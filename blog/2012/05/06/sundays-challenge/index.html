@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yoursite.com/blog/2012/05/06/sundays-challenge/">
+  <link rel="canonical" href="http://jeffreybaird.github.com/blog/2012/05/06/sundays-challenge/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -49,7 +49,7 @@
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input type="hidden" name="q" value="site:jeffreybaird.github.com" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -90,17 +90,15 @@
   </header>
 
 
-<div class="entry-content">Full of the knowledge gained from <a href="http://www.meetup.com/tampa-rb/events/60266012/" target="_blank">Coder Night</a> on Thursday, I made an attempt at creating a poker game. My original plan was to create three classes, a Player class, a Deck class and a Game class. The general construction of the game would be the Game class would use take a new deck object and pop the last card out of the shuffled array and assign it to one of the players in the array &#8220;hand&#8221;
+<div class="entry-content"><p>Full of the knowledge gained from <a href="http://www.meetup.com/tampa-rb/events/60266012/" target="_blank">Coder Night</a> on Thursday, I made an attempt at creating a poker game. My original plan was to create three classes, a Player class, a Deck class and a Game class. The general construction of the game would be the Game class would use take a new deck object and pop the last card out of the shuffled array and assign it to one of the players in the array &#8220;hand&#8221;</p>
 
-The first problem I ran into was getting each player cards from the same deck. When I wrote the program the first time I assigned a new deck to each player.
+<p>The first problem I ran into was getting each player cards from the same deck. When I wrote the program the first time I assigned a new deck to each player.</p>
 
-I think I finally figured out the problem there, but I broke the program :/
+<p>I think I finally figured out the problem there, but I broke the program :/</p>
 
-I am pretty sure the problem is somewhere in my Game class. Any ideas?
+<p>I am pretty sure the problem is somewhere in my Game class. Any ideas?</p>
 
-
-[sourcecode language=&#8221;ruby&#8221;]
-require_relative &#8216;player&#8217;
+<pre><code>require_relative 'player'
 class Game
   attr_reader :hand
   attr_accessor :make_game
@@ -110,13 +108,13 @@ class Game
   end
   def make_game
     i = 0
-    while i &lt; @numplayers
-    hand &lt;&lt; Player.new()
+    while i &amp;lt; @numplayers
+    hand &amp;lt;&amp;lt; Player.new()
     i+=1
     end
   end
 end
-[/sourcecode] 
+</code></pre>
 </div>
 
 
@@ -147,7 +145,7 @@ end
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/blog/2012/05/06/sundays-challenge/" data-via="" data-counturl="http://yoursite.com/blog/2012/05/06/sundays-challenge/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jeffreybaird.github.com/blog/2012/05/06/sundays-challenge/" data-via="" data-counturl="http://jeffreybaird.github.com/blog/2012/05/06/sundays-challenge/" >Tweet</a>
   
   
   

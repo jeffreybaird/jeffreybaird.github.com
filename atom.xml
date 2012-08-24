@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://yoursite.com/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2012-08-24T16:19:16-04:00</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://jeffreybaird.github.com/atom.xml" rel="self"/>
+  <link href="http://jeffreybaird.github.com/"/>
+  <updated>2012-08-24T17:10:35-04:00</updated>
+  <id>http://jeffreybaird.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[How to Get a Job as a Developer in Less Than Six Months]]></title>
-    <link href="http://yoursite.com/blog/2012/08/21/how-to-get-a-job-as-a-developer-in-less-than-six-months/"/>
+    <link href="http://jeffreybaird.github.com/blog/2012/08/21/how-to-get-a-job-as-a-developer-in-less-than-six-months/"/>
     <updated>2012-08-21T00:00:00-04:00</updated>
-    <id>http://yoursite.com/blog/2012/08/21/how-to-get-a-job-as-a-developer-in-less-than-six-months</id>
+    <id>http://jeffreybaird.github.com/blog/2012/08/21/how-to-get-a-job-as-a-developer-in-less-than-six-months</id>
     <content type="html"><![CDATA[So the month of June came and went, and so did July. A lot has happened, but I wasn&#8217;t able to <a title="Goals for the month of June." href="http://www.learnwithjeff.com/2012/05/31/goals-for-the-month-of-june/">complete my goals.</a>
 
 I did, however, make huge strides in my programming skills &#8211; so huge, in fact, that I was hired as a junior developer at <a href="http://medivo.com">Medivo</a>!
@@ -106,9 +106,9 @@ In February 2012 I had never written a line of code. But, as of July 11, 2012 I 
   
   <entry>
     <title type="html"><![CDATA[Goals for the month of June.]]></title>
-    <link href="http://yoursite.com/blog/2012/05/31/goals-for-the-month-of-june/"/>
+    <link href="http://jeffreybaird.github.com/blog/2012/05/31/goals-for-the-month-of-june/"/>
     <updated>2012-05-31T00:00:00-04:00</updated>
-    <id>http://yoursite.com/blog/2012/05/31/goals-for-the-month-of-june</id>
+    <id>http://jeffreybaird.github.com/blog/2012/05/31/goals-for-the-month-of-june</id>
     <content type="html"><![CDATA[In my learning, I find it immensely helpful to set lofty (but possible and measurable) goals. I didn&#8217;t my goal for the month of May but it was pretty straight-forward, publish a gem. I accomplished that goal, twice.
 
 I&#8217;ve decided to talk about my goals out for the month of June since they are much more challenging than my goals for May. First, I want to publish a &#8220;useful&#8221; gem/plugin/program/app. Second, I want to make some contribution to an open source project.
@@ -124,9 +124,9 @@ I realize that the above are huge challenges for a beginning programmer, but I w
   
   <entry>
     <title type="html"><![CDATA[Testing - a n00b's reflection]]></title>
-    <link href="http://yoursite.com/blog/2012/05/29/testing-a-n00bs-reflection/"/>
+    <link href="http://jeffreybaird.github.com/blog/2012/05/29/testing-a-n00bs-reflection/"/>
     <updated>2012-05-29T00:00:00-04:00</updated>
-    <id>http://yoursite.com/blog/2012/05/29/testing-a-n00bs-reflection</id>
+    <id>http://jeffreybaird.github.com/blog/2012/05/29/testing-a-n00bs-reflection</id>
     <content type="html"><![CDATA[I have officially spent more time testing and refactoring my code for my black jack game, <a href="https://github.com/jeffreybaird/RubyJack">RubyJack</a>, than I have on the original code base and it has taught me a big lesson: TEST FIRST.
 
 This is a topic that I don&#8217;t have the breadth of knowledge to really attack. Jeff Atwood does a much better job than I, <a href="http://www.codinghorror.com/blog/2006/07/i-pity-the-fool-who-doesnt-write-unit-tests.html">here</a>. I do, however, feel that I can add the perspective of a new programmer.
@@ -221,9 +221,9 @@ Thanks for reading!
   
   <entry>
     <title type="html"><![CDATA[RubyJack my second Ruby Gem!]]></title>
-    <link href="http://yoursite.com/blog/2012/05/24/rubyjack-my-second-ruby-gem/"/>
+    <link href="http://jeffreybaird.github.com/blog/2012/05/24/rubyjack-my-second-ruby-gem/"/>
     <updated>2012-05-24T00:00:00-04:00</updated>
-    <id>http://yoursite.com/blog/2012/05/24/rubyjack-my-second-ruby-gem</id>
+    <id>http://jeffreybaird.github.com/blog/2012/05/24/rubyjack-my-second-ruby-gem</id>
     <content type="html"><![CDATA[For the last two days I have been slaving over my second attempt at a real ruby program, this one with no help from my friends over at pragmatic programming. I am going to briefly go over something I learned doing this, some of the problems I faced and some of the features I am still working on.
 
 If you want to find the project I am working on, the source code can be found <a href="https://github.com/jeffreybaird/RubyJack/tree/master/black_jack">here</a>, on my GitHub profile.
@@ -314,9 +314,9 @@ Please go play the game ($gem install RubyJack) and give me some feedback! Thank
   
   <entry>
     <title type="html"><![CDATA[I/O...FINALLY!]]></title>
-    <link href="http://yoursite.com/blog/2012/05/21/io-finally/"/>
+    <link href="http://jeffreybaird.github.com/blog/2012/05/21/io-finally/"/>
     <updated>2012-05-21T00:00:00-04:00</updated>
-    <id>http://yoursite.com/blog/2012/05/21/io-finally</id>
+    <id>http://jeffreybaird.github.com/blog/2012/05/21/io-finally</id>
     <content type="html"><![CDATA[When I was learning to play the piano, I remember wanting to jump right into Billy Joel. &#8220;Hot Cross Buns&#8221; and &#8220;Mary Had a Little Lamb&#8221; were boring and very uncool for an eight year old boy to be learning.
 
 I have had the same feeling while learning to code. I spent a lot of time doing methods, objects and classes never really getting to use them as I would in the real world.
@@ -406,20 +406,18 @@ I will be writing about packaging the gem and some issues I ran into with that l
   
   <entry>
     <title type="html"><![CDATA[Sunday's Challenge]]></title>
-    <link href="http://yoursite.com/blog/2012/05/06/sundays-challenge/"/>
+    <link href="http://jeffreybaird.github.com/blog/2012/05/06/sundays-challenge/"/>
     <updated>2012-05-06T00:00:00-04:00</updated>
-    <id>http://yoursite.com/blog/2012/05/06/sundays-challenge</id>
-    <content type="html"><![CDATA[Full of the knowledge gained from <a href="http://www.meetup.com/tampa-rb/events/60266012/" target="_blank">Coder Night</a> on Thursday, I made an attempt at creating a poker game. My original plan was to create three classes, a Player class, a Deck class and a Game class. The general construction of the game would be the Game class would use take a new deck object and pop the last card out of the shuffled array and assign it to one of the players in the array &#8220;hand&#8221;
+    <id>http://jeffreybaird.github.com/blog/2012/05/06/sundays-challenge</id>
+    <content type="html"><![CDATA[<p>Full of the knowledge gained from <a href="http://www.meetup.com/tampa-rb/events/60266012/" target="_blank">Coder Night</a> on Thursday, I made an attempt at creating a poker game. My original plan was to create three classes, a Player class, a Deck class and a Game class. The general construction of the game would be the Game class would use take a new deck object and pop the last card out of the shuffled array and assign it to one of the players in the array &#8220;hand&#8221;</p>
 
-The first problem I ran into was getting each player cards from the same deck. When I wrote the program the first time I assigned a new deck to each player.
+<p>The first problem I ran into was getting each player cards from the same deck. When I wrote the program the first time I assigned a new deck to each player.</p>
 
-I think I finally figured out the problem there, but I broke the program :/
+<p>I think I finally figured out the problem there, but I broke the program :/</p>
 
-I am pretty sure the problem is somewhere in my Game class. Any ideas?
+<p>I am pretty sure the problem is somewhere in my Game class. Any ideas?</p>
 
-
-[sourcecode language=&#8221;ruby&#8221;]
-require_relative &#8216;player&#8217;
+<pre><code>require_relative 'player'
 class Game
   attr_reader :hand
   attr_accessor :make_game
@@ -429,21 +427,21 @@ class Game
   end
   def make_game
     i = 0
-    while i &lt; @numplayers
-    hand &lt;&lt; Player.new()
+    while i &amp;lt; @numplayers
+    hand &amp;lt;&amp;lt; Player.new()
     i+=1
     end
   end
 end
-[/sourcecode] 
+</code></pre>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Yeah... I'm a bad blogger.]]></title>
-    <link href="http://yoursite.com/blog/2012/05/02/yeah-im-a-bad-blogger/"/>
+    <link href="http://jeffreybaird.github.com/blog/2012/05/02/yeah-im-a-bad-blogger/"/>
     <updated>2012-05-02T00:00:00-04:00</updated>
-    <id>http://yoursite.com/blog/2012/05/02/yeah-im-a-bad-blogger</id>
+    <id>http://jeffreybaird.github.com/blog/2012/05/02/yeah-im-a-bad-blogger</id>
     <content type="html"><![CDATA[<h2>I&#8217;m coming back now, I promise</h2>
 I&#8217;m sorry, audience of zero, I haven&#8217;t been updating you on my learning process or helping you keep up. The problem is, I have been moving way too fast to write about it every day. So, to update you:
 <h3>HTML:</h3>
@@ -473,9 +471,9 @@ So, yes I am busy. I will however try to post more often with some tidbits, chal
   
   <entry>
     <title type="html"><![CDATA[HTML Meet Style]]></title>
-    <link href="http://yoursite.com/blog/2012/03/06/html-meet-style/"/>
+    <link href="http://jeffreybaird.github.com/blog/2012/03/06/html-meet-style/"/>
     <updated>2012-03-06T00:00:00-05:00</updated>
-    <id>http://yoursite.com/blog/2012/03/06/html-meet-style</id>
+    <id>http://jeffreybaird.github.com/blog/2012/03/06/html-meet-style</id>
     <content type="html"><![CDATA[Sorry for the unannounced absence. Life gets in the way.
 
 Let&#8217;s look back at what we have learned so far:
@@ -496,19 +494,19 @@ I won&#8217;t be teaching any CSS today, just showing you where it fits in and w
 
 So let&#8217;s go back to the code from the earlier lesson:
 
-[caption id=&#8221;attachment_41&#8221; align=&#8221;alignnone&#8221; width=&#8221;475&#8221; caption=&#8221;Straight HTML&#8221;]<a href="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.41.14-PM1.png"><img class="alignnone size-full wp-image-46" title="HTML" src="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.41.14-PM1.png" alt="" width="475" height="519" /></a>[/caption]
+<br><a href="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.41.14-PM1.png"><img class="alignnone size-full wp-image-46" title="HTML" src="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.41.14-PM1.png" alt="" width="475" height="519" /></a>
 
-That code gave us this web page:
+<br>That code gave us this web page:
 
-<a href="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.13-PM.png"><img class="alignnone size-medium wp-image-44" title="Unformatted Website" src="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.13-PM-300x206.png" alt="" width="300" height="206" /></a>
+<br><a href="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.13-PM.png"><img class="alignnone size-medium wp-image-44" title="Unformatted Website" src="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.13-PM-300x206.png" alt="" width="300" height="206" /></a>
 
-Now take a look at the same code with a little CSS thrown in:
+<br>Now take a look at the same code with a little CSS thrown in:
 
-<a href="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.45.19-PM1.png"><img class="alignnone size-full wp-image-47" title="HTML with CSS" src="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.45.19-PM1.png" alt="" width="520" height="660" /></a>
+<br><a href="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.45.19-PM1.png"><img class="alignnone size-full wp-image-47" title="HTML with CSS" src="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.45.19-PM1.png" alt="" width="520" height="660" /></a>
 
-Notice that I threw in a &#8220;Style&#8221; tag. The tag has an attribute, text/css. This tells the browser that we will be styling the website with CSS. I won&#8217;t tell you exactly what each one does, try to figure it out based on the picture below.
+<br>Notice that I threw in a &#8220;Style&#8221; tag. The tag has an attribute, text/css. This tells the browser that we will be styling the website with CSS. I won&#8217;t tell you exactly what each one does, try to figure it out based on the picture below.
 
-<a href="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.02-PM.png"><img class="alignnone size-medium wp-image-43" title="Website Styled with CSS" src="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.02-PM-300x210.png" alt="" width="300" height="210" /></a>
+<br><a href="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.02-PM.png"><img class="alignnone size-medium wp-image-43" title="Website Styled with CSS" src="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.02-PM-300x210.png" alt="" width="300" height="210" /></a>
 
 So what did the CSS accomplish?
 ]]></content>
@@ -516,9 +514,9 @@ So what did the CSS accomplish?
   
   <entry>
     <title type="html"><![CDATA[Setting Up Your Website]]></title>
-    <link href="http://yoursite.com/blog/2012/02/20/setting-up-your-website/"/>
+    <link href="http://jeffreybaird.github.com/blog/2012/02/20/setting-up-your-website/"/>
     <updated>2012-02-20T00:00:00-05:00</updated>
-    <id>http://yoursite.com/blog/2012/02/20/setting-up-your-website</id>
+    <id>http://jeffreybaird.github.com/blog/2012/02/20/setting-up-your-website</id>
     <content type="html"><![CDATA[<h2>Homework Answers:</h2>
 &lt;html&gt; and &lt;/html&gt; let the browser know where the html document begins and ends
 
@@ -551,9 +549,9 @@ Now, try creating a file like the one I did in my <a title="A Quick Look at HTML
   
   <entry>
     <title type="html"><![CDATA[A Quick Look at HTML and Your First Assignment]]></title>
-    <link href="http://yoursite.com/blog/2012/02/16/a-quick-look-at-html-and-your-first-assignment/"/>
+    <link href="http://jeffreybaird.github.com/blog/2012/02/16/a-quick-look-at-html-and-your-first-assignment/"/>
     <updated>2012-02-16T00:00:00-05:00</updated>
-    <id>http://yoursite.com/blog/2012/02/16/a-quick-look-at-html-and-your-first-assignment</id>
+    <id>http://jeffreybaird.github.com/blog/2012/02/16/a-quick-look-at-html-and-your-first-assignment</id>
     <content type="html"><![CDATA[Hello!
 
 Today we are going to look at a little basic HTML. I&#8217;m running behind so this will be a short post.
@@ -576,9 +574,9 @@ Your homework for tonight is to compare the two and make a guess as to what each
   
   <entry>
     <title type="html"><![CDATA[Lesson 2: An Intro to HTML]]></title>
-    <link href="http://yoursite.com/blog/2012/02/14/lesson-2-an-intro-to-html/"/>
+    <link href="http://jeffreybaird.github.com/blog/2012/02/14/lesson-2-an-intro-to-html/"/>
     <updated>2012-02-14T00:00:00-05:00</updated>
-    <id>http://yoursite.com/blog/2012/02/14/lesson-2-an-intro-to-html</id>
+    <id>http://jeffreybaird.github.com/blog/2012/02/14/lesson-2-an-intro-to-html</id>
     <content type="html"><![CDATA[<h2>Disclaimer:</h2>
 Third post in and I&#8217;ve already made an executive decision about this blog, it is about me. I know this may sound a bit selfish. I am okay with that.
 
@@ -608,9 +606,9 @@ See you next time :)
   
   <entry>
     <title type="html"><![CDATA[For My First Lesson: My Digital Resume]]></title>
-    <link href="http://yoursite.com/blog/2012/02/13/for-my-first-lesson-my-digital-resume/"/>
+    <link href="http://jeffreybaird.github.com/blog/2012/02/13/for-my-first-lesson-my-digital-resume/"/>
     <updated>2012-02-13T00:00:00-05:00</updated>
-    <id>http://yoursite.com/blog/2012/02/13/for-my-first-lesson-my-digital-resume</id>
+    <id>http://jeffreybaird.github.com/blog/2012/02/13/for-my-first-lesson-my-digital-resume</id>
     <content type="html"><![CDATA[I&#8217;ve done a lot of cool things in my short 24 years. I&#8217;m proud of my accomplishments and I want to show them off to future employers, partners and investors. To do this, I am making an online resume.
 
 First, I need a url. To do this you need to find an available <a href="http://en.wikipedia.org/wiki/Domain_name" target="_blank">domain name</a> and a <a href="http://en.wikipedia.org/wiki/Domain_name_registrar" target="_blank">domain registration company</a>.
@@ -659,9 +657,9 @@ Some other tools:
   
   <entry>
     <title type="html"><![CDATA[I am Jeff. Learn cool shit with me.]]></title>
-    <link href="http://yoursite.com/blog/2012/02/12/i-am-jeff/"/>
+    <link href="http://jeffreybaird.github.com/blog/2012/02/12/i-am-jeff/"/>
     <updated>2012-02-12T00:00:00-05:00</updated>
-    <id>http://yoursite.com/blog/2012/02/12/i-am-jeff</id>
+    <id>http://jeffreybaird.github.com/blog/2012/02/12/i-am-jeff</id>
     <content type="html"><![CDATA[Welcome to my new website, where we get to learn cool stuff together! I have spent a lifetime in school learning jack shit. Everything I&#8217;ve learned, for real, I taught myself or learned on the job.
 
 That is what we are going to take a stab at on this site. I am going to pick a skill and then I&#8217;m going to teach myself said skill. I will then post how-to guides, instructional videos, detailed accounts of my mistakes, and (sometimes) funny anecdotes of the learning experience.

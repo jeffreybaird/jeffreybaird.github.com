@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://jeffreybaird.github.com/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -49,7 +49,7 @@
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input type="hidden" name="q" value="site:jeffreybaird.github.com" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -619,17 +619,15 @@ I will be writing about packaging the gem and some issues I ran into with that l
   </header>
 
 
-  <div class="entry-content">Full of the knowledge gained from <a href="http://www.meetup.com/tampa-rb/events/60266012/" target="_blank">Coder Night</a> on Thursday, I made an attempt at creating a poker game. My original plan was to create three classes, a Player class, a Deck class and a Game class. The general construction of the game would be the Game class would use take a new deck object and pop the last card out of the shuffled array and assign it to one of the players in the array &#8220;hand&#8221;
+  <div class="entry-content"><p>Full of the knowledge gained from <a href="http://www.meetup.com/tampa-rb/events/60266012/" target="_blank">Coder Night</a> on Thursday, I made an attempt at creating a poker game. My original plan was to create three classes, a Player class, a Deck class and a Game class. The general construction of the game would be the Game class would use take a new deck object and pop the last card out of the shuffled array and assign it to one of the players in the array &#8220;hand&#8221;</p>
 
-The first problem I ran into was getting each player cards from the same deck. When I wrote the program the first time I assigned a new deck to each player.
+<p>The first problem I ran into was getting each player cards from the same deck. When I wrote the program the first time I assigned a new deck to each player.</p>
 
-I think I finally figured out the problem there, but I broke the program :/
+<p>I think I finally figured out the problem there, but I broke the program :/</p>
 
-I am pretty sure the problem is somewhere in my Game class. Any ideas?
+<p>I am pretty sure the problem is somewhere in my Game class. Any ideas?</p>
 
-
-[sourcecode language=&#8221;ruby&#8221;]
-require_relative &#8216;player&#8217;
+<pre><code>require_relative 'player'
 class Game
   attr_reader :hand
   attr_accessor :make_game
@@ -639,13 +637,13 @@ class Game
   end
   def make_game
     i = 0
-    while i &lt; @numplayers
-    hand &lt;&lt; Player.new()
+    while i &amp;lt; @numplayers
+    hand &amp;lt;&amp;lt; Player.new()
     i+=1
     end
   end
 end
-[/sourcecode] 
+</code></pre>
 </div>
   
   
@@ -760,19 +758,19 @@ I won&#8217;t be teaching any CSS today, just showing you where it fits in and w
 
 So let&#8217;s go back to the code from the earlier lesson:
 
-[caption id=&#8221;attachment_41&#8221; align=&#8221;alignnone&#8221; width=&#8221;475&#8221; caption=&#8221;Straight HTML&#8221;]<a href="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.41.14-PM1.png"><img class="alignnone size-full wp-image-46" title="HTML" src="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.41.14-PM1.png" alt="" width="475" height="519" /></a>[/caption]
+<br><a href="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.41.14-PM1.png"><img class="alignnone size-full wp-image-46" title="HTML" src="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.41.14-PM1.png" alt="" width="475" height="519" /></a>
 
-That code gave us this web page:
+<br>That code gave us this web page:
 
-<a href="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.13-PM.png"><img class="alignnone size-medium wp-image-44" title="Unformatted Website" src="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.13-PM-300x206.png" alt="" width="300" height="206" /></a>
+<br><a href="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.13-PM.png"><img class="alignnone size-medium wp-image-44" title="Unformatted Website" src="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.13-PM-300x206.png" alt="" width="300" height="206" /></a>
 
-Now take a look at the same code with a little CSS thrown in:
+<br>Now take a look at the same code with a little CSS thrown in:
 
-<a href="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.45.19-PM1.png"><img class="alignnone size-full wp-image-47" title="HTML with CSS" src="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.45.19-PM1.png" alt="" width="520" height="660" /></a>
+<br><a href="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.45.19-PM1.png"><img class="alignnone size-full wp-image-47" title="HTML with CSS" src="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.45.19-PM1.png" alt="" width="520" height="660" /></a>
 
-Notice that I threw in a &#8220;Style&#8221; tag. The tag has an attribute, text/css. This tells the browser that we will be styling the website with CSS. I won&#8217;t tell you exactly what each one does, try to figure it out based on the picture below.
+<br>Notice that I threw in a &#8220;Style&#8221; tag. The tag has an attribute, text/css. This tells the browser that we will be styling the website with CSS. I won&#8217;t tell you exactly what each one does, try to figure it out based on the picture below.
 
-<a href="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.02-PM.png"><img class="alignnone size-medium wp-image-43" title="Website Styled with CSS" src="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.02-PM-300x210.png" alt="" width="300" height="210" /></a>
+<br><a href="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.02-PM.png"><img class="alignnone size-medium wp-image-43" title="Website Styled with CSS" src="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.02-PM-300x210.png" alt="" width="300" height="210" /></a>
 
 So what did the CSS accomplish?
 </div>
