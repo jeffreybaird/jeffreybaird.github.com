@@ -5,8 +5,8 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>RubyJack my second Ruby Gem! - My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <title>RubyJack my second Ruby Gem! - Learn With Jeff</title>
+  <meta name="author" content="Jeff Baird">
 
   
   <meta name="description" content="For the last two days I have been slaving over my second attempt at a real ruby program, this one with no help from my friends over at pragmatic &hellip;">
@@ -24,7 +24,7 @@
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Learn With Jeff" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -35,9 +35,9 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
+  <h1><a href="/">Learn With Jeff</a></h1>
   
-    <h2>A blogging framework for hackers.</h2>
+    <h2>I like to learn; I like to teach; I kill two birds.</h2>
   
 </hgroup>
 
@@ -90,91 +90,96 @@
   </header>
 
 
-<div class="entry-content">For the last two days I have been slaving over my second attempt at a real ruby program, this one with no help from my friends over at pragmatic programming. I am going to briefly go over something I learned doing this, some of the problems I faced and some of the features I am still working on.
+<div class="entry-content"><p>For the last two days I have been slaving over my second attempt at a real ruby program, this one with no help from my friends over at pragmatic programming. I am going to briefly go over something I learned doing this, some of the problems I faced and some of the features I am still working on.</p>
 
-If you want to find the project I am working on, the source code can be found <a href="https://github.com/jeffreybaird/RubyJack/tree/master/black_jack">here</a>, on my GitHub profile.
+<p>If you want to find the project I am working on, the source code can be found <a href="https://github.com/jeffreybaird/RubyJack/tree/master/black_jack">here</a> on my GitHub profile.</p>
 
-You can install the gem with $gem install RubyJack
-<h2><strong>TIL:</strong></h2>
-Today I learned a little bit about ruby&#8217;s regular expressions. I  know there is a lot more that I don&#8217;t know about them, but from what I can tell, they are powerful. The most basic definition I could find of a regular expression is from the Programming Ruby 1.9 book (the latest PickAxe addition):
-<blockquote>A regular expression is a pattern that can be matched against a string. It can be a simple pattern, such as <em>the string must contain the sequence of letters &#8220;cat&#8221;,</em> or the pattern can be complex, such as <em>the string must start with a protocol identifier, followed by two literal forward slashes, followed by&#8230;, </em>and so on. This is cool in theory. But what makes reqular expressions so powerful is what you can do with them in practice:
-<ul>
-	<li>You can test a string to see whether it matches a pattern</li>
-	<li>You can extract from a string the sections that match all or part of a pattern.</li>
-	<li>You can change the string, replacing parts that match a pattern</li>
-</ul>
-</blockquote>
-The job I needed regular expressions for in my code is most likely based in the poor design of my deck of cards. The following is the code that initialized a new deck:
+<p>You can install the gem with $gem install RubyJack</p>
 
-[sourcecode language=&#8221;ruby&#8221;]
+<h2>TIL:</h2>
 
-  def create_a_deck
-    new_suits = %w(hearts spades clubs diamonds )
-    new_value = %w(Ace 2 3 4 5 6 7 8 9 10 Jack Queen King)
-    @new_deck = Array.new
-    #creates a new array by combining the information in the
-    #above two
-    new_value.each do |card|
-      new_suits.each do |suited|
-        @new_deck &lt;&lt; &quot;#{card} of #{suited}&quot;
-      end
+<p>Today I learned a little bit about ruby&#8217;s regular expressions. I  know there is a lot more that I don&#8217;t know about them, but from what I can tell, they are powerful. The most basic definition I could find of a regular expression is from the Programming Ruby 1.9 book (the latest PickAxe addition):</p>
+
+<blockquote><p>A regular expression is a pattern that can be matched against a string. It can be a simple pattern, such as <em>the string must contain the sequence of letters &#8220;cat&#8221;,</em> or the pattern can be complex, such as <em>the string must start with a protocol identifier, followed by two literal forward slashes, followed by&#8230;,</em> and so on. This is cool in theory. But what makes reqular expressions so powerful is what you can do with them in practice:</p>
+
+<p>-You can test a string to see whether it matches a pattern
+-You can extract from a string the sections that match all or part of a pattern.
+-You can change the string, replacing parts that match a pattern</p></blockquote>
+
+<p>The job I needed regular expressions for in my code is most likely based in the poor design of my deck of cards. The following is the code that initialized a new deck:</p>
+
+<pre><code>def create_a_deck
+  new_suits = %w(hearts spades clubs diamonds )
+  new_value = %w(Ace 2 3 4 5 6 7 8 9 10 Jack Queen King)
+  @new_deck = Array.new
+  #creates a new array by combining the information in the
+  #above two
+  new_value.each do |card|
+    new_suits.each do |suited|
+      @new_deck &amp;lt;&amp;lt; &amp;quot;#{card} of #{suited}&amp;quot;
     end
   end
+end
+</code></pre>
 
-[/sourcecode]
+<p>What I am doing above is creating an array of strings that have combined the strings found in the &#8220;new_suits&#8221; array and the &#8220;new_value&#8221; array above to make a new array that includes an entire deck. The iterator starts with &#8220;Ace&#8221; and combines it with &#8220;hearts&#8221; to make &#8220;Ace of hearts&#8221; which is then added on to the end of the @new_deck array. The iterator goes through and makes 52 cards in this fashion.</p>
 
-What I am doing above is creating an array of strings that have combined the strings found in the &#8220;new_suits&#8221; array and the &#8220;new_value&#8221; array above to make a new array that includes an entire deck. The iterator starts with &#8220;Ace&#8221; and combines it with &#8220;hearts&#8221; to make &#8220;Ace of hearts&#8221; which is then added on to the end of the @new_deck array. The iterator goes through and makes 52 cards in this fashion.
+<p>The problem with this method of making a deck is that all of my cards are now Strings and I need a way to covert them into point values for the Black Jack game. I did some research and came upon regular expressions.</p>
 
-The problem with this method of making a deck is that all of my cards are now Strings and I need a way to covert them into point values for the Black Jack game. I did some research and came upon regular expressions.
+<p>Here is the method I used to parse the deck and assign values:</p>
 
-Here is the method I used to parse the deck and assign values:
-
-[sourcecode language=&#8221;ruby&#8221;]
-
-  def card_value card
-    if card =~ /Queen/
-      10
-    elsif card =~ /King/
-      10
-    elsif card =~ /Jack/
-      10
-    elsif card =~ /Ace/
-      11
-    elsif card =~ /2/
-      2
-    elsif card =~ /3/
-      3
-    elsif card =~ /4/
-      4
-    elsif card =~ /5/
-      5
-    elsif card =~ /6/
-      6
-    elsif card =~ /7/
-      7
-    elsif card =~ /8/
-      8
-    elsif card =~ /9/
-      9
-    elsif card =~ /10/
-      10
-    else
-      0
-    end
+<pre><code>def card_value card
+  if card =~ /Queen/
+    10
+  elsif card =~ /King/
+    10
+  elsif card =~ /Jack/
+    10
+  elsif card =~ /Ace/
+    11
+  elsif card =~ /2/
+    2
+  elsif card =~ /3/
+    3
+  elsif card =~ /4/
+    4
+  elsif card =~ /5/
+    5
+  elsif card =~ /6/
+    6
+  elsif card =~ /7/
+    7
+  elsif card =~ /8/
+    8
+  elsif card =~ /9/
+    9
+  elsif card =~ /10/
+    10
+  else
+    0
   end
-[/sourcecode]
+end
+</code></pre>
 
-I have a gut feeling that any rubyists that are reading this, died a little bit inside with that method. However, it got the job done and it taught me a little about regular expressions. Essentially what this method does is search the string I give it (I&#8217;m using this with an iterator and passing it each card in the player&#8217;s hand) and assigning a value based on what it finds. I will probably add another method to this in order to expand upon the Ace, but more on that later.
+<p>I have a gut feeling that any rubyists that are reading this, died a little bit inside with that method. However, it got the job done and it taught me a little about regular expressions. Essentially what this method does is search the string I give it (I&#8217;m using this with an iterator and passing it each card in the player&#8217;s hand) and assigning a value based on what it finds. I will probably add another method to this in order to expand upon the Ace, but more on that later.</p>
+
 <h2>Problems I faced:</h2>
-So there are a couple parts to blackjack that were a little tough for me to get in the program. They are, dealer play, the option of playing an Ace as a 1 or 11, and the ability to bet.  I am not going to attack the betting capability just yet but I do think I will discuss dealer play and  Ace action.
-<h3>Dealer Play:</h3>
-On the surface, this problem seemed pretty simple. The dealer is just a special player. So, create a subclass of player and write some methods that automate the play of the dealer (I won&#8217;t paste all that code here, go look at the source!). However, every time I called a method from the dealer class my program crashed. I have to keep fiddling with that to see if I can get it to work.
-<h3>Ace Action:</h3>
-I actually think I solved this problem while I was writing this blog post (which is why I write this blog). I think if I add call a method in when the card_value method finds &#8220;Ace&#8221; that prompts the user to make a choice, it will solve the problem. The tricky part will be offering that choice repeatedly (so if the user changes his mind later in the hand) and automating it for the dealer.
-<h2>Features to come:</h2>
-So you can probably gather that I plan on adding the above two features today. Another feature that I want to add is the ability of the user to place bets, have holdings and play multiple games.
 
-Please go play the game ($gem install RubyJack) and give me some feedback! Thanks!
+<p>So there are a couple parts to blackjack that were a little tough for me to get in the program. They are, dealer play, the option of playing an Ace as a 1 or 11, and the ability to bet.  I am not going to attack the betting capability just yet but I do think I will discuss dealer play and  Ace action.</p>
+
+<h3>Dealer Play:</h3>
+
+<p>On the surface, this problem seemed pretty simple. The dealer is just a special player. So, create a subclass of player and write some methods that automate the play of the dealer (I won&#8217;t paste all that code here, go look at the source!). However, every time I called a method from the dealer class my program crashed. I have to keep fiddling with that to see if I can get it to work.</p>
+
+<h3>Ace Action:</h3>
+
+<p>I actually think I solved this problem while I was writing this blog post (which is why I write this blog). I think if I add call a method in when the card_value method finds &#8220;Ace&#8221; that prompts the user to make a choice, it will solve the problem. The tricky part will be offering that choice repeatedly (so if the user changes his mind later in the hand) and automating it for the dealer.</p>
+
+<h2>Features to come:</h2>
+
+<p>So you can probably gather that I plan on adding the above two features today. Another feature that I want to add is the ability of the user to place bets, have holdings and play multiple games.</p>
+
+<p>Please go play the game ($gem install RubyJack) and give me some feedback! Thanks!</p>
 </div>
 
 
@@ -183,7 +188,7 @@ Please go play the game ($gem install RubyJack) and give me some feedback! Thank
       
   
 
-<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+<span class="byline author vcard">Posted by <span class="fn">Jeff Baird</span></span>
 
       
 
@@ -254,6 +259,35 @@ Please go play the game ($gem install RubyJack) and give me some feedback! Thank
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/jeffreybaird">@jeffreybaird</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'jeffreybaird',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
 
 
 
@@ -266,7 +300,7 @@ Please go play the game ($gem install RubyJack) and give me some feedback! Thank
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Your Name -
+  Copyright &copy; 2012 - Jeff Baird -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

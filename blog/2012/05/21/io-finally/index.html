@@ -5,8 +5,8 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>I/O...FINALLY! - My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <title>I/O...FINALLY! - Learn With Jeff</title>
+  <meta name="author" content="Jeff Baird">
 
   
   <meta name="description" content="When I was learning to play the piano, I remember wanting to jump right into Billy Joel. &#8220;Hot Cross Buns&#8221; and &#8220;Mary Had a Little &hellip;">
@@ -24,7 +24,7 @@
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Learn With Jeff" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -35,9 +35,9 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
+  <h1><a href="/">Learn With Jeff</a></h1>
   
-    <h2>A blogging framework for hackers.</h2>
+    <h2>I like to learn; I like to teach; I kill two birds.</h2>
   
 </hgroup>
 
@@ -90,90 +90,83 @@
   </header>
 
 
-<div class="entry-content">When I was learning to play the piano, I remember wanting to jump right into Billy Joel. &#8220;Hot Cross Buns&#8221; and &#8220;Mary Had a Little Lamb&#8221; were boring and very uncool for an eight year old boy to be learning.
+<div class="entry-content"><p>When I was learning to play the piano, I remember wanting to jump right into Billy Joel. &#8220;Hot Cross Buns&#8221; and &#8220;Mary Had a Little Lamb&#8221; were boring and very uncool for an eight year old boy to be learning.</p>
 
-I have had the same feeling while learning to code. I spent a lot of time doing methods, objects and classes never really getting to use them as I would in the real world.
+<p>I have had the same feeling while learning to code. I spent a lot of time doing methods, objects and classes never really getting to use them as I would in the real world.</p>
 
-There is one question I wanted to be able answer since the day I started programming: &#8220;How the hell do I interact with a program?&#8221;
+<p>There is one question I wanted to be able answer since the day I started programming: &#8220;How the hell do I interact with a program?&#8221;</p>
 
-Today, I figured that out.  The code below is from the main program file for the game I created in the <a href="http://online.pragmaticstudio.com/courses/ruby">Pragmatic Studios course</a>. In it, there are two examples of some of ruby&#8217;s basic input functions. 
+<p>Today, I figured that out.  The code below is from the main program file for the game I created in the <a href="http://online.pragmaticstudio.com/courses/ruby">Pragmatic Studios course</a>. In it, there are two examples of some of ruby&#8217;s basic input functions.</p>
 
-[sourcecode language=&#8221;ruby&#8221;]
-knuckleheads = StudioGame::Game.new(&quot;Knuckleheads&quot;)
+<pre><code>knuckleheads = StudioGame::Game.new(&amp;quot;Knuckleheads&amp;quot;)
 
-default_player_file = File.join(File.dirname(__FILE__), &#8216;players.csv&#8217;)
+default_player_file = File.join(File.dirname(__FILE__), 'players.csv')
 knuckleheads.load_players(ARGV.shift || default_player_file)
 
 loop do
-  puts &quot;\nHow many game rounds do you want to play?&quot;
+  puts &amp;quot;\nHow many game rounds do you want to play?&amp;quot;
   answer = gets.downcase.chomp
   case answer
   when /^\d+$/
     knuckleheads.play(answer.to_i)
-  when &#8216;quit&#8217;,&#8217;exit&#8217;
+  when 'quit','exit'
     knuckleheads.print_stats
     break
   else
-    puts &quot;Please enter a number or &#8216;quit&#8217;&quot;
+    puts &amp;quot;Please enter a number or 'quit'&amp;quot;
   end
 end
 
 knuckleheads.save_high_scores
-[/sourcecode]
+</code></pre>
 
-The first input I learned was the &#8220;gets&#8221; method. Here, the program prompts the user to provide a number, the code checks that it is in fact a number (or a quit command) and then uses the number as an argument for the method. 
+<p>The first input I learned was the &#8220;gets&#8221; method. Here, the program prompts the user to provide a number, the code checks that it is in fact a number (or a quit command) and then uses the number as an argument for the method.</p>
 
-[sourcecode language=&#8221;ruby&#8221;]
-loop do
-  puts &quot;\nHow many game rounds do you want to play?&quot;
+<pre><code>loop do
+  puts &amp;quot;\nHow many game rounds do you want to play?&amp;quot;
   answer = gets.downcase.chomp
   case answer
   when /^\d+$/
     knuckleheads.play(answer.to_i)
-  when &#8216;quit&#8217;,&#8217;exit&#8217;
+  when 'quit','exit'
     knuckleheads.print_stats
     break
   else
-    puts &quot;Please enter a number or &#8216;quit&#8217;&quot;
+    puts &amp;quot;Please enter a number or 'quit'&amp;quot;
   end
-[/sourcecode]
+</code></pre>
 
-The next one is a little more complicated so I will try to break it up into pieces. 
+<p>The next one is a little more complicated so I will try to break it up into pieces.</p>
 
-What I am trying to accomplish is to allow non-programmers to add players to my game using a csv file and no code. They should be able to simply input the name of a player and the program automatically adds a Player object to the game.
+<p>What I am trying to accomplish is to allow non-programmers to add players to my game using a csv file and no code. They should be able to simply input the name of a player and the program automatically adds a Player object to the game.</p>
 
-To do this I created a player.csv file (in the above code a person could theoretically create their own file and load it in) with a series of players each on their own line. Then I included the following code in my Game class:
+<p>To do this I created a player.csv file (in the above code a person could theoretically create their own file and load it in) with a series of players each on their own line. Then I included the following code in my Game class:</p>
 
-[sourcecode language=&#8221;ruby&#8221;]
-  def load_players (filename=&quot;players.csv&quot;)
+<pre><code>  def load_players (filename=&amp;quot;players.csv&amp;quot;)
     CSV.foreach(filename) do |line|
       player = Player.new(line[0], line[1].to_i)
       add_player(player)
     end
   end
-[/sourcecode]
+</code></pre>
 
-This takes a file (defaulted with my players.csv) and goes through each line of the file, creating a Player object for each one.
+<p>This takes a file (defaulted with my players.csv) and goes through each line of the file, creating a Player object for each one.</p>
 
-Then, I included this in the main program file:
+<p>Then, I included this in the main program file:</p>
 
-[sourcecode language=&#8221;ruby&#8221;]
-default_player_file = File.join(File.dirname(__FILE__), &#8216;players.csv&#8217;)
+<pre><code>default_player_file = File.join(File.dirname(__FILE__), 'players.csv')
 knuckleheads.load_players(ARGV.shift || default_player_file)
-[/sourcecode]
+</code></pre>
 
-This loaded the players from the file given by the user or my default file if none is give and then runs the program as normal.
+<p>This loaded the players from the file given by the user or my default file if none is give and then runs the program as normal.</p>
 
-So, after two months of hard work and a steep learning curve I have completed my first gem! w00t! You can download it if you want:
+<p>So, after two months of hard work and a steep learning curve I have completed my first gem! w00t! You can download it if you want:</p>
 
-$gem install blam_and_woot
+<p>$gem install blam_and_woot</p>
 
-If you want to peek at the source code you can find it <a href="https://github.com/jeffreybaird/blam_and_woot">here</a>:
+<p>If you want to peek at the source code you can find it<a href="https://github.com/jeffreybaird/blam_and_woot">here</a></p>
 
-I will be writing about packaging the gem and some issues I ran into with that later. For now, I am celebrating!
-
-
-
+<p>I will be writing about packaging the gem and some issues I ran into with that later. For now, I am celebrating!</p>
 </div>
 
 
@@ -182,7 +175,7 @@ I will be writing about packaging the gem and some issues I ran into with that l
       
   
 
-<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+<span class="byline author vcard">Posted by <span class="fn">Jeff Baird</span></span>
 
       
 
@@ -253,6 +246,35 @@ I will be writing about packaging the gem and some issues I ran into with that l
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/jeffreybaird">@jeffreybaird</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'jeffreybaird',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
 
 
 
@@ -265,7 +287,7 @@ I will be writing about packaging the gem and some issues I ran into with that l
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Your Name -
+  Copyright &copy; 2012 - Jeff Baird -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

@@ -5,8 +5,8 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Lesson 2: An Intro to HTML - My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <title>Lesson 2: An Intro to HTML - Learn With Jeff</title>
+  <meta name="author" content="Jeff Baird">
 
   
   <meta name="description" content="Disclaimer: Third post in and I&#8217;ve already made an executive decision about this blog, it is about me. I know this may sound a bit selfish. I &hellip;">
@@ -24,7 +24,7 @@
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Learn With Jeff" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -35,9 +35,9 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
+  <h1><a href="/">Learn With Jeff</a></h1>
   
-    <h2>A blogging framework for hackers.</h2>
+    <h2>I like to learn; I like to teach; I kill two birds.</h2>
   
 </hgroup>
 
@@ -107,11 +107,11 @@ HTML is the language your browser understands. When you make a website you load 
 
 When you visit a website you are sending a request to the server to send you that HTML file. Your browser than interprets all the HTML tags (certain words surrounded by &lt;…&gt;), and displays websites as you know them.
 
-[caption id=&#8221;attachment_25&#8221; align=&#8221;aligncenter&#8221; width=&#8221;465&#8221; caption=&#8221;I know, I can&#39;t draw&#8221;]<a href="http://www.learnwithjeff.com/wp-content/uploads/2012/02/circleofweb.jpg"><img class="size-full wp-image-25" title="circleofweb" src="http://www.learnwithjeff.com/wp-content/uploads/2012/02/circleofweb.jpg" alt="" width="465" height="603" /></a>[/caption]
+<a href="http://www.learnwithjeff.com/wp-content/uploads/2012/02/circleofweb.jpg"><img class="size-full wp-image-25" title="circleofweb" src="http://www.learnwithjeff.com/wp-content/uploads/2012/02/circleofweb.jpg" alt="" width="465" height="603" /></a>
 
 &nbsp;
 
-So now we know where HTML fits into the web in general. It is a language that browsers use to determine the structure of a website. Next lesson, basic HTML tags.
+<br>So now we know where HTML fits into the web in general. It is a language that browsers use to determine the structure of a website. Next lesson, basic HTML tags.
 
 See you next time :)
 </div>
@@ -122,7 +122,7 @@ See you next time :)
       
   
 
-<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+<span class="byline author vcard">Posted by <span class="fn">Jeff Baird</span></span>
 
       
 
@@ -193,6 +193,35 @@ See you next time :)
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/jeffreybaird">@jeffreybaird</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'jeffreybaird',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
 
 
 
@@ -205,7 +234,7 @@ See you next time :)
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Your Name -
+  Copyright &copy; 2012 - Jeff Baird -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
