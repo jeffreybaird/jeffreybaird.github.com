@@ -1,99 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>My Octopress Blog</title>
-  <meta name="author" content="Your Name">
-
-  
-  <meta name="description" content="So the month of June came and went, and so did July. A lot has happened, but I wasn&#8217;t able to complete my goals. I did, however, make huge &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://yoursite.com/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
-  
-    <h2>A blogging framework for hackers.</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:yoursite.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2012-08-24T16:19:16-04:00</updated>
+  <id>http://yoursite.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
     
-      <h1 class="entry-title"><a href="/blog/2012/08/21/how-to-get-a-job-as-a-developer-in-less-than-six-months/">How to Get a Job as a Developer in Less Than Six Months</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2012-08-21T00:00:00-04:00" pubdate data-updated="true">Aug 21<span>st</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">So the month of June came and went, and so did July. A lot has happened, but I wasn&#8217;t able to <a title="Goals for the month of June." href="http://www.learnwithjeff.com/2012/05/31/goals-for-the-month-of-june/">complete my goals.</a>
+  <entry>
+    <title type="html"><![CDATA[How to Get a Job as a Developer in Less Than Six Months]]></title>
+    <link href="http://yoursite.com/blog/2012/08/21/how-to-get-a-job-as-a-developer-in-less-than-six-months/"/>
+    <updated>2012-08-21T00:00:00-04:00</updated>
+    <id>http://yoursite.com/blog/2012/08/21/how-to-get-a-job-as-a-developer-in-less-than-six-months</id>
+    <content type="html"><![CDATA[So the month of June came and went, and so did July. A lot has happened, but I wasn&#8217;t able to <a title="Goals for the month of June." href="http://www.learnwithjeff.com/2012/05/31/goals-for-the-month-of-june/">complete my goals.</a>
 
 I did, however, make huge strides in my programming skills &#8211; so huge, in fact, that I was hired as a junior developer at <a href="http://medivo.com">Medivo</a>!
 
@@ -176,42 +101,15 @@ When I started this search I thought I would be scrubbing toilets in exchange fo
 Work hard, write a lot of code, be transparent and be enthusiastic.
 
 In February 2012 I had never written a line of code. But, as of July 11, 2012 I am employed as a full-time Ruby Developer. You can do it too :).
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/05/31/goals-for-the-month-of-june/">Goals for the Month of June.</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-05-31T00:00:00-04:00" pubdate data-updated="true">May 31<span>st</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">In my learning, I find it immensely helpful to set lofty (but possible and measurable) goals. I didn&#8217;t my goal for the month of May but it was pretty straight-forward, publish a gem. I accomplished that goal, twice.
+  <entry>
+    <title type="html"><![CDATA[Goals for the month of June.]]></title>
+    <link href="http://yoursite.com/blog/2012/05/31/goals-for-the-month-of-june/"/>
+    <updated>2012-05-31T00:00:00-04:00</updated>
+    <id>http://yoursite.com/blog/2012/05/31/goals-for-the-month-of-june</id>
+    <content type="html"><![CDATA[In my learning, I find it immensely helpful to set lofty (but possible and measurable) goals. I didn&#8217;t my goal for the month of May but it was pretty straight-forward, publish a gem. I accomplished that goal, twice.
 
 I&#8217;ve decided to talk about my goals out for the month of June since they are much more challenging than my goals for May. First, I want to publish a &#8220;useful&#8221; gem/plugin/program/app. Second, I want to make some contribution to an open source project.
 
@@ -221,42 +119,15 @@ I realize that the above are huge challenges for a beginning programmer, but I w
 
 <script src="https://d39v39m55yawr.cloudfront.net/assets/clr.js" type="text/javascript"></script>
 <a href="https://urtak.com/clr/b4mmphglf9pzvqm4fxoc9oozlzuoxykt">Learn With Jeff</a>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/05/29/testing-a-n00bs-reflection/">Testing - a N00b&#8217;s Reflection</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-05-29T00:00:00-04:00" pubdate data-updated="true">May 29<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">I have officially spent more time testing and refactoring my code for my black jack game, <a href="https://github.com/jeffreybaird/RubyJack">RubyJack</a>, than I have on the original code base and it has taught me a big lesson: TEST FIRST.
+  <entry>
+    <title type="html"><![CDATA[Testing - a n00b's reflection]]></title>
+    <link href="http://yoursite.com/blog/2012/05/29/testing-a-n00bs-reflection/"/>
+    <updated>2012-05-29T00:00:00-04:00</updated>
+    <id>http://yoursite.com/blog/2012/05/29/testing-a-n00bs-reflection</id>
+    <content type="html"><![CDATA[I have officially spent more time testing and refactoring my code for my black jack game, <a href="https://github.com/jeffreybaird/RubyJack">RubyJack</a>, than I have on the original code base and it has taught me a big lesson: TEST FIRST.
 
 This is a topic that I don&#8217;t have the breadth of knowledge to really attack. Jeff Atwood does a much better job than I, <a href="http://www.codinghorror.com/blog/2006/07/i-pity-the-fool-who-doesnt-write-unit-tests.html">here</a>. I do, however, feel that I can add the perspective of a new programmer.
 
@@ -345,42 +216,15 @@ Many people have helped me learn, I would love to return the favor! <a href="htt
 Thanks for reading!
 
 <a class="twitter-share-button" title="Tweet This Story" href="https://twitter.com/share" data-via="Jeffrey_Baird">Tell Your Friends!</a>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/05/24/rubyjack-my-second-ruby-gem/">RubyJack My Second Ruby Gem!</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-05-24T00:00:00-04:00" pubdate data-updated="true">May 24<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">For the last two days I have been slaving over my second attempt at a real ruby program, this one with no help from my friends over at pragmatic programming. I am going to briefly go over something I learned doing this, some of the problems I faced and some of the features I am still working on.
+  <entry>
+    <title type="html"><![CDATA[RubyJack my second Ruby Gem!]]></title>
+    <link href="http://yoursite.com/blog/2012/05/24/rubyjack-my-second-ruby-gem/"/>
+    <updated>2012-05-24T00:00:00-04:00</updated>
+    <id>http://yoursite.com/blog/2012/05/24/rubyjack-my-second-ruby-gem</id>
+    <content type="html"><![CDATA[For the last two days I have been slaving over my second attempt at a real ruby program, this one with no help from my friends over at pragmatic programming. I am going to briefly go over something I learned doing this, some of the problems I faced and some of the features I am still working on.
 
 If you want to find the project I am working on, the source code can be found <a href="https://github.com/jeffreybaird/RubyJack/tree/master/black_jack">here</a>, on my GitHub profile.
 
@@ -465,42 +309,15 @@ I actually think I solved this problem while I was writing this blog post (which
 So you can probably gather that I plan on adding the above two features today. Another feature that I want to add is the ability of the user to place bets, have holdings and play multiple games.
 
 Please go play the game ($gem install RubyJack) and give me some feedback! Thanks!
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/05/21/io-finally/">I/O&#8230;FINALLY!</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-05-21T00:00:00-04:00" pubdate data-updated="true">May 21<span>st</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">When I was learning to play the piano, I remember wanting to jump right into Billy Joel. &#8220;Hot Cross Buns&#8221; and &#8220;Mary Had a Little Lamb&#8221; were boring and very uncool for an eight year old boy to be learning.
+  <entry>
+    <title type="html"><![CDATA[I/O...FINALLY!]]></title>
+    <link href="http://yoursite.com/blog/2012/05/21/io-finally/"/>
+    <updated>2012-05-21T00:00:00-04:00</updated>
+    <id>http://yoursite.com/blog/2012/05/21/io-finally</id>
+    <content type="html"><![CDATA[When I was learning to play the piano, I remember wanting to jump right into Billy Joel. &#8220;Hot Cross Buns&#8221; and &#8220;Mary Had a Little Lamb&#8221; were boring and very uncool for an eight year old boy to be learning.
 
 I have had the same feeling while learning to code. I spent a lot of time doing methods, objects and classes never really getting to use them as I would in the real world.
 
@@ -584,42 +401,15 @@ I will be writing about packaging the gem and some issues I ran into with that l
 
 
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/05/06/sundays-challenge/">Sunday&#8217;s Challenge</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-05-06T00:00:00-04:00" pubdate data-updated="true">May 6<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">Full of the knowledge gained from <a href="http://www.meetup.com/tampa-rb/events/60266012/" target="_blank">Coder Night</a> on Thursday, I made an attempt at creating a poker game. My original plan was to create three classes, a Player class, a Deck class and a Game class. The general construction of the game would be the Game class would use take a new deck object and pop the last card out of the shuffled array and assign it to one of the players in the array &#8220;hand&#8221;
+  <entry>
+    <title type="html"><![CDATA[Sunday's Challenge]]></title>
+    <link href="http://yoursite.com/blog/2012/05/06/sundays-challenge/"/>
+    <updated>2012-05-06T00:00:00-04:00</updated>
+    <id>http://yoursite.com/blog/2012/05/06/sundays-challenge</id>
+    <content type="html"><![CDATA[Full of the knowledge gained from <a href="http://www.meetup.com/tampa-rb/events/60266012/" target="_blank">Coder Night</a> on Thursday, I made an attempt at creating a poker game. My original plan was to create three classes, a Player class, a Deck class and a Game class. The general construction of the game would be the Game class would use take a new deck object and pop the last card out of the shuffled array and assign it to one of the players in the array &#8220;hand&#8221;
 
 The first problem I ran into was getting each player cards from the same deck. When I wrote the program the first time I assigned a new deck to each player.
 
@@ -646,42 +436,15 @@ class Game
   end
 end
 [/sourcecode] 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/05/02/yeah-im-a-bad-blogger/">Yeah&#8230; I&#8217;m a Bad Blogger.</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-05-02T00:00:00-04:00" pubdate data-updated="true">May 2<span>nd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>I&#8217;m coming back now, I promise</h2>
+  <entry>
+    <title type="html"><![CDATA[Yeah... I'm a bad blogger.]]></title>
+    <link href="http://yoursite.com/blog/2012/05/02/yeah-im-a-bad-blogger/"/>
+    <updated>2012-05-02T00:00:00-04:00</updated>
+    <id>http://yoursite.com/blog/2012/05/02/yeah-im-a-bad-blogger</id>
+    <content type="html"><![CDATA[<h2>I&#8217;m coming back now, I promise</h2>
 I&#8217;m sorry, audience of zero, I haven&#8217;t been updating you on my learning process or helping you keep up. The problem is, I have been moving way too fast to write about it every day. So, to update you:
 <h3>HTML:</h3>
 While I am no master, I plowed through my HTML book and felt comfortable enough to move on.
@@ -705,42 +468,15 @@ For this I am reading <a href="http://rcm.amazon.com/e/cm?lt1=_blank&amp;bc1=000
 I am also going through<a href="http://see.stanford.edu/see/courseinfo.aspx?coll=824a47e1-135f-4508-a5aa-866adcae1111"> Standford&#8217;s Intro to Programming Methodology and Computer Science </a>class to hopefully give me some training in larger theories and best practices of software design.
 
 So, yes I am busy. I will however try to post more often with some tidbits, challenges and advice I pick up along the way. I hope you continue to read!
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/03/06/html-meet-style/">HTML Meet Style</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-03-06T00:00:00-05:00" pubdate data-updated="true">Mar 6<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">Sorry for the unannounced absence. Life gets in the way.
+  <entry>
+    <title type="html"><![CDATA[HTML Meet Style]]></title>
+    <link href="http://yoursite.com/blog/2012/03/06/html-meet-style/"/>
+    <updated>2012-03-06T00:00:00-05:00</updated>
+    <id>http://yoursite.com/blog/2012/03/06/html-meet-style</id>
+    <content type="html"><![CDATA[Sorry for the unannounced absence. Life gets in the way.
 
 Let&#8217;s look back at what we have learned so far:
 
@@ -775,42 +511,15 @@ Notice that I threw in a &#8220;Style&#8221; tag. The tag has an attribute, text
 <a href="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.02-PM.png"><img class="alignnone size-medium wp-image-43" title="Website Styled with CSS" src="http://www.learnwithjeff.com/wp-content/uploads/2012/03/Screen-Shot-2012-03-06-at-1.56.02-PM-300x210.png" alt="" width="300" height="210" /></a>
 
 So what did the CSS accomplish?
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/02/20/setting-up-your-website/">Setting Up Your Website</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-02-20T00:00:00-05:00" pubdate data-updated="true">Feb 20<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Homework Answers:</h2>
+  <entry>
+    <title type="html"><![CDATA[Setting Up Your Website]]></title>
+    <link href="http://yoursite.com/blog/2012/02/20/setting-up-your-website/"/>
+    <updated>2012-02-20T00:00:00-05:00</updated>
+    <id>http://yoursite.com/blog/2012/02/20/setting-up-your-website</id>
+    <content type="html"><![CDATA[<h2>Homework Answers:</h2>
 &lt;html&gt; and &lt;/html&gt; let the browser know where the html document begins and ends
 
 &lt;head&gt; and &lt;/head&gt; starts and ends the page &#8220;head&#8221;
@@ -837,42 +546,15 @@ Save the file as &#8220;index.html&#8221; to a folder called &#8220;learnwithjef
 Now, try creating a file like the one I did in my <a title="A Quick Look at HTML and Your First Assignment" href="http://www.learnwithjeff.com/2012/02/16/a-quick-look-at-html-and-your-first-assignment/">previous post</a>. Once you have finished open the file using your browser and check out your first HTML website!
 
 &nbsp;
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/02/16/a-quick-look-at-html-and-your-first-assignment/">A Quick Look at HTML and Your First Assignment</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-02-16T00:00:00-05:00" pubdate data-updated="true">Feb 16<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">Hello!
+  <entry>
+    <title type="html"><![CDATA[A Quick Look at HTML and Your First Assignment]]></title>
+    <link href="http://yoursite.com/blog/2012/02/16/a-quick-look-at-html-and-your-first-assignment/"/>
+    <updated>2012-02-16T00:00:00-05:00</updated>
+    <id>http://yoursite.com/blog/2012/02/16/a-quick-look-at-html-and-your-first-assignment</id>
+    <content type="html"><![CDATA[Hello!
 
 Today we are going to look at a little basic HTML. I&#8217;m running behind so this will be a short post.
 
@@ -889,87 +571,118 @@ This is what that file looks like on a web browser:
 <img class="aligncenter size-full wp-image-30" title="HTML in Browser" src="http://www.learnwithjeff.com/wp-content/uploads/2012/02/Screen-Shot-2012-02-15-at-11.08.57-PM.png" alt="" width="1280" height="447" />
 <h2>Homework:</h2>
 Your homework for tonight is to compare the two and make a guess as to what each tag does. Tomorrow we will go over it.
-</div>
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[Lesson 2: An Intro to HTML]]></title>
+    <link href="http://yoursite.com/blog/2012/02/14/lesson-2-an-intro-to-html/"/>
+    <updated>2012-02-14T00:00:00-05:00</updated>
+    <id>http://yoursite.com/blog/2012/02/14/lesson-2-an-intro-to-html</id>
+    <content type="html"><![CDATA[<h2>Disclaimer:</h2>
+Third post in and I&#8217;ve already made an executive decision about this blog, it is about me. I know this may sound a bit selfish. I am okay with that.
+
+I want you to read, follow along and learn with me. I will answer all questions as best I can. I won&#8217;t, however, choose what I teach based on popular demand. I want to learn, so I won&#8217;t cover things I already know.
+
+So, on that note, we are not going to go over WordPress today like I had originally planned. We are going to go straight into HTML.
+
+Now I know a little HTML but I figure it can&#8217;t hurt to get a little refresher so I will start from the beginning.
+<h2>HTML:</h2>
+I got my book in the mail, <a href="http://www.headfirstlabs.com/books/hfhtml/" target="_blank">Head First HTML with CSS &amp; XHTML</a>. It looks pretty basic and seems like a lot of fun (Lots of pictures). I will try to explain everything as best I can but I will always refer back to the book. If you want to follow along I would suggest purchasing it.
+
+So let us first delve into the basics of HyperText Markup Language or HTML for short. To do that we need to first take a look at where it fits into the equation of the internet.
+
+HTML is the language your browser understands. When you make a website you load HTML file(s) onto a web server. A web server is just a computer that stays on, connected to the internet.
+
+When you visit a website you are sending a request to the server to send you that HTML file. Your browser than interprets all the HTML tags (certain words surrounded by &lt;…&gt;), and displays websites as you know them.
+
+[caption id=&#8221;attachment_25&#8221; align=&#8221;aligncenter&#8221; width=&#8221;465&#8221; caption=&#8221;I know, I can&#39;t draw&#8221;]<a href="http://www.learnwithjeff.com/wp-content/uploads/2012/02/circleofweb.jpg"><img class="size-full wp-image-25" title="circleofweb" src="http://www.learnwithjeff.com/wp-content/uploads/2012/02/circleofweb.jpg" alt="" width="465" height="603" /></a>[/caption]
+
+&nbsp;
+
+So now we know where HTML fits into the web in general. It is a language that browsers use to determine the structure of a website. Next lesson, basic HTML tags.
+
+See you next time :)
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[For My First Lesson: My Digital Resume]]></title>
+    <link href="http://yoursite.com/blog/2012/02/13/for-my-first-lesson-my-digital-resume/"/>
+    <updated>2012-02-13T00:00:00-05:00</updated>
+    <id>http://yoursite.com/blog/2012/02/13/for-my-first-lesson-my-digital-resume</id>
+    <content type="html"><![CDATA[I&#8217;ve done a lot of cool things in my short 24 years. I&#8217;m proud of my accomplishments and I want to show them off to future employers, partners and investors. To do this, I am making an online resume.
 
+First, I need a url. To do this you need to find an available <a href="http://en.wikipedia.org/wiki/Domain_name" target="_blank">domain name</a> and a <a href="http://en.wikipedia.org/wiki/Domain_name_registrar" target="_blank">domain registration company</a>.
 
-    </article>
+<strong>Here are some of the tools I used</strong>:
+<ul>
+	<li><a href="http://domai.nr" target="_blank">Domai.nr</a> - This tool helps you find interesting domain names</li>
+</ul>
+<a href="http://domai.nr"><img class="alignnone size-medium wp-image-8" title="Domai.nr" src="http://www.learnwithjeff.com/wp-content/uploads/2012/02/Screen-Shot-2012-02-13-at-3.42.08-PM-300x121.png" alt="" width="300" height="121" /></a>
+
+&nbsp;
+<ul>
+	<li><a href="http://www.fatcow.com" target="_blank">Fat Cow</a> - I love this website. It handles my domain registration as well as my hosting. It has one click Word Press installation, unlimited storage and a free domain name. It may not be the best in the market but I have been very happy with them.</li>
+</ul>
+<a href="http://www.fatcow.com"><img class="alignnone size-medium wp-image-10" title="Fat Cow" src="http://www.learnwithjeff.com/wp-content/uploads/2012/02/Screen-Shot-2012-02-13-at-3.48.14-PM-300x130.png" alt="" width="300" height="130" /></a>
+
+&nbsp;
+
+Some other tools:
+<ul>
+	<li>Domain Registrars</li>
+</ul>
+<ol>
+	<li><a href="http://http://www.namecheap.com/" target="_blank">Name Cheap</a> - Voted number one by lifehacker</li>
+	<li><a href="http://order.1and1.com/;jsessionid=F02BDFEE56A859224F2FB59347CCB7AF.TCpfix240b?linkOrigin=Instant&amp;linkId=hd.log.eue" target="_blank">1&amp;1</a> - Came highly recommended</li>
+	<li><a href="http://www.godaddy.com" target="_blank">Godaddy</a> - I have used in the past, generally more expensive and not user friendly</li>
+</ol>
+<ul>
+	<li>Website Hosting</li>
+</ul>
+<ol>
+	<li><a href="http://www.bluehost.com/" target="_blank">Blue Host</a> - Highly recommended by friends</li>
+	<li><a href="http://www.hostmonster.com/" target="_blank">Host Monster</a> - Generally good online reviews</li>
+	<li><a href="http://www.godaddy.com" target="_blank">Godaddy</a> - Popular but again, more expensive and not user friendly</li>
+</ol>
+<strong>What I did:</strong>
+<ol>
+	<li>Searched for domains using <a href="http://www.domai.nr" target="_blank">domia.nr</a>. I tried a few combinations and settled on <a href="http://www.hirejeffbaird.com" target="_blank">hirejeffbaird.com</a></li>
+	<li>Opened a new account of <a href="http://www.fatcow.com" target="_blank">Fat Cow</a>, entered in my desired domain name and credit card information. I am now the proud owner of hirejeffbaird.com and have a hosting account to go along with it. Yay!</li>
+</ol>
+<strong>Tomorrow&#8217;s Lesson: Getting Started with Word Press</strong>
+
+&nbsp;
+]]></content>
+  </entry>
   
-  <div class="pagination">
-    
-      <a class="prev" href="/blog/page/2/">&larr; Older</a>
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
+  <entry>
+    <title type="html"><![CDATA[I am Jeff. Learn cool shit with me.]]></title>
+    <link href="http://yoursite.com/blog/2012/02/12/i-am-jeff/"/>
+    <updated>2012-02-12T00:00:00-05:00</updated>
+    <id>http://yoursite.com/blog/2012/02/12/i-am-jeff</id>
+    <content type="html"><![CDATA[Welcome to my new website, where we get to learn cool stuff together! I have spent a lifetime in school learning jack shit. Everything I&#8217;ve learned, for real, I taught myself or learned on the job.
+
+That is what we are going to take a stab at on this site. I am going to pick a skill and then I&#8217;m going to teach myself said skill. I will then post how-to guides, instructional videos, detailed accounts of my mistakes, and (sometimes) funny anecdotes of the learning experience.
+
+Sound fun? I hope so.
+
+So a little about me:
+<ul>
+	<li>I am an undergraduate student in the entrepreneurship program at University of South Florida St. Petersburg.</li>
+	<li>I worked on ships (no not cruise ships, the ones that bring all those products from China that you like)</li>
+	<li>I&#8217;ve started three companies</li>
+	<li>I just got engaged to the most wonderful woman in the world</li>
+	<li>I read. A lot.</li>
+	<li>I like to teach</li>
+	<li>New is exciting</li>
+	<li>I love learning</li>
+</ul>
+Okay, I won&#8217;t talk much more about myself from here on out, but I thought you should know the man behind the curtain.
+
+As this website progresses I would love to field suggestions on topics to cover so jump in on the comments :)
+]]></content>
+  </entry>
   
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2012/08/21/how-to-get-a-job-as-a-developer-in-less-than-six-months/">How to Get a Job as a Developer in Less Than Six Months</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/05/31/goals-for-the-month-of-june/">Goals for the month of June.</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/05/29/testing-a-n00bs-reflection/">Testing - a n00b&#8217;s reflection</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/05/24/rubyjack-my-second-ruby-gem/">RubyJack my second Ruby Gem!</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/05/21/io-finally/">I/O&#8230;FINALLY!</a>
-      </li>
-    
-  </ul>
-</section>
-
-
-
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Your Name -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>
