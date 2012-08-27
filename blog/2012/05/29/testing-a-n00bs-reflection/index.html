@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Testing - a n00b's reflection - Learn With Jeff</title>
+  <meta name="author" content="Jeff Baird">
+
+  
+  <meta name="description" content="I have officially spent more time testing and refactoring my code for my black jack game, RubyJack, than I have on the original code base and it has &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://jeffreybaird.github.com/blog/2012/05/29/testing-a-n00bs-reflection/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+   <link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Learn With Jeff" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9062655-5']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+</hgroup>
+
+</header>
+  <!-- <nav role="navigation"><ul class="subscription" data-subscription="rss email">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+    <li><a href="jeff@jeffreyleebaird.com" rel="subscribe-email" title="subscribe via email">Email</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jeffreybaird.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav> -->
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Testing - a N00b's Reflection</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-29T00:00:00-04:00" pubdate data-updated="true">May 29<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I have officially spent more time testing and refactoring my code for my black jack game, <a href="https://github.com/jeffreybaird/RubyJack">RubyJack</a>, than I have on the original code base and it has taught me a big lesson: TEST FIRST.</p>
+
+<p>This is a topic that I don&#8217;t have the breadth of knowledge to really attack. Jeff Atwood does a much better job than I, <a href="http://www.codinghorror.com/blog/2006/07/i-pity-the-fool-who-doesnt-write-unit-tests.html">here</a>. I do, however, feel that I can add the perspective of a new programmer.</p>
+
+<p>The challenge of testing first as a n00b, is that when you are learning to program, you generally learn</p>
+
+<pre><code>    def print_hello_world
+
+
+      puts "hello world"
+
+    end
+
+    print_hello_world
+</code></pre>
+
+<p>before you learn</p>
+
+<pre><code>    it  "prints hello word" do
+
+      print_hello_world.should == "hello world"
+
+    end
+</code></pre>
+
+<p>I wouldn&#8217;t say this is a mistake since testing is inherently more complicated, but it does create a significant barrier to entry to the new programmer. This barrier is mainly a comfort level thing.</p>
+
+<p>When I was first learning about testing, I thought &#8220;I can really see the theoretical application of this, but my programs are so simple now that I don&#8217;t need tests.&#8221;</p>
+
+<p>BIG F&amp;<sup>%$ING</sup> MISTAKE.</p>
+
+<p>The big example, in <a href="https://github.com/jeffreybaird/RubyJack">RubyJack</a>, of where writing my tests first would have helped me, was during the refactoring process. The first draft of my code may not have been bad for a new programmer, but was(is) poorly written software on a whole. There were methods in classes where they didn&#8217;t make sense, arrays of strings where they should have been arrays of objects, 25 line methods that did one simple task and many, many other problems.</p>
+
+<p>Up to this point my tests consisted on running the program through my command line, playing the game till it broke and reading the error message. Not super efficient.</p>
+
+<p>So, after I published the first version of the gem (gem install RubyJack) I started to move stuff around. First, I did some simple refactoring of individual methods, no problems. Then I thought &#8220;oh, well this method that starts the game probably should be in the &#8216;Game class&#8217; and not the &#8216;Player class.&#8217;&#8221;</p>
+
+<p>All Hell Broke Loose.</p>
+
+<p>Nothing worked anymore, I couldn&#8217;t even start the game let alone deal a card or initialize a deck.</p>
+
+<p>Thank god for &#8220;git reset &#8211;hard&#8221;.</p>
+
+<p>I was able to hop back to my latest commit and start again (more about using commits to your advantage later). Then, I wrote some tests. It was hard;  it hurt my head; I didn&#8217;t like it.</p>
+
+<p>I struggled through them and got (most of) them to pass. Around this time I brought in some professional help, Gavin. Gavin was nice enough to sit with me and help me do a little (a lot) of refactoring of my code. We moved some methods into classes where they made more sense, and created classes that should have been there from the beginning.</p>
+
+<p>Then I tried to do some more refactoring on my own, which led to even more problems. I hadn&#8217;t learned my lesson.</p>
+
+<p>Once again, I found myself reaching for &#8220;git reset&#8221;</p>
+
+<p>It was then that I resolved to write better tests. I re-watched the pragmatic studios video on unit testing and peppered Gavin with some more questions. Then, I wrote a bunch of tests and MADE THEM ALL PASS.</p>
+
+<p>When I originally wrote my tests, if I couldn&#8217;t get a test of a certain functionality to pass, I marked it as &#8220;pending&#8221; instead of figuring out the problem. Not this time. It took me hours, and until 2am, but I made them all pass.</p>
+
+<p>I then entered the process to which Gavin introduced me to:</p>
+
+<p>Red</p>
+
+<p>Green</p>
+
+<p>Refactor</p>
+
+<p>What that translates to is this:</p>
+
+<p>Check my tests, if they pass I make one small change. I then check my tests again, some of them may be failing, I want to make sure they are the ones I expect. Then, I continue tweaking the code till I get it to pass all the tests again (sometimes tweaking the tests too).</p>
+
+<p>Then I start the process all over again with my next change.</p>
+
+<p>The benefit to testing first, as I see it, is as it concerns the thought process towards your code. As <a href="http://blog.jtimothyking.com/2006/07/11/twelve-benefits-of-writing-unit-tests-first">J. Timothy King</a> States:</p>
+
+<blockquote><p>You ask, “What code will I write to generate a solution?” But that’s backward. The first thing you should be doing&#8230; The first thing you ask is <em>not</em>“What code will I write?” The first thing you ask is “How will I know that I’ve solved the problem?”</p></blockquote>
+
+<p>So, my tip for other n00bs out there is to learn to test sooner rather than later. You won&#8217;t regret it.</p>
+
+<h3>Thank You!</h3>
+
+<p>I want to give a huge public thank you to <a href="http://www.twitter.com/gstark">Gavin Stark</a> for helping me with the refactoring process and answering all my crazy n00b questions. Thanks Gavin! Also, thanks to <a href="blog.migrantstudios.com">Aubrey Goodman</a> who graciously takes my questions at all hours. Finally, I&#8217;d like to say thanks to <a href="http://alindeman.github.com/">Andy Lindeman</a> who went through and commented on my code on github! It is people like you guys that make the Ruby community awesome and make me glad to be a part of it.</p>
+
+<h3>Disclaimer, links, and tweets</h3>
+
+<p>I love to learn and I do not pretend to be an expert on the topics I post about. If I&#8217;m wrong please, let me know in the comments, I love feedback and you won&#8217;t offend me. Follow me on <a href="http://www.twitter.com/jeffrey_baird">Twitter</a>; I love to discuss Ruby, books and anything interesting.</p>
+
+<p>If you want to help an aspiring Rubyist, I&#8217;m on <a href="http://github.com/jeffreybaird">GitHub</a> and would love any feedback you have to offer.</p>
+
+<p>Many people have helped me learn, I would love to return the favor! <a href="http://jeffreyleebaird.com">Get in touch</a> and I&#8217;ll see if I can help.</p>
+
+<p>Thanks for reading!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jeff Baird</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-29T00:00:00-04:00" pubdate data-updated="true">May 29<span>th</span>, 2012</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jeffreybaird.github.com/blog/2012/05/29/testing-a-n00bs-reflection/" data-via="jeffrey_baird" data-counturl="http://jeffreybaird.github.com/blog/2012/05/29/testing-a-n00bs-reflection/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/05/24/rubyjack-my-second-ruby-gem/" title="Previous Post: RubyJack my second Ruby Gem!">&laquo; RubyJack my second Ruby Gem!</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/05/31/goals-for-the-month-of-june/" title="Next Post: Goals for the month of June.">Goals for the month of June. &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <ul id="recent_posts">
+      <li class="post">
+      <a href="http://jeffreybaird.github.com" alt="Home"><img src="/images/Home.png"></a>
+      <a href="http://jeffreybaird.github.com/archives/" alt="Archives"><img src="/images/Calendar.png"></a>
+      <a href="mailto:jeff@jeffreyleebaird.com" alt="E-Mail"><img src="/images/Envelope.png"></a>
+      <a href="http://jeffreybaird.github.com/atom.xml" alt="subscribe feed"><img src="/images/rss.png"></a>
+      </li>
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/08/21/how-to-get-a-job-as-a-developer-in-less-than-six-months/">How to Get a Job as a Developer in Less Than Six Months</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/31/goals-for-the-month-of-june/">Goals for the month of June.</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/29/testing-a-n00bs-reflection/">Testing - a n00b's reflection</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/24/rubyjack-my-second-ruby-gem/">RubyJack my second Ruby Gem!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/21/io-finally/">I/O...FINALLY!</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/jeffreybaird">@jeffreybaird</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'jeffreybaird',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("jeffrey_baird", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/jeffrey_baird" class="twitter-follow-button" data-show-count="false">Follow @jeffrey_baird</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Jeff Baird -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
