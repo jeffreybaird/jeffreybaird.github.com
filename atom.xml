@@ -1,0 +1,1524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Learn With Jeff]]></title>
+  <link href="http://jeffreybaird.github.io/atom.xml" rel="self"/>
+  <link href="http://jeffreybaird.github.io/"/>
+  <updated>2014-01-27T10:10:35-08:00</updated>
+  <id>http://jeffreybaird.github.io/</id>
+  <author>
+    <name><![CDATA[Jeffrey Baird]]></name>
+    <email><![CDATA[jeff@jeffreyleebaird.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Easy Broiled Rib-eye]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2014/01/25/easy-broiled-rib-eye/"/>
+    <updated>2014-01-25T21:00:00-08:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2014/01/25/easy-broiled-rib-eye</id>
+    <content type="html"><![CDATA[<p>Sometimes, after a long day of work, the last thing Clare and I want to do is spend an hour crafting the perfect Paleo dinner. This steak and salad combination is a great way to have dinner ready in less than 20 minutes and have it feel like a gourmet meal.</p>
+
+<h1>Broiled Rib-Eye</h1>
+
+<h2>Tools</h2>
+
+<ol>
+<li><p>A 12-inch, well-seasoned cast-iron pan. I use this one from <a href="http://www.amazon.com/gp/product/B00G2XGC88/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00G2XGC88&amp;linkCode=as2&amp;tag=debautblo-20">Lodge.</a></p></li>
+<li><p>A <a href="http://www.amazon.com/gp/product/B005SWNZWA/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B005SWNZWA&amp;linkCode=as2&amp;tag=debautblo-20">meat thermometer</a></p></li>
+<li><p>Pepper Grinder/Mortar &amp; Pestle</p></li>
+</ol>
+
+
+<p><button class="remove-pics">
+  Hide/Show Pictures
+</button></p>
+
+<h2>Ingredients</h2>
+
+<ul>
+<li>2 Rib-Eye Steaks</li>
+</ul>
+
+
+<div class="ingredient">
+  <img src="http://jeffreybaird.github.io/images/rib-eye/raw_steak.JPG" height="50%" width="50%">
+</div>
+
+
+<ul>
+<li>&frac12; tablespoon fresh ground pepper</li>
+</ul>
+
+
+<div class="ingredient">
+  <img src="http://jeffreybaird.github.io/images/rib-eye/pepper.JPG" height="50%" width="50%">
+</div>
+
+
+<ul>
+<li>&frac12; tablespoon sea salt</li>
+<li>Olive Oil</li>
+</ul>
+
+
+<h2>Prep</h2>
+
+<ol>
+<li>I like to leave the steak on the counter for about 30 minutes prior to cooking. It seems that this allows the steak to cook more evenly</li>
+</ol>
+
+
+<h2>Cooking</h2>
+
+<ul>
+<li><p>Turn on the Broiler. When it is warm put the skillet on the top rack and let it heat up for about 5 &ndash; 7 minutes. It may start to smoke, open a window and turn on a fan.</p></li>
+<li><p>While the skillet is heating up salt and pepper the steak, gently pressing it into the meat. Then, drizzle the steaks with olive oil. Flip the steaks over and repeat.</p></li>
+</ul>
+
+
+<div class="row">
+
+  <div class="ingredient split-left">
+    <img src="http://jeffreybaird.github.io/images/rib-eye/oiling.JPG">
+  </div>
+
+
+  <div class="ingredient split-page">
+    <img src="http://jeffreybaird.github.io/images/rib-eye/seasoned.JPG">
+  </div>
+</div>
+
+
+<ul>
+<li>Pull the skillet out of the broiler (it will be extraordinarily hot; use a thick pot holder) and put the steaks on it.</li>
+</ul>
+
+
+<div class="ingredient">
+  <img src="http://jeffreybaird.github.io/images/rib-eye/sizzling.JPG" height="50%" width="50%">
+</div>
+
+
+<ul>
+<li>Return the skillet to the top rack of the broiler and set the timer for 4-5 mins.</li>
+</ul>
+
+
+<div class="ingredient">
+  <img src="http://jeffreybaird.github.io/images/rib-eye/return_to_oven.JPG" height="50%" width="50%">
+</div>
+
+
+<ul>
+<li>Check the steak. If it is at 125 degrees it is ready (rare, the only way it should be eaten).</li>
+</ul>
+
+
+<div class="ingredient">
+  <img src="http://jeffreybaird.github.io/images/rib-eye/check.JPG" height="50%" width="50%">
+</div>
+
+
+<ul>
+<li>Let the steak sit for about 3 to 4 minutes before cutting it.</li>
+</ul>
+
+
+<div class="ingredient">
+  <img src="http://jeffreybaird.github.io/images/rib-eye/eat.JPG" height="50%" width="50%">
+</div>
+
+
+<ul>
+<li>Eat!</li>
+</ul>
+
+
+<p>Clare prepared a spinach salad ahead of time so maybe I&rsquo;ll be able to get her on here to write about that. Enjoy!</p>
+
+<script type="text/javascript">
+$( ".remove-pics" ).click(function() {
+  $("ingredient").toggle();
+});
+</script>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Easiest Stew]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2014/01/19/the-easiest-stew/"/>
+    <updated>2014-01-19T20:00:00-08:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2014/01/19/the-easiest-stew</id>
+    <content type="html"><![CDATA[<p>I think we have all realized by now that I am a pretty awful blogger.</p>
+
+<p>I haven&rsquo;t reliably posted, ever.</p>
+
+<p>But, I am going to give it another go.</p>
+
+<p>So let&rsquo;s start with cooking, at least that is something I can write about. Let&rsquo;s start with my stew.</p>
+
+<h1>Jeff&rsquo;s Paleo Stew</h1>
+
+<h2>Ingredients</h2>
+
+<ul>
+<li>1.5 lbs of stew meat (Trader Joe&rsquo;s sells pre-packaged pre cut stew meat)</li>
+<li>1 large or 2 medium sized onions (Any Kind will do, I like Vidalia but I used Red Onions here)</li>
+<li>8oz of whole White Mushroom</li>
+<li>1 lb of carrots (I use baby carrots here but usually prefer rainbow carrots)</li>
+<li>2 &ndash; 3 sweet potatoes or regular potatoes</li>
+<li>1 quart Beef Broth</li>
+<li>5-6 cloves of garlic</li>
+<li>2 Bay leaves</li>
+<li>2 tsp freshly ground pepper</li>
+<li>2 tsp salt</li>
+<li>1 tsp rosemary</li>
+<li>1 tsp thyme</li>
+</ul>
+
+
+<p><button class="remove-pics">
+  Hide/Show Pictures
+</button></p>
+
+<h2>Steps</h2>
+
+<h3>Collect your ingredients:</h3>
+
+<h4>Stew Meat:</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/ingredient-beef.jpg" title="Beef! It's whats for dinner" alt="Beef! It's whats for dinner" /></p>
+
+<h4>Onions:</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/ingredient-onion.jpg" title="Onions, try not to cry :'(" alt="Onions, try not to cry :'(" /></p>
+
+<h4>Mushrooms:</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/ingredient-mushrooms.jpg" title="Mushrooms, wash them well, they grow in shit" alt="Mushrooms, wash them well, they grow in shit" /></p>
+
+<h4>Carrots:</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/ingredient-carrots.jpg" title="What's up doc?" alt="Carrots, Wish I had rainbows" /></p>
+
+<h4>Potatoes</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/ingredient-potatos.jpg" title="Potatoes, I like em sweet" alt="Potatoes, I like em sweet" /></p>
+
+<h4>Garlic</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/ingredient-garlic.jpg" title="Keep away the vampires" alt="Keep away the vampires" /></p>
+
+<h4>Beef Broth:</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/ingredient-broth.jpg" title="dead animal juice" alt="dead animal juice" /></p>
+
+<h4>Spices:</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/ingredient-spices.jpg" title="Not the drug" alt="Not the drug" /></p>
+
+<h3>Prep your ingredients:</h3>
+
+<h4>Cut the ends off of the onion</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/step-prep-onion.jpg" alt="step 1 prep" /></p>
+
+<h4>Cut the onion into eight wedges</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/step-prep-onion-2.jpg" alt="step 2 prep" /></p>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/step-prep-onion-3.jpg" alt="step 3 prep" /></p>
+
+<h4>Wash the mushrooms very well then slice them in half</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/step-prep-mushrooms-2.jpg" alt="step 4 prep" /></p>
+
+<h4>Scrub the potatos and cut the into (approximately) 1 inch chunks</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/step-prep-potato.jpg" alt="step 5 prep" /></p>
+
+<h4>Cut carrots (if not using baby carrots) into 1 inch chunks</h4>
+
+<h3>Put it in the cooker:</h3>
+
+<h4>Start with a layer of about &frac12; of your onions</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/step-01.jpg" alt="step 6" /></p>
+
+<h4>Add about &frac12; of your carrots</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/step-02.jpg" alt="step 7" /></p>
+
+<h4>Add about &frac12; of your potatoes</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/step-03.jpg" alt="step 8" /></p>
+
+<h4>Add about &frac12; of your mushrooms</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/step-04.jpg" alt="step 9" /></p>
+
+<h4>Put in the two bay leaves</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/step-05.jpg" alt="step 10" /></p>
+
+<h4>Put in all of your meat</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/step-06.jpg" alt="step 11" /></p>
+
+<h4>Put in your garlic</h4>
+
+<h4>Put in the rest of your vegetables</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/step-07.jpg" alt="step 13" /></p>
+
+<h4>Sprinkle on all of the spices</h4>
+
+<h4>Pour the entire quart of broth into the slow cooker (try to cover as many veggies as possible)</h4>
+
+<h4>Give everything a quick mix</h4>
+
+<h4>Set the slow cooker to &lsquo;Low&rsquo; for at least 10 hours. I have set it for as long as 16 hours, the longer it cooks the more tender the meat is.</h4>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/step-08.jpg" alt="step 17" /></p>
+
+<h3>EAT YOUR CREATION:</h3>
+
+<p><img src="http://jeffreybaird.github.io/images/cooking/eat.jpg" alt="step 18" /></p>
+
+<script type="text/javascript">
+$( ".remove-pics" ).click(function() {
+  $("img").toggle();
+});
+</script>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Easy Broiled Rib-eye With Salad]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2014/01/14/easy-broiled-rib-eye/"/>
+    <updated>2014-01-14T20:48:00-08:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2014/01/14/easy-broiled-rib-eye</id>
+    <content type="html"><![CDATA[<p>Sometimes, after a long day of work, the last thing Clare and I want to do is spend an hour crafting the perfect Paleo dinner. So, this steak and salad combination is a great way to have dinner ready in less than 20 minutes and have it feel like a gourmet meal.</p>
+
+<h1>Broiled Rib-Eye</h1>
+
+<h2>Tools</h2>
+
+<ol>
+<li><p>For this recipe we will again bust out ol&#8217; faithful, the 12-inch, well-seasoned <a href="http://www.amazon.com/gp/product/B00G2XGC88/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00G2XGC88&amp;linkCode=as2&amp;tag=debautblo-20">cast-iron</a> skillet.</p></li>
+<li><p>The <a href="http://www.amazon.com/gp/product/B005SWNZWA/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B005SWNZWA&amp;linkCode=as2&amp;tag=debautblo-20">meat thermometerr</a></p></li>
+<li><p>Pepper Grinder/Mortar &amp; Pestle</p></li>
+</ol>
+
+
+<h2>Ingredients</h2>
+
+<ol>
+<li>2 Rib-Eye steaks</li>
+<li>&frac12; tablespoon fresh ground pepper</li>
+<li>&frac12; tablespoon sea salt</li>
+<li>Olive Oil</li>
+</ol>
+
+
+<h2>Prep</h2>
+
+<ol>
+<li>I like to leave the steak on the counter for about 30 minutes prior to cooking. It seems that this allows the steak to cook more evenly</li>
+</ol>
+
+
+<h2>Cooking</h2>
+
+<ol>
+<li><p>Turn on the Broiler, when it is warm put the skillet on the top rack and let it heat up for about 5 &ndash; 7 minutes. It may start to smoke, open a window and turn on a fan.</p></li>
+<li><p>While the skillet is heating up salt and pepper the steak, gently pressing it into the meat. Then, drizzle the steaks with olive oil. Flip the steaks over and repeat.</p></li>
+<li><p>Pull the skillet out of the broiler (it will be extrordinarily hot, use a think pot holder) and put the steaks on it.</p></li>
+<li><p>Return the skillet to the top rack of the broiler and set the timer for 4-5 mins.</p></li>
+<li><p>Check the steak, if it is at 125 degrees it is ready (rare, the only way it should be eaten).</p></li>
+</ol>
+
+
+<h1>Goat cheese, pomegranate and spinach salad with a honey vinaigrette.</h1>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Im trying this again]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2014/01/13/im-trying-this-again/"/>
+    <updated>2014-01-13T20:15:00-08:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2014/01/13/im-trying-this-again</id>
+    <content type="html"><![CDATA[<p>I think we have all realized by now that I am a pretty awful blogger.</p>
+
+<p>I haven&rsquo;t reliably posted, ever.</p>
+
+<p>But, I am going to give it another go.</p>
+
+<p>So let&rsquo;s start with cooking, at least that is something I can write about.</p>
+
+<p>My chicken recipe has improved greatly in the last few months so I thought I would  share it.</p>
+
+<h1>Whole Baked Chicken</h1>
+
+<p>If you are anything like me, you grew up thinking that cooking an entire chicken was as intense cooking a Turkey on Thanksgiving. No need to fear! I am going to show you that cooking a whole chicken can be one of the easiest dishes you make and your coworkers will all be jealous of the succulent chicken you bring in for lunch the next day.</p>
+
+<h2>Tools</h2>
+
+<p>The key to making this dish easy is having the correct tools. Don&rsquo;t worry, none of them are too expensive and I use most of them for almost every dish I make, so you&rsquo;ll get a lot of mileage out of them.</p>
+
+<ol>
+<li><p>A 12-inch, well-seasoned cast-iron pan. I use this one <a href="http://www.amazon.com/gp/product/B00G2XGC88/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00G2XGC88&amp;linkCode=as2&amp;tag=debautblo-20">Lodge</a></p></li>
+<li><p>A pair of good kitchen shears <a href="http://www.amazon.com/gp/product/B0007IR2ME/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B0007IR2ME&amp;linkCode=as2&amp;tag=debautblo-20">Kitchen Shears</a></p></li>
+<li><p>A good meat thermometer. I use this one <a href="http://www.williams-sonoma.com/products/all-clad-instant-read-digital-thermometer/?pkey=e%7Call-clad%2Binstant%2Bread%2Bdigital%2Bthermometer%7C7%7Cbest%7C0%7Cviewall%7C24%7C%7C1&amp;cm_src=PRODUCTSEARCH||NoFacet-_-NoFacet-_-search%20term%20-%20fry%20pan%20test-_-">Meat Thermometer</a> and have been moderately happy with it. However, this one comes highly recommended <a href="http://www.amazon.com/gp/product/B005SWNZWA/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B005SWNZWA&amp;linkCode=as2&amp;tag=debautblo-20">Mavericks</a></p></li>
+</ol>
+
+
+<h2>Ingredients</h2>
+
+<p>I prefer to use organic, vegetarian fed
+1. A whole chicken (I prefer to use organic, vegetarian fed)</p>
+
+<h2>Prep</h2>
+
+<h2>Cooking</h2>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Moving to Portland]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2013/07/31/moving-to-portland/"/>
+    <updated>2013-07-31T22:32:00-07:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2013/07/31/moving-to-portland</id>
+    <content type="html"><![CDATA[<p>Moving to Portland</p>
+
+<p>It feels like yesterday that I was writing about new adventures. Here I am, planning another crazy but exciting move.</p>
+
+<p>The last 18 months have involved an insane amount of change for me. I changed careers, moved to New York, then switched jobs again. Now we are starting a new chapter in Portland, Oregon!</p>
+
+<p>Clare, my fiancee, was recently offered a feature writing position at The Oregonian newspaper! I am excited for the adventure, the prospect of a new job and a new city, but I will miss my friends, Brooklyn and the Flatiron School immensely.</p>
+
+<p>In the last few months I have watched and helped train 32 of the most amazing people I have met. I have no doubt that over the next few years we will see amazing products coming from these students.</p>
+
+<p>This move is a little bittersweet. In a few short months the team and Flatiron School has become like a family. I&rsquo;ve learned so much from my bosses and coworkers, and I&rsquo;m incredibly grateful to them.</p>
+
+<p>My time at Flatiron School has changed me as a person and as a programmer.</p>
+
+<p>This is goodbye, but hopefully not forever. New York, I&rsquo;ll miss you.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Moving Beyond 'Advanced Beginner']]></title>
+    <link href="http://jeffreybaird.github.io/blog/2013/07/11/moving-beyond-advanced-beginner/"/>
+    <updated>2013-07-11T09:34:00-07:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2013/07/11/moving-beyond-advanced-beginner</id>
+    <content type="html"><![CDATA[<p>Last year <a href="http://www.daedtech.com/author/erik">Erik Dietrich</a> wrote a great piece called <a href="http://www.daedtech.com/how-developers-stop-learning-rise-of-the-expert-beginner">How Developers Stop Learning: Rise of the Expert Beginner</a>.</p>
+
+<p>Just in case, here&rsquo;s a quick summary.</p>
+
+<p>Dietrich&rsquo;s main point is that some beginners reach a point of complacency with their expertise long before they ever reach the &ldquo;expert&rdquo; level on the <a href="" title="http://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition">Dryfus Model of Skill Aquisition</a>. This results in many over-confident programmers writing production applications and often leaving the team before they have to suffer for their mistakes.</p>
+
+<p>He has a great little graphic to explain what he means:</p>
+
+<p><img src="http://daedtech.com/pics/ExpertBeginner.jpg" alt="&quot;Expert Beginners&quot;" /></p>
+
+<p>I think Dietrich has an excellent point, yet it isn&rsquo;t really a problem I see in my role as a TA at the Flatiron school. I think, instead the bigger question raised is &ldquo;What is an Advanced beginner to do?&rdquo;</p>
+
+<p>I have been working as a rails developer for about a year now. I have a fair grasp of the basics; I feel I can be productive on most rails projects without too much of a ramp-up; I can pick up new languages with relative ease; I&rsquo;m slowly developing my personal style as a programmer.</p>
+
+<p>I still have a long way to go.</p>
+
+<p>One of the most prominent traits of an expert beginner is extensive breadth and a lack of depth. As a guy who loves &ldquo;shiny&rdquo; things, I am faced with a problem. I tend to pick up new technologies before I have truely mastered the ones I get paid to know.</p>
+
+<p>I&rsquo;ve posed the following question to myself: how do I level up from here?</p>
+
+<p>The options seem endless. A year ago, I only wanted to build web apps, now I want to try writing a VM, a compiler, or a language.</p>
+
+<p>That is only the tip of the iceberg. The more I learn, the more I realize I don&rsquo;t know. I feel overwhelmed because I want to do everything.</p>
+
+<p>So what is an advanced beginner to do?</p>
+
+<p>I&rsquo;ve decided to set a series of high level learning objectives, followed by goals that will give some amount of concrete accountability to them. The Web is where I am least comfortable and will likely have the biggest impact on my career going forward, so that is where I&rsquo;ve decided to focus.</p>
+
+<h3>Objectives</h3>
+
+<ol>
+<li>Gain a deep understanding of TCP/IP</li>
+<li>Learn how to effectively use WebSockets</li>
+<li>Become comfortable with the DOM apis</li>
+<li>Understand Event Handling</li>
+</ol>
+
+
+<p>I almost put a line about learning Functional Reactive Programming in the list above, but I think it is a good example of me trying to &lsquo;pre-maturly optimize&rsquo; my knowledge for problems I don&rsquo;t have yet. That being said, FRP is really freaking cool.</p>
+
+<p>Below I&rsquo;ve sketched out some projects to help me reach these goals.</p>
+
+<h3>Projects</h3>
+
+<ol>
+<li>Build a web application using at least one major JavaScript framework, currently leaning towards <a href="http://emberjs.com/">Ember.js</a>.</li>
+<li>Write a simple webserver in Ruby from scratch.</li>
+<li>Read <a href="http://www.amazon.com/Network-Administration-Edition-OReilly-Networking/dp/0596002971/ref=cm_cr_pr_product_top">TCP/IP Network Administration</a>.</li>
+<li>Read <a href="http://www.amazon.com/Definitive-Guide-HTML5-WebSocket-Apress/dp/1430247401">The Definitive Guide to HTML5 WebSocket</a>.</li>
+<li>Build an interactive browser game using JavaScript.</li>
+</ol>
+
+
+<p>Readers, what do you think? Is there something I should add, subtract or expand on? Let me know on <a href="http://twitter.com/jeffrey_baird">twitter</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A New Challenge]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2013/06/20/a-new-challenge/"/>
+    <updated>2013-06-20T16:00:00-07:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2013/06/20/a-new-challenge</id>
+    <content type="html"><![CDATA[<p>Man, it has been a long time since I&rsquo;ve written a blog post. The last time you heard from me I had just started working for <a href="http://www.medivo.com">Medivo</a>. My experience at Medivo has been amazing. I learned from some amazing developers, worked on a product I care deeply about and made some great friends.</p>
+
+<p>But all good things come to an end, and as of this Monday I started as a Teacher&rsquo;s Assistant at The Flatiron School. Look at the title of this blog &mdash; teaching has long been a passion of mine. I am pumped to take on this new challenge in my life.</p>
+
+<p>In other news, I&rsquo;ve been playing a lot with <a href="http://golang.org">Go</a>. You should go over there and check it out. I will be writing on it soon :&ndash;)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Get a Job as a Developer in Less Than Six Months - Learn With Jeff]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2012/08/21/how-to-get-a-job-as-a-developer-in-less-than-six-months/"/>
+    <updated>2012-08-21T10:00:00-07:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2012/08/21/how-to-get-a-job-as-a-developer-in-less-than-six-months</id>
+    <content type="html"><![CDATA[<p>So the month of June came and went, and so did July. A lot has happened, but I wasn’t able to <a href="http://www.learnwithjeff.com/2012/05/31/goals-for-the-month-of-june/">complete my goals</a></p>
+
+
+
+
+<p>I did, however, make huge strides in my programming skills – so huge, in fact, that I was hired as a junior developer at <a href="http://medivo.com">Medivo</a>!</p>
+
+
+
+
+<p>This post is about how I got hired for my dream job with less then six months of programming experience.</p>
+
+
+
+
+<h2>Learning to Program</h2>
+
+
+
+
+<p><strong>Work your ass off:</strong></p>
+
+
+
+
+<p>This isn’t how to fake your way into a position. It is how I got real results in a short amount of time.</p>
+
+
+
+
+<p>I was, however, in a unique position. I didn’t have a job, I was only taking one class and I had fallen in love with programming.</p>
+
+
+
+
+<p>So, in order to make the kind of strides I made, expect to spend at least 10 hours a day, six days a week dedicated to programming activities.</p>
+
+
+
+
+<p><strong>Read a shit ton:</strong></p>
+
+
+
+
+<p><a href="http://pragprog.com/">The Pragmatic Programmers</a> is now your best friend. If you are learning Ruby, get the <a href="http://pragprog.com/book/ruby3/programming-ruby-1-9">Ruby 1.9 manual</a>, <a href="http://pragprog.com/book/ltp2/learn-to-program">Learn to Program</a>, and get their <a href="http://pragmaticstudio.com/">Pragmatic studios</a> learning ruby course (It is $200 but worth every cent). Start with the Pragmatic studios video course, and after about five lessons, start step two of my process while continuing to work on the videos.</p>
+
+
+
+
+<p><strong>Join your local ruby group:</strong></p>
+
+
+
+
+<p>This is a must. If you ignore everything else I say, still join your local meetup group.</p>
+
+
+
+
+<p>This is imperative for three main reasons: First, the people you meet may become your employers, or they might introduce you to your future employers. Second, you will be around the people that have the jobs you want. Listen to them, jot down notes about the things they say, and if you don’t understand, then go research it. Last, if you show passion, you will likely find enthusiastic mentors from this group of people. I would not have made it as far as I have without <a href="http://www.twitter.com/gstark">Gavin Stark</a>, <a href="http://blog.migrantstudios.com/">Aubrey Goodman</a> and the rest of the Tampa ruby brigade.</p>
+
+
+
+
+<p><strong>Write a ton of code:</strong></p>
+
+
+
+
+<p><a href="http://www.codeschool.com/courses/try-git">Learn git</a> and get a <a href="https://github.com/">GitHub</a> account. Push code to github EVERYDAY. There is no exception to this rule.</p>
+
+
+
+
+<p>There are no shortcuts, you must write code, and a lot of it. It doesn’t have to be good code, but you must write it. If you look at it and think, “boy, this is shitty,” document the code and explain what you were thinking.</p>
+
+
+
+
+<p><strong>Make everything public:</strong></p>
+
+
+
+
+<p>This is an important aspect of writing a ton of code. If you keep it to yourself, it can be as shitty as you want. I find that if its public, every line of code has to be defendable, even if your reasoning is flawed. It is easier to adjust how you do things if you know why you did it in the first place.</p>
+
+
+
+
+<p>Get a GitHub account, learn git like a boss, make every repo public.</p>
+
+
+
+
+<p><strong>Blog about your challenges:</strong></p>
+
+
+
+
+<p>You will face challenges just like everyone else. Blog about them incessantly. You can’t get any better unless you are asking for help. Also, having a record of your progress will come into handy later when you are trying to get that job.</p>
+
+
+
+
+<p>Make sure you also blog about your successes. When you get something right, especially early on, it feels like the most epic of wins. Tell everyone about how awesome it feels and how you did it.</p>
+
+
+
+
+<h2>Getting The Job</h2>
+
+
+
+
+<p>So now you know a little programming. Don’t wait to get to a point where you feel skilled enough to get a job, because you will be waiting a long time. There is a desperate need for developers, and you are doing a great disservice to yourself and to the community. By learning on the job, you will give yourself a much more focused learning environment. However, here are a few things that will make the search go a little smoother.</p>
+
+
+
+
+<p><strong>Learn to speak like a programmer:</strong></p>
+
+
+
+
+<p>You’ll get a little of this from your reading and from your meetup groups, but there is more you can do. First, listen to related podcasts, I recommend every episode of <a href="http://rubyrogues.com/">Ruby Rogues</a>, next subscribe to <a href="http://railscasts.com/">Rails Casts</a> and <a href="https://www.destroyallsoftware.com/screencasts">Destroy all Software</a> two great programming screen casts.</p>
+
+
+
+
+<p>Some of what is discussed will go right over your head. That is okay. The point of this is to learn how developers speak. When you interview this will be an important skill.</p>
+
+
+
+
+<p><strong>Cast a wide net:</strong></p>
+
+
+
+
+<p>I got my job by sending out this email to the NYC Ruby community:</p>
+
+
+
+
+<blockquote>
+<p>Hey NYC.rb!</p>
+
+<p>I am a (relatively new) self-taught programmer moving to NYC from Tampa, FL at the end of July. Tampa’s awesome Ruby community inspired me to learn Ruby as my first language, and I’m excited to get involved with the New York City Ruby community.</p>
+
+<p>I am graduating in a few weeks with a degree in business and entrepreneurship from the University of South Florida but found my passion, programming, while I was hiring a developer for one of my businesses.</p>
+
+<p>I am looking for an internship/apprenticeship/junior programming position open in the area. If anyone has or knows of such a position, I would love to meet in June when I am in town for GoRuCo.</p>
+
+<p>I am getting fairly proficient with Ruby, know the basics of JavaScript, HTML and CSS and am currently
+working with Rails. I learn quickly and work hard.</p>
+
+<p>You can see where I am with my skills on <a href="https://github.com/jeffreybaird">GitHub</a>, and I blog about my learning at learnwithjeff.com. Any feedback or advice is greatly appreciated!</p>
+
+<p>I look forward to meeting some of you and getting involved with the New York City Ruby Community.</p>
+
+<p>Sincerely,
+Jeff</p>
+</blockquote>
+
+
+
+
+<p>I got 40+ responses in 18 hours. I also found every NYC ruby shop I could and read about them.</p>
+
+
+
+
+<p>Next, I made a list of my top 10 companies and I worked my ass off to get interviews with all of them. I also stayed open to a few more pending discussions with the people on the team.</p>
+
+
+
+
+<p><strong>Don’t underestimate your value:</strong></p>
+
+
+
+
+<p>When I started this search I thought I would be scrubbing toilets in exchange for nightly code reviews. While that determination was probably a good thing, the market is currently in favor of devs looking for work. You may be a n00b, but don’t underestimate your value.</p>
+
+
+
+
+<p><strong>So to sum up:</strong></p>
+
+
+
+
+<p>Work hard, write a lot of code, be transparent and be enthusiastic.</p>
+
+
+
+
+<p>In February 2012 I had never written a line of code. But, as of July 11, 2012 I am employed as a full-time Ruby Developer. You can do it too :).</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Goals for the month of June. - Learn With Jeff]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2012/05/31/goals-for-the-month-of-june/"/>
+    <updated>2012-05-31T10:00:00-07:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2012/05/31/goals-for-the-month-of-june</id>
+    <content type="html"><![CDATA[<p>In my learning, I find it immensely helpful to set lofty (but possible and measurable) goals. I didn’t my goal for the month of May but it was pretty straight-forward, publish a gem. I accomplished that goal, twice.</p>
+
+<p>I’ve decided to talk about my goals out for the month of June since they are much more challenging than my goals for May. First, I want to publish a “useful” gem/plugin/program/app. Second, I want to make some contribution to an open source project.</p>
+
+<p>Both of these are a little subjective, so let me define further. I define “useful” as someone other than myself <span style="text-decoration: underline;">uses</span> it. Not just downloads it, actually uses my creation. Now, since I can’t control whether or not my contribution to an open source project is accepted, I will be a little more loose in that definition. I want to issue a meaningful pull request on a public repo that has multiple contributors.</p>
+
+<p>I realize that the above are huge challenges for a beginning programmer, but I wouldn’t get anywhere if I only tried to do comfortable things :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Testing - a n00b's reflection - Learn With Jeff]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2012/05/29/testing-a-n00bs-reflection/"/>
+    <updated>2012-05-29T10:00:00-07:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2012/05/29/testing-a-n00bs-reflection</id>
+    <content type="html"><![CDATA[<p>I have officially spent more time testing and refactoring my code for my black jack game, <a href="https://github.com/jeffreybaird/RubyJack">RubyJack</a>, than I have on the original code base and it has taught me a big lesson: TEST FIRST.</p>
+
+
+
+
+<p>This is a topic that I don’t have the breadth of knowledge to really attack. Jeff Atwood does a much better job than I, <a href="http://www.codinghorror.com/blog/2006/07/i-pity-the-fool-who-doesnt-write-unit-tests.html">here</a>. I do, however, feel that I can add the perspective of a new programmer.</p>
+
+
+
+
+<p>The challenge of testing first as a n00b, is that when you are learning to program, you generally learn</p>
+
+
+
+
+<pre><code>    def print_hello_world
+
+
+      puts "hello world"
+
+    end
+
+    print_hello_world
+</code></pre>
+
+
+
+
+<p>before you learn</p>
+
+
+
+
+<pre><code>    it  "prints hello word" do
+
+      print_hello_world.should == "hello world"
+
+    end
+</code></pre>
+
+
+
+
+<p>I wouldn’t say this is a mistake since testing is inherently more complicated, but it does create a significant barrier to entry to the new programmer. This barrier is mainly a comfort level thing.</p>
+
+
+
+
+<p>When I was first learning about testing, I thought “I can really see the theoretical application of this, but my programs are so simple now that I don’t need tests.”</p>
+
+
+
+
+<p>BIG F&amp;<sup>%$ING</sup> MISTAKE.</p>
+
+
+
+
+<p>The big example, in <a href="https://github.com/jeffreybaird/RubyJack">RubyJack</a>, of where writing my tests first would have helped me, was during the refactoring process. The first draft of my code may not have been bad for a new programmer, but was(is) poorly written software on a whole. There were methods in classes where they didn’t make sense, arrays of strings where they should have been arrays of objects, 25 line methods that did one simple task and many, many other problems.</p>
+
+
+
+
+<p>Up to this point my tests consisted on running the program through my command line, playing the game till it broke and reading the error message. Not super efficient.</p>
+
+
+
+
+<p>So, after I published the first version of the gem (gem install RubyJack) I started to move stuff around. First, I did some simple refactoring of individual methods, no problems. Then I thought “oh, well this method that starts the game probably should be in the ‘Game class’ and not the ‘Player class.’”</p>
+
+
+
+
+<p>All Hell Broke Loose.</p>
+
+
+
+
+<p>Nothing worked anymore, I couldn’t even start the game let alone deal a card or initialize a deck.</p>
+
+
+
+
+<p>Thank god for “git reset –hard”.</p>
+
+
+
+
+<p>I was able to hop back to my latest commit and start again (more about using commits to your advantage later). Then, I wrote some tests. It was hard;  it hurt my head; I didn’t like it.</p>
+
+
+
+
+<p>I struggled through them and got (most of) them to pass. Around this time I brought in some professional help, Gavin. Gavin was nice enough to sit with me and help me do a little (a lot) of refactoring of my code. We moved some methods into classes where they made more sense, and created classes that should have been there from the beginning.</p>
+
+
+
+
+<p>Then I tried to do some more refactoring on my own, which led to even more problems. I hadn’t learned my lesson.</p>
+
+
+
+
+<p>Once again, I found myself reaching for “git reset”</p>
+
+
+
+
+<p>It was then that I resolved to write better tests. I re-watched the pragmatic studios video on unit testing and peppered Gavin with some more questions. Then, I wrote a bunch of tests and MADE THEM ALL PASS.</p>
+
+
+
+
+<p>When I originally wrote my tests, if I couldn’t get a test of a certain functionality to pass, I marked it as “pending” instead of figuring out the problem. Not this time. It took me hours, and until 2am, but I made them all pass.</p>
+
+
+
+
+<p>I then entered the process to which Gavin introduced me to:</p>
+
+
+
+
+<p>Red</p>
+
+
+
+
+<p>Green</p>
+
+
+
+
+<p>Refactor</p>
+
+
+
+
+<p>What that translates to is this:</p>
+
+
+
+
+<p>Check my tests, if they pass I make one small change. I then check my tests again, some of them may be failing, I want to make sure they are the ones I expect. Then, I continue tweaking the code till I get it to pass all the tests again (sometimes tweaking the tests too).</p>
+
+
+
+
+<p>Then I start the process all over again with my next change.</p>
+
+
+
+
+<p>The benefit to testing first, as I see it, is as it concerns the thought process towards your code. As <a href="http://blog.jtimothyking.com/2006/07/11/twelve-benefits-of-writing-unit-tests-first">J. Timothy King</a> States:</p>
+
+
+
+
+<blockquote><p>You ask, “What code will I write to generate a solution?” But that’s backward. The first thing you should be doing… The first thing you ask is <em>not</em>“What code will I write?” The first thing you ask is “How will I know that I’ve solved the problem?”</p></blockquote>
+
+
+
+
+<p>So, my tip for other n00bs out there is to learn to test sooner rather than later. You won’t regret it.</p>
+
+
+
+
+<h3>Thank You!</h3>
+
+
+
+
+<p>I want to give a huge public thank you to <a href="http://www.twitter.com/gstark">Gavin Stark</a> for helping me with the refactoring process and answering all my crazy n00b questions. Thanks Gavin! Also, thanks to <a href="blog.migrantstudios.com">Aubrey Goodman</a> who graciously takes my questions at all hours. Finally, I’d like to say thanks to <a href="http://alindeman.github.com/">Andy Lindeman</a> who went through and commented on my code on github! It is people like you guys that make the Ruby community awesome and make me glad to be a part of it.</p>
+
+
+
+
+<h3>Disclaimer, links, and tweets</h3>
+
+
+
+
+<p>I love to learn and I do not pretend to be an expert on the topics I post about. If I’m wrong please, let me know in the comments, I love feedback and you won’t offend me. Follow me on <a href="http://www.twitter.com/jeffrey_baird">Twitter</a>; I love to discuss Ruby, books and anything interesting.</p>
+
+
+
+
+<p>If you want to help an aspiring Rubyist, I’m on <a href="http://github.com/jeffreybaird">GitHub</a> and would love any feedback you have to offer.</p>
+
+
+
+
+<p>Many people have helped me learn, I would love to return the favor! <a href="http://jeffreyleebaird.com">Get in touch</a> and I’ll see if I can help.</p>
+
+
+
+
+<p>Thanks for reading!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[RubyJack my second Ruby Gem! - Learn With Jeff]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2012/05/24/rubyjack-my-second-ruby-gem/"/>
+    <updated>2012-05-24T10:00:00-07:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2012/05/24/rubyjack-my-second-ruby-gem</id>
+    <content type="html"><![CDATA[<p>For the last two days I have been slaving over my second attempt at a real ruby program, this one with no help from my friends over at pragmatic programming. I am going to briefly go over something I learned doing this, some of the problems I faced and some of the features I am still working on.</p>
+
+
+
+
+<p>If you want to find the project I am working on, the source code can be found <a href="https://github.com/jeffreybaird/RubyJack/tree/master/black_jack">here</a> on my GitHub profile.</p>
+
+
+
+
+<p>You can install the gem with $gem install RubyJack</p>
+
+
+
+
+<h2>TIL:</h2>
+
+
+
+
+<p>Today I learned a little bit about ruby’s regular expressions. I  know there is a lot more that I don’t know about them, but from what I can tell, they are powerful. The most basic definition I could find of a regular expression is from the Programming Ruby 1.9 book (the latest PickAxe addition):</p>
+
+
+
+
+<blockquote>
+<p>A regular expression is a pattern that can be matched against a string. It can be a simple pattern, such as <em>the string must contain the sequence of letters “cat”,</em> or the pattern can be complex, such as <em>the string must start with a protocol identifier, followed by two literal forward slashes, followed by…,</em> and so on. This is cool in theory. But what makes reqular expressions so powerful is what you can do with them in practice:</p>
+
+<p>-You can test a string to see whether it matches a pattern
+-You can extract from a string the sections that match all or part of a pattern.
+-You can change the string, replacing parts that match a pattern</p>
+</blockquote>
+
+
+
+
+<p>The job I needed regular expressions for in my code is most likely based in the poor design of my deck of cards. The following is the code that initialized a new deck:</p>
+
+
+
+
+<pre><code>def create_a_deck
+  new_suits = %w(hearts spades clubs diamonds )
+  new_value = %w(Ace 2 3 4 5 6 7 8 9 10 Jack Queen King)
+  @new_deck = Array.new
+  #creates a new array by combining the information in the
+  #above two
+  new_value.each do |card|
+    new_suits.each do |suited|
+      @new_deck &amp;lt;&amp;lt; &amp;quot;#{card} of #{suited}&amp;quot;
+    end
+  end
+end
+</code></pre>
+
+
+
+
+<p>What I am doing above is creating an array of strings that have combined the strings found in the “new_suits” array and the “new_value” array above to make a new array that includes an entire deck. The iterator starts with “Ace” and combines it with “hearts” to make “Ace of hearts” which is then added on to the end of the @new_deck array. The iterator goes through and makes 52 cards in this fashion.</p>
+
+
+
+
+<p>The problem with this method of making a deck is that all of my cards are now Strings and I need a way to covert them into point values for the Black Jack game. I did some research and came upon regular expressions.</p>
+
+
+
+
+<p>Here is the method I used to parse the deck and assign values:</p>
+
+
+
+
+<pre><code>def card_value card
+  if card =~ /Queen/
+    10
+  elsif card =~ /King/
+    10
+  elsif card =~ /Jack/
+    10
+  elsif card =~ /Ace/
+    11
+  elsif card =~ /2/
+    2
+  elsif card =~ /3/
+    3
+  elsif card =~ /4/
+    4
+  elsif card =~ /5/
+    5
+  elsif card =~ /6/
+    6
+  elsif card =~ /7/
+    7
+  elsif card =~ /8/
+    8
+  elsif card =~ /9/
+    9
+  elsif card =~ /10/
+    10
+  else
+    0
+  end
+end
+</code></pre>
+
+
+
+
+<p>I have a gut feeling that any rubyists that are reading this, died a little bit inside with that method. However, it got the job done and it taught me a little about regular expressions. Essentially what this method does is search the string I give it (I’m using this with an iterator and passing it each card in the player’s hand) and assigning a value based on what it finds. I will probably add another method to this in order to expand upon the Ace, but more on that later.</p>
+
+
+
+
+<h2>Problems I faced:</h2>
+
+
+
+
+<p>So there are a couple parts to blackjack that were a little tough for me to get in the program. They are, dealer play, the option of playing an Ace as a 1 or 11, and the ability to bet.  I am not going to attack the betting capability just yet but I do think I will discuss dealer play and  Ace action.</p>
+
+
+
+
+<h3>Dealer Play:</h3>
+
+
+
+
+<p>On the surface, this problem seemed pretty simple. The dealer is just a special player. So, create a subclass of player and write some methods that automate the play of the dealer (I won’t paste all that code here, go look at the source!). However, every time I called a method from the dealer class my program crashed. I have to keep fiddling with that to see if I can get it to work.</p>
+
+
+
+
+<h3>Ace Action:</h3>
+
+
+
+
+<p>I actually think I solved this problem while I was writing this blog post (which is why I write this blog). I think if I add call a method in when the card_value method finds “Ace” that prompts the user to make a choice, it will solve the problem. The tricky part will be offering that choice repeatedly (so if the user changes his mind later in the hand) and automating it for the dealer.</p>
+
+
+
+
+<h2>Features to come:</h2>
+
+
+
+
+<p>So you can probably gather that I plan on adding the above two features today. Another feature that I want to add is the ability of the user to place bets, have holdings and play multiple games.</p>
+
+
+
+
+<p>Please go play the game ($gem install RubyJack) and give me some feedback! Thanks!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[I/O...FINALLY! - Learn With Jeff]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2012/05/21/io-finally/"/>
+    <updated>2012-05-21T10:00:00-07:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2012/05/21/io-finally</id>
+    <content type="html"><![CDATA[<p>When I was learning to play the piano, I remember wanting to jump right into Billy Joel. “Hot Cross Buns” and “Mary Had a Little Lamb” were boring and very uncool for an eight year old boy to be learning.</p>
+
+
+
+
+<p>I have had the same feeling while learning to code. I spent a lot of time doing methods, objects and classes never really getting to use them as I would in the real world.</p>
+
+
+
+
+<p>There is one question I wanted to be able answer since the day I started programming: “How the hell do I interact with a program?”</p>
+
+
+
+
+<p>Today, I figured that out.  The code below is from the main program file for the game I created in the <a href="http://online.pragmaticstudio.com/courses/ruby">Pragmatic Studios course</a>. In it, there are two examples of some of ruby’s basic input functions.</p>
+
+
+
+
+<pre><code>knuckleheads = StudioGame::Game.new(&amp;quot;Knuckleheads&amp;quot;)
+
+default_player_file = File.join(File.dirname(__FILE__), 'players.csv')
+knuckleheads.load_players(ARGV.shift || default_player_file)
+
+loop do
+  puts &amp;quot;\nHow many game rounds do you want to play?&amp;quot;
+  answer = gets.downcase.chomp
+  case answer
+  when /^\d+$/
+    knuckleheads.play(answer.to_i)
+  when 'quit','exit'
+    knuckleheads.print_stats
+    break
+  else
+    puts &amp;quot;Please enter a number or 'quit'&amp;quot;
+  end
+end
+
+knuckleheads.save_high_scores
+</code></pre>
+
+
+
+
+<p>The first input I learned was the “gets” method. Here, the program prompts the user to provide a number, the code checks that it is in fact a number (or a quit command) and then uses the number as an argument for the method.</p>
+
+
+
+
+<pre><code>loop do
+  puts &amp;quot;\nHow many game rounds do you want to play?&amp;quot;
+  answer = gets.downcase.chomp
+  case answer
+  when /^\d+$/
+    knuckleheads.play(answer.to_i)
+  when 'quit','exit'
+    knuckleheads.print_stats
+    break
+  else
+    puts &amp;quot;Please enter a number or 'quit'&amp;quot;
+  end
+</code></pre>
+
+
+
+
+<p>The next one is a little more complicated so I will try to break it up into pieces.</p>
+
+
+
+
+<p>What I am trying to accomplish is to allow non-programmers to add players to my game using a csv file and no code. They should be able to simply input the name of a player and the program automatically adds a Player object to the game.</p>
+
+
+
+
+<p>To do this I created a player.csv file (in the above code a person could theoretically create their own file and load it in) with a series of players each on their own line. Then I included the following code in my Game class:</p>
+
+
+
+
+<pre><code>  def load_players (filename=&amp;quot;players.csv&amp;quot;)
+    CSV.foreach(filename) do |line|
+      player = Player.new(line[0], line[1].to_i)
+      add_player(player)
+    end
+  end
+</code></pre>
+
+
+
+
+<p>This takes a file (defaulted with my players.csv) and goes through each line of the file, creating a Player object for each one.</p>
+
+
+
+
+<p>Then, I included this in the main program file:</p>
+
+
+
+
+<pre><code>default_player_file = File.join(File.dirname(__FILE__), 'players.csv')
+knuckleheads.load_players(ARGV.shift || default_player_file)
+</code></pre>
+
+
+
+
+<p>This loaded the players from the file given by the user or my default file if none is give and then runs the program as normal.</p>
+
+
+
+
+<p>So, after two months of hard work and a steep learning curve I have completed my first gem! w00t! You can download it if you want:</p>
+
+
+
+
+<p>$gem install blam_and_woot</p>
+
+
+
+
+<p>If you want to peek at the source code you can find it<a href="https://github.com/jeffreybaird/blam_and_woot">here</a></p>
+
+
+
+
+<p>I will be writing about packaging the gem and some issues I ran into with that later. For now, I am celebrating!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Sunday's Challenge - Learn With Jeff]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2012/05/06/sundays-challenge/"/>
+    <updated>2012-05-06T10:00:00-07:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2012/05/06/sundays-challenge</id>
+    <content type="html"><![CDATA[<p>Full of the knowledge gained from <a href="http://www.meetup.com/tampa-rb/events/60266012/" target="_blank">Coder Night</a> on Thursday, I made an attempt at creating a poker game. My original plan was to create three classes, a Player class, a Deck class and a Game class. The general construction of the game would be the Game class would use take a new deck object and pop the last card out of the shuffled array and assign it to one of the players in the array “hand”</p>
+
+
+
+
+<p>The first problem I ran into was getting each player cards from the same deck. When I wrote the program the first time I assigned a new deck to each player.</p>
+
+
+
+
+<p>I think I finally figured out the problem there, but I broke the program :/</p>
+
+
+
+
+<p>I am pretty sure the problem is somewhere in my Game class. Any ideas?</p>
+
+
+
+
+<pre><code>require_relative 'player'
+class Game
+  attr_reader :hand
+  attr_accessor :make_game
+  def initialize numplayers
+    @numplayers = numplayers
+    hand = []
+  end
+  def make_game
+    i = 0
+    while i &amp;lt; @numplayers
+    hand &amp;lt;&amp;lt; Player.new()
+    i+=1
+    end
+  end
+end
+</code></pre>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Yeah... I'm a bad blogger. - Learn With Jeff]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2012/05/02/yeah-im-a-bad-blogger/"/>
+    <updated>2012-05-02T10:00:00-07:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2012/05/02/yeah-im-a-bad-blogger</id>
+    <content type="html"><![CDATA[<h2>I’m coming back now, I promise</h2>
+
+
+<p>I’m sorry, audience of zero, I haven’t been updating you on my learning process or helping you keep up. The problem is, I have been moving way too fast to write about it every day. So, to update you:</p>
+
+<h3>HTML:</h3>
+
+
+<p>While I am no master, I plowed through my HTML book and felt comfortable enough to move on.</p>
+
+<h3>CSS:</h3>
+
+
+<p>I know the concepts of CSS, I know what it can do and I know where to look up commands, I think I will get better by doing.</p>
+
+<p>So the blog originally was for you to learn with me and I dropped the ball on keeping up with it. Sorry.</p>
+
+<p>So, Where am I now?</p>
+
+<h3>JavaScript</h3>
+
+
+<p>I have been playing around with <a href="http://www.codecademy.com">codecademy</a> for a few months now and I love it. The exercises are challenging and you have a lot of freedom to mess around. It was a great intro to programming and I have since expanded my pursuits!</p>
+
+<h3>Ruby</h3>
+
+
+<p>Through the urging of my wonderful friends <a href="http://redheadjessica.com/">Jessica Barnett</a> and <a href="http://aubreygoodman.wordpress.com/">Aubrey Goodman</a>, I decided to pursue Ruby. I love it. Actually love is a gross understatement. When I sleep, I have dreams of objects and methods dancing in my head (you think I’m joking).</p>
+
+<p>I am currently working my way through the <a href="http://pragprog.com/book/ltp2/learn-to-program">Learn to Program by Chris Pine</a> (highly recommend) and a course offered by <a href="http://pragmaticstudio.com/ruby">Pragmatic Studios</a> (equally awesome).</p>
+
+<p>Needless to say, I don’t want to do anything else but program in Ruby for the foreseeable future.</p>
+
+<h3>General Computer Science</h3>
+
+
+<p>For this I am reading <a href="http://rcm.amazon.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=debautblo-20&amp;o=1&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=ss_til&amp;asins=0071460519">Schaum’s Outline</a> which moves really fast but is completely worth the effort. I think this will prepare me well for some further exploration into algorithms and databases.</p>
+
+<h3>Java</h3>
+
+
+<p>I am also going through<a href="http://see.stanford.edu/see/courseinfo.aspx?coll=824a47e1-135f-4508-a5aa-866adcae1111"> Standford’s Intro to Programming Methodology and Computer Science </a>class to hopefully give me some training in larger theories and best practices of software design.</p>
+
+<p>So, yes I am busy. I will however try to post more often with some tidbits, challenges and advice I pick up along the way. I hope you continue to read!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Setting Up Your Website - Learn With Jeff]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2012/02/20/setting-up-your-website/"/>
+    <updated>2012-02-20T10:00:00-08:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2012/02/20/setting-up-your-website</id>
+    <content type="html"><![CDATA[<h2>Homework Answers:</h2>
+
+
+<p>&lt;html&gt; and &lt;/html&gt; let the browser know where the html document begins and ends</p>
+
+<p>&lt;head&gt; and &lt;/head&gt; starts and ends the page “head”</p>
+
+<p>&lt;title&gt; and &lt;/title&gt; Gives the page a title</p>
+
+<p>&lt;body&gt; and &lt;/body&gt; starts and ends the “body” of the document.</p>
+
+<p>&lt;h1&gt; and &lt;/h1&gt; changes the formatting of the enclosed text to the size of  heading 1</p>
+
+<p>&lt;p&gt; and &lt;/p&gt; shows when a paragraph begins and ends</p>
+
+<p>&lt;h2&gt; and &lt;/h2&gt; Same as heading 1 except slightly smaller.  There is a total of 6 heading sizes</p>
+
+<h2>Today’s Lesson</h2>
+
+
+<h3>Setting up your website</h3>
+
+
+<p>In order to begin creating your website you have to first choose a text editor. If you have a Mac you can use TextEdit. If you have a PC, Notepad comes standard. Thanks to <a href="http://www.redheadjessica.com">Jessica</a> I will be using <a href="http://macromates.com/">TextMate</a> which is a text editor made specially for developers.</p>
+
+<p>So open up the text editor of your choice and make sure that it is set to a plain text format (not necessary if using TextMate)</p>
+
+<br>Save the file as “index.html” to a folder called “learnwithjeff.”
+
+
+
+
+<br>Now, try creating a file like the one I did in my <a title="A Quick Look at HTML and Your First Assignment" href="http://www.learnwithjeff.com/2012/02/16/a-quick-look-at-html-and-your-first-assignment/">previous post</a>. Once you have finished open the file using your browser and check out your first HTML website!
+
+
+<p> </p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Quick Look at HTML and Your First Assignment - Learn With Jeff]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2012/02/16/a-quick-look-at-html-and-your-first-assignment/"/>
+    <updated>2012-02-16T10:00:00-08:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2012/02/16/a-quick-look-at-html-and-your-first-assignment</id>
+    <content type="html"><![CDATA[<p>Hello!</p>
+
+<p>Today we are going to look at a little basic HTML. I’m running behind so this will be a short post.</p>
+
+<p>This is what a (super) basic HTML file looks like:</p>
+
+<p> </p>
+
+<pre><code>
+  `<html>
+    <head> This is the Header </head>
+    <body>
+      <p> This is a paragraph in the body of the html</p>
+    </body>
+  </html>`
+</pre>
+
+
+<p></code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Lesson 2 An Intro to HTML - Learn With Jeff]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2012/02/14/lesson-2-an-intro-to-html/"/>
+    <updated>2012-02-14T10:00:00-08:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2012/02/14/lesson-2-an-intro-to-html</id>
+    <content type="html"><![CDATA[<h2>Disclaimer:</h2>
+
+<p>Third post in and I’ve already made an executive decision about this blog, it is about me. I know this may sound a bit selfish. I am okay with that.</p>
+
+<p>I want you to read, follow along and learn with me. I will answer all questions as best I can. I won’t, however, choose what I teach based on popular demand. I want to learn, so I won’t cover things I already know.</p>
+
+<p>So, on that note, we are not going to go over WordPress today like I had originally planned. We are going to go straight into HTML.</p>
+
+<p>Now I know a little HTML but I figure it can’t hurt to get a little refresher so I will start from the beginning.</p>
+
+<h2>HTML:</h2>
+
+<p>I got my book in the mail, <a href="" title="http://www.headfirstlabs.com/books/hfhtml/">Head First HTML with CSS &amp; XHTML</a>. It looks pretty basic and seems like a lot of fun (Lots of pictures). I will try to explain everything as best I can but I will always refer back to the book. If you want to follow along I would suggest purchasing it.</p>
+
+<p>So let us first delve into the basics of HyperText Markup Language or HTML for short. To do that we need to first take a look at where it fits into the equation of the internet.</p>
+
+<p>HTML is the language your browser understands. When you make a website you load HTML file(s) onto a web server. A web server is just a computer that stays on, connected to the internet.</p>
+
+<p>When you visit a website you are sending a request to the server to send you that HTML file. Your browser than interprets all the HTML tags (certain words surrounded by &lt;…>), and displays websites as you know them.</p>
+
+<p><img csrc = "images/circleofweb.jpg" alt="" width="465" height="603"></p>
+
+<p> </p>
+
+<br>So now we know where HTML fits into the web in general. It is a language that browsers use to determine the structure of a website. Next lesson, basic HTML tags.
+
+
+<p>See you next time :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[For My First Lesson My Digital Resume - Learn With Jeff]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2012/02/13/for-my-first-lesson-my-digital-resume/"/>
+    <updated>2012-02-13T10:00:00-08:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2012/02/13/for-my-first-lesson-my-digital-resume</id>
+    <content type="html"><![CDATA[<div class="entry-content">I’ve done a lot of cool things in my short 24 years. I’m proud of my accomplishments and I want to show them off to future employers, partners and investors. To do this, I am making an online resume.
+
+First, I need a url. To do this you need to find an available <a href="http://en.wikipedia.org/wiki/Domain_name" target="_blank">domain name</a> and a <a href="http://en.wikipedia.org/wiki/Domain_name_registrar" target="_blank">domain registration company</a>.
+
+<strong>Here are some of the tools I used</strong>:
+<ul>
+<li>
+<a href="http://domai.nr" target="_blank">Domai.nr</a> - This tool helps you find interesting domain names</li>
+</ul>
+<a href="http://domai.nr"><img class="alignnone size-medium wp-image-8" title="Domai.nr" src="http://www.learnwithjeff.com/wp-content/uploads/2012/02/Screen-Shot-2012-02-13-at-3.42.08-PM-300x121.png" alt="" width="300" height="121"></a>
+
+ 
+<ul>
+<li>
+<a href="http://www.fatcow.com" target="_blank">Fat Cow</a> - I love this website. It handles my domain registration as well as my hosting. It has one click Word Press installation, unlimited storage and a free domain name. It may not be the best in the market but I have been very happy with them.</li>
+</ul>
+<a href="http://www.fatcow.com"><img class="alignnone size-medium wp-image-10" title="Fat Cow" src="http://www.learnwithjeff.com/wp-content/uploads/2012/02/Screen-Shot-2012-02-13-at-3.48.14-PM-300x130.png" alt="" width="300" height="130"></a>
+
+ 
+
+<br>Some other tools:
+<ul>
+<li>Domain Registrars</li>
+</ul>
+<ol>
+<li>
+<a href="http://http://www.namecheap.com/" target="_blank">Name Cheap</a> - Voted number one by lifehacker</li>
+    <li>
+<a href="http://order.1and1.com/;jsessionid=F02BDFEE56A859224F2FB59347CCB7AF.TCpfix240b?linkOrigin=Instant&amp;linkId=hd.log.eue" target="_blank">1&amp;1</a> - Came highly recommended</li>
+    <li>
+<a href="http://www.godaddy.com" target="_blank">Godaddy</a> - I have used in the past, generally more expensive and not user friendly</li>
+</ol>
+<ul>
+<li>Website Hosting</li>
+</ul>
+<ol>
+<li>
+<a href="http://www.bluehost.com/" target="_blank">Blue Host</a> - Highly recommended by friends</li>
+    <li>
+<a href="http://www.hostmonster.com/" target="_blank">Host Monster</a> - Generally good online reviews</li>
+    <li>
+<a href="http://www.godaddy.com" target="_blank">Godaddy</a> - Popular but again, more expensive and not user friendly</li>
+</ol>
+<strong>What I did:</strong>
+<ol>
+<li>Searched for domains using <a href="http://www.domai.nr" target="_blank">domia.nr</a>. I tried a few combinations and settled on <a href="http://www.hirejeffbaird.com" target="_blank">hirejeffbaird.com</a>
+</li>
+    <li>Opened a new account of <a href="http://www.fatcow.com" target="_blank">Fat Cow</a>, entered in my desired domain name and credit card information. I am now the proud owner of hirejeffbaird.com and have a hosting account to go along with it. Yay!</li>
+</ol>
+<strong>Tomorrow’s Lesson: Getting Started with Word Press</strong>
+
+ 
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[I am Jeff. Learn cool shit with me. - Learn With Jeff]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2012/02/12/i-am-jeff/"/>
+    <updated>2012-02-12T10:00:00-08:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2012/02/12/i-am-jeff</id>
+    <content type="html"><![CDATA[<p>Welcome to my new website, where we get to learn cool stuff together! I have spent a lifetime in school learning jack shit. Everything I’ve learned, for real, I taught myself or learned on the job.</p>
+
+<p>That is what we are going to take a stab at on this site. I am going to pick a skill and then I’m going to teach myself said skill. I will then post how-to guides, instructional videos, detailed accounts of my mistakes, and (sometimes) funny anecdotes of the learning experience.</p>
+
+<p>Sound fun? I hope so.</p>
+
+<p>So a little about me:</p>
+
+<ul>
+<li>I am an undergraduate student in the entrepreneurship program at University of South Florida St. Petersburg.</li>
+    <li>I worked on ships (no not cruise ships, the ones that bring all those products from China that you like)</li>
+    <li>I’ve started three companies</li>
+    <li>I just got engaged to the most wonderful woman in the world</li>
+    <li>I read. A lot.</li>
+    <li>I like to teach</li>
+    <li>New is exciting</li>
+    <li>I love learning</li>
+</ul>
+
+
+<p>Okay, I won’t talk much more about myself from here on out, but I thought you should know the man behind the curtain.</p>
+
+<p>As this website progresses I would love to field suggestions on topics to cover so jump in on the comments :)</p>
+]]></content>
+  </entry>
+  
+</feed>
