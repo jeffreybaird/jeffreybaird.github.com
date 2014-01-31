@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Sunday's Challenge - Learn With Jeff - Learn With Jeff</title>
+  <title>Free Consulting - Learn With Jeff</title>
   <meta name="author" content="Jeffrey Baird">
 
   
-  <meta name="description" content="Full of the knowledge gained from Coder Night on Thursday, I made an attempt at creating a poker game. My original plan was to create three classes, &hellip;">
+  <meta name="description" content="I&rsquo;ve struggled for a while to figure out where I fit into the activist community. I have learned lately that I (another cis white hetero male &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jeffreybaird.github.io/blog/2012/05/06/sundays-challenge/">
+  <link rel="canonical" href="http://jeffreybaird.github.io/blog/2014/01/31/free-consulting/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/user.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -78,7 +78,7 @@
   <header>
     
       
-        <h1 class="entry-title">Sunday's Challenge - Learn With Jeff</h1>
+        <h1 class="entry-title">Free Consulting</h1>
       
     
     
@@ -95,51 +95,20 @@
   
 
 
-<time datetime="2012-05-06T10:00:00-07:00" pubdate data-updated="true">May 6<span>th</span>, 2012</time>
+<time datetime="2014-01-31T09:22:00-08:00" pubdate data-updated="true">Jan 31<span>st</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Full of the knowledge gained from <a href="http://www.meetup.com/tampa-rb/events/60266012/" target="_blank">Coder Night</a> on Thursday, I made an attempt at creating a poker game. My original plan was to create three classes, a Player class, a Deck class and a Game class. The general construction of the game would be the Game class would use take a new deck object and pop the last card out of the shuffled array and assign it to one of the players in the array “hand”</p>
+<div class="entry-content"><p>I&rsquo;ve struggled for a while to figure out where I fit into the activist community.  I have learned lately that I (another cis white hetero male programmer) don&rsquo;t have much, in the way of experiences, to add to the greater conversation.</p>
 
+<p>But I recently helped a writer/activist with some programming tasks, and I realized there might be a lot of activists for whom the Web is complicated territory.  So, if you&rsquo;re an independent activist who works to fight injustice, and you need help on anything Web-related, I&rsquo;m happy to provide it, free of charge.</p>
 
+<p>email me at anytime: jeff (at) jeffreyleebaird.com</p>
 
-
-<p>The first problem I ran into was getting each player cards from the same deck. When I wrote the program the first time I assigned a new deck to each player.</p>
-
-
-
-
-<p>I think I finally figured out the problem there, but I broke the program :/</p>
-
-
-
-
-<p>I am pretty sure the problem is somewhere in my Game class. Any ideas?</p>
-
-
-
-
-<pre><code>require_relative 'player'
-class Game
-  attr_reader :hand
-  attr_accessor :make_game
-  def initialize numplayers
-    @numplayers = numplayers
-    hand = []
-  end
-  def make_game
-    i = 0
-    while i &amp;lt; @numplayers
-    hand &amp;lt;&amp;lt; Player.new()
-    i+=1
-    end
-  end
-end
-</code></pre>
-
+<p>I have no idea how many requests I&rsquo;ll get so if it becomes too much to handle I&rsquo;ll have to put some sort of limit on it, but for now let&rsquo;s just see where this goes.</p>
 </div>
 
 
@@ -162,7 +131,7 @@ end
   
 
 
-<time datetime="2012-05-06T10:00:00-07:00" pubdate data-updated="true">May 6<span>th</span>, 2012</time>
+<time datetime="2014-01-31T09:22:00-08:00" pubdate data-updated="true">Jan 31<span>st</span>, 2014</time>
       
 
 
@@ -170,7 +139,7 @@ end
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jeffreybaird.github.io/blog/2012/05/06/sundays-challenge/" data-via="jeffrey_baird" data-counturl="http://jeffreybaird.github.io/blog/2012/05/06/sundays-challenge/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jeffreybaird.github.io/blog/2014/01/31/free-consulting/" data-via="jeffrey_baird" data-counturl="http://jeffreybaird.github.io/blog/2014/01/31/free-consulting/" >Tweet</a>
   
   
   
@@ -179,10 +148,8 @@ end
     
     <p class="meta">
       
-        <a class="basic-alignment left articlenav" href="/blog/2012/05/02/yeah-im-a-bad-blogger/" title="Previous Post: Yeah... I'm a bad blogger. - Learn With Jeff">&laquo; Yeah... I'm a bad blogger. - Learn With Jeff</a>
+        <a class="basic-alignment left articlenav" href="/blog/2014/01/25/easy-broiled-rib-eye/" title="Previous Post: Easy Broiled Rib-eye">&laquo; Easy Broiled Rib-eye</a>
       
-      
-        <a class="basic-alignment right articlenav" href="/blog/2012/05/21/io-finally/" title="Next Post: I/O...FINALLY! - Learn With Jeff">I/O...FINALLY! - Learn With Jeff &raquo;</a>
       
     </p>
   </footer>
