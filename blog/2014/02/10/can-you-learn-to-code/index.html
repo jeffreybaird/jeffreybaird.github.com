@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Sunday's Challenge - Learn With Jeff - Learn With Jeff</title>
+  <title>Can You Learn to Code? - Learn With Jeff</title>
   <meta name="author" content="Jeffrey Baird">
 
   
-  <meta name="description" content="Full of the knowledge gained from Coder Night on Thursday, I made an attempt at creating a poker game. My original plan was to create three classes, &hellip;">
+  <meta name="description" content="I get this email three or four times a month: I&rsquo;ve recently had a thought that I should learn how to code. I have a full time job.
+Can I learn &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jeffreybaird.github.io/blog/2012/05/06/sundays-challenge/">
+  <link rel="canonical" href="http://jeffreybaird.github.io/blog/2014/02/10/can-you-learn-to-code/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/user.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -90,7 +91,7 @@
   <header>
     
       
-        <h1 class="entry-title">Sunday's Challenge - Learn With Jeff</h1>
+        <h1 class="entry-title">Can You Learn to Code?</h1>
       
     
     
@@ -107,51 +108,54 @@
   
 
 
-<time datetime="2012-05-06T10:00:00-07:00" pubdate data-updated="true">May 6<span>th</span>, 2012</time>
+<time datetime="2014-02-10T16:53:00-08:00" pubdate data-updated="true">Feb 10<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Full of the knowledge gained from <a href="http://www.meetup.com/tampa-rb/events/60266012/" target="_blank">Coder Night</a> on Thursday, I made an attempt at creating a poker game. My original plan was to create three classes, a Player class, a Deck class and a Game class. The general construction of the game would be the Game class would use take a new deck object and pop the last card out of the shuffled array and assign it to one of the players in the array “hand”</p>
+<div class="entry-content"><p>I get this email three or four times a month:</p>
+
+<blockquote><p>I&rsquo;ve recently had a thought that I should learn how to code. I have a full time job.
+Can I learn to code? How long will it take me?</p></blockquote>
+
+<p>I often hesitate to respond since it often results in a series of exchanges that leaves me frustrated and the original author unsatisfied. So I hope to clarify or extend my almost two year old post <a href="/blog/2012/08/21/how-to-get-a-job-as-a-developer-in-less-than-six-months/">How to get a Job as a Developer in Less Than Six Months</a> with this one.</p>
+
+<h3>Can <em>You</em> Learn to Code?</h3>
+
+<p>Short answer:</p>
+
+<p>I have no idea.</p>
+
+<p>Slightly longer answer:</p>
+
+<p>Yes. I emphatically stand behind the idea that almost anyone has the mental facilities needed to comprehend programming.</p>
+
+<p>However, when reading my post my circumstances are easy to forget. I had no job. I had just graduated from college. I had three months of money saved up. I was living at home with my parents.</p>
+
+<p>Not everyone has those privileges.</p>
+
+<p>I was able to devote all of my available time to learn to code.</p>
+
+<p>There is a reason that the <a href="http://www.flatironschool.com">Flatiron School</a> and schools like them encourage students to not be employed during while they are attending.</p>
+
+<p>learning to code is hard work.</p>
+
+<p>Even now, when I am learning something new I find that I need to block off at least two hours at a time in order to be productive.</p>
+
+<p>So ask yourself some questions:</p>
+
+<ul>
+<li>Can you reduce the amount of hours you work?</li>
+<li>How many (consecutive) hours can you devote each day to learning how to code?</li>
+<li>How long can you sustain that pace?</li>
+</ul>
 
 
+<p>Your answers to those questions still won&rsquo;t help me answer your original question because this will be different for every person reading this post.</p>
 
-
-<p>The first problem I ran into was getting each player cards from the same deck. When I wrote the program the first time I assigned a new deck to each player.</p>
-
-
-
-
-<p>I think I finally figured out the problem there, but I broke the program :/</p>
-
-
-
-
-<p>I am pretty sure the problem is somewhere in my Game class. Any ideas?</p>
-
-
-
-
-<pre><code>require_relative 'player'
-class Game
-  attr_reader :hand
-  attr_accessor :make_game
-  def initialize numplayers
-    @numplayers = numplayers
-    hand = []
-  end
-  def make_game
-    i = 0
-    while i &amp;lt; @numplayers
-    hand &amp;lt;&amp;lt; Player.new()
-    i+=1
-    end
-  end
-end
-</code></pre>
-
+<p>The resources are out there, the community is out there. I am happy to pair with anyone on almost any project. I will review your code. I will recommend code schools &ndash; <a href="http://www.flatironschool.com">Flatiron School</a> &ndash; but at the end of the day I cannot decide if you are capable of learning how to code. Only you can.</p>
 </div>
 
 
@@ -174,7 +178,7 @@ end
   
 
 
-<time datetime="2012-05-06T10:00:00-07:00" pubdate data-updated="true">May 6<span>th</span>, 2012</time>
+<time datetime="2014-02-10T16:53:00-08:00" pubdate data-updated="true">Feb 10<span>th</span>, 2014</time>
       
 
 
@@ -182,7 +186,7 @@ end
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jeffreybaird.github.io/blog/2012/05/06/sundays-challenge/" data-via="jeffrey_baird" data-counturl="http://jeffreybaird.github.io/blog/2012/05/06/sundays-challenge/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jeffreybaird.github.io/blog/2014/02/10/can-you-learn-to-code/" data-via="jeffrey_baird" data-counturl="http://jeffreybaird.github.io/blog/2014/02/10/can-you-learn-to-code/" >Tweet</a>
   
   
   
@@ -191,10 +195,8 @@ end
     
     <p class="meta">
       
-        <a class="basic-alignment left articlenav" href="/blog/2012/05/02/yeah-im-a-bad-blogger/" title="Previous Post: Yeah... I'm a bad blogger. - Learn With Jeff">&laquo; Yeah... I'm a bad blogger. - Learn With Jeff</a>
+        <a class="basic-alignment left articlenav" href="/blog/2014/01/31/free-consulting/" title="Previous Post: Free Consulting">&laquo; Free Consulting</a>
       
-      
-        <a class="basic-alignment right articlenav" href="/blog/2012/05/21/io-finally/" title="Next Post: I/O...FINALLY! - Learn With Jeff">I/O...FINALLY! - Learn With Jeff &raquo;</a>
       
     </p>
   </footer>

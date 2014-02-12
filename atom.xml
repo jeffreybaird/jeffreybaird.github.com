@@ -4,7 +4,7 @@
   <title><![CDATA[Learn With Jeff]]></title>
   <link href="http://jeffreybaird.github.io/atom.xml" rel="self"/>
   <link href="http://jeffreybaird.github.io/"/>
-  <updated>2014-02-11T10:03:59-08:00</updated>
+  <updated>2014-02-12T14:11:01-08:00</updated>
   <id>http://jeffreybaird.github.io/</id>
   <author>
     <name><![CDATA[Jeffrey Baird]]></name>
@@ -12,6 +12,55 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Can You Learn to Code?]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2014/02/10/can-you-learn-to-code/"/>
+    <updated>2014-02-10T16:53:00-08:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2014/02/10/can-you-learn-to-code</id>
+    <content type="html"><![CDATA[<p>I get this email three or four times a month:</p>
+
+<blockquote><p>I&rsquo;ve recently had a thought that I should learn how to code. I have a full time job.
+Can I learn to code? How long will it take me?</p></blockquote>
+
+<p>I often hesitate to respond since it often results in a series of exchanges that leaves me frustrated and the original author unsatisfied. So I hope to clarify or extend my almost two year old post <a href="http://jeffreybaird.github.io/blog/2012/08/21/how-to-get-a-job-as-a-developer-in-less-than-six-months/">How to get a Job as a Developer in Less Than Six Months</a> with this one.</p>
+
+<h3>Can <em>You</em> Learn to Code?</h3>
+
+<p>Short answer:</p>
+
+<p>I have no idea.</p>
+
+<p>Slightly longer answer:</p>
+
+<p>Yes. I emphatically stand behind the idea that almost anyone has the mental facilities needed to comprehend programming.</p>
+
+<p>However, when reading my post my circumstances are easy to forget. I had no job. I had just graduated from college. I had three months of money saved up. I was living at home with my parents.</p>
+
+<p>Not everyone has those privileges.</p>
+
+<p>I was able to devote all of my available time to learn to code.</p>
+
+<p>There is a reason that the <a href="http://www.flatironschool.com">Flatiron School</a> and schools like them encourage students to not be employed during while they are attending.</p>
+
+<p>learning to code is hard work.</p>
+
+<p>Even now, when I am learning something new I find that I need to block off at least two hours at a time in order to be productive.</p>
+
+<p>So ask yourself some questions:</p>
+
+<ul>
+<li>Can you reduce the amount of hours you work?</li>
+<li>How many (consecutive) hours can you devote each day to learning how to code?</li>
+<li>How long can you sustain that pace?</li>
+</ul>
+
+
+<p>Your answers to those questions still won&rsquo;t help me answer your original question because this will be different for every person reading this post.</p>
+
+<p>The resources are out there, the community is out there. I am happy to pair with anyone on almost any project. I will review your code. I will recommend code schools &ndash; <a href="http://www.flatironschool.com">Flatiron School</a> &ndash; but at the end of the day I cannot decide if you are capable of learning how to code. Only you can.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Free Consulting]]></title>
