@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/jeffreybaird
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://learnwithjeff.com
+  * I am jeffreybaird (https://keybase.io/jeffreybaird) on keybase.
+  * I have a public key with fingerprint F6EE 23D3 5669 09FD 77EE  0FA2 6752 C11E 4841 E0B9
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "f6ee23d3566909fd77ee0fa26752c11e4841e0b9",
+            "host": "keybase.io",
+            "key_id": "6752c11e4841e0b9",
+            "uid": "14a473fbb3a82d01ec0a907334618100",
+            "username": "jeffreybaird"
+        },
+        "service": {
+            "hostname": "learnwithjeff.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1395944795,
+    "expire_in": 157680000,
+    "prev": "b58f4828fd7f413eebb21eb74243808f229656702aa223468a0832e849ad6803",
+    "seqno": 11,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.1
+Comment: https://keybase.io/crypto
+
+yMHrAnicbZFbSBRfHMdnNfOCVtpFjfqjB8GKZZvL2blsRIW1L0IG+maxzOyccSfd
+mW1mXJVN8OVvKRJpoU9eSM1gwUSDonpwpYcsI5G84FpJlvRQIYYUlOkZsbfmZZjz
+/fw+3zPnPMtIJNIcBdf+z1z60AYdL0d/VROlMFgeAZIu1wFPBFSirZeiahXICBmq
+ZgEPUFiEaEZm3CwrkIIicxxCpCLSLOem/RSFIA8pREoCcIKAbtoTWCOJJnKpOl7D
+Hz5Vxqv/4Ku3AgqKkGMUSWJEnpZJCvlJUSA5hoEsxVMkaYMmMjQxiDB9GSmKYReo
+hgzqnQAnYdWPk8hW/TZVhURDq1GtgI27/HoQS0KGbul+vQrHAcsKeexpqy5k4zVI
+8m2LfJKqyfgA8EAYGaaqa8BDYdJvqbaZYgS3ACEnuJ0A1YZUA/lUm3BzLE/ix65B
+YayU3LwCeZrHB6ZAikFIkmgKSRykIcOTvELTAutmOZIWRZrGv8qLJM/QiIeCKGMV
+g/tNdEXTsZvC+xQrsNNUKzTRqjYQqB8bvbiDcKQRO5MS7Dsk0lL3/L3ZQ0spxN3m
+zNve8ZNfb035TPPm4PSdHrJzyDWZP+C01P4Jk1moze9ijgvtYbbhbXChcDC/c+Np
+EeufeXU2+n7lZ+xc4mrT4qmEdP3qhR98R252jrl4tCxMmBH4aTa5ofe194bsmJxt
+WisMlQtt3cufA/s3Rh7P6cN7WZc3Mr97X0sOd2L6YVIsuWVxNTY1MtTXunqkyPs8
+evh7cYmccWDuy3p/a6y0QY6UbXy73173Jq+vsTdK3FOSJrr+i7t+HxxYK3i3Pkal
+nk/p7hgadxzrfZAbjw/Hd833lDWfPlOrgYzr2UR6aCD8MfjkT1Y5WMiKziyvVF16
+9KK4kazkS/I2ARJzFFU=
+=xNBD
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jeffreybaird
+
+==================================================================
