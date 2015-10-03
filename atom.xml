@@ -4,7 +4,7 @@
   <title><![CDATA[Learn With Jeff]]></title>
   <link href="http://jeffreybaird.github.io/atom.xml" rel="self"/>
   <link href="http://jeffreybaird.github.io/"/>
-  <updated>2014-03-27T11:46:46-07:00</updated>
+  <updated>2015-10-03T11:25:28-07:00</updated>
   <id>http://jeffreybaird.github.io/</id>
   <author>
     <name><![CDATA[Jeffrey Baird]]></name>
@@ -12,6 +12,202 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Building a JSON API with Phoenix]]></title>
+    <link href="http://jeffreybaird.github.io/blog/2015/10/03/building-a-json-api-with-phoenix/"/>
+    <updated>2015-10-03T10:56:00-07:00</updated>
+    <id>http://jeffreybaird.github.io/blog/2015/10/03/building-a-json-api-with-phoenix</id>
+    <content type="html"><![CDATA[<p>I’ve been following Elixir for the last 18 months and finally, this week I was able to make it to ElixirConf. I’m glad I did. I had, up until this point, been very skeptical about phoenix. I really enjoyed writing in Elixir but I wasn’t convinced that the language needed a Rails. However, the ease in which you can create apis is just too cool. I thought that I would share just how easy it is.</p>
+
+
+
+
+<h2>Dependencies</h2>
+
+
+
+
+<p><a href="http://elixir-lang.org/install.html" title="Install Elixir">Install Elixir</a></p>
+
+
+
+
+<p>This will help you install Erlang, Mix, Elixir and other Elixir specific tools</p>
+
+
+
+
+<p><a href="http://www.phoenixframework.org/docs/installation">Install Phoenix</a></p>
+
+
+
+
+<p>This has the instructions for installing hex, phoenix and configuring your database. Phoenix, by default, uses postgres. I use the <a href="http://postgresapp.com/">Postgres.app</a> but you can use the install you prefer.</p>
+
+
+
+
+<h2>Let’s Get Started</h2>
+
+
+
+
+<pre><code>$mix phoenix.new testapi
+$cd testapi
+$mix ecto.create
+$mix phoenix.gen.json User users fullname:string email:string
+</code></pre>
+
+
+
+
+<p>This will create a bunch of files that do a bunch of different stuff. But, the point of this post isn’t to explain how phoenix works to you. Instead it is to show you how fast you can get an api built.</p>
+
+
+
+
+<p>Open you web/router.ex file and look for the following block:</p>
+
+
+
+
+<pre><code>#Other scopes may use custom stacks.
+  #scope &quot;/api&quot;, Testapi do
+     #pipe_through :api
+  #end
+</code></pre>
+
+
+
+
+<p>Un-comment this block and paste this line (It should show up in your terminal):</p>
+
+
+
+
+<p>resources &quot;/users&quot;, UserController, except: [:new, :edit]</p>
+
+
+
+
+<p>under “pipe_through” :api</p>
+
+
+
+
+<p>It should look like:</p>
+
+
+
+
+<pre><code>#Other scopes may use custom stacks.
+  scope &quot;/api&quot;, Testapi do
+     pipe_through :api
+     resources &quot;/users&quot;, UserController, except: [:new, :edit]
+  end
+</code></pre>
+
+
+
+
+<p>Then, back in your terminal run:</p>
+
+
+
+
+<pre><code>$mix ecto.migrate
+</code></pre>
+
+
+
+
+<p>This migrates your database.</p>
+
+
+
+
+<pre><code>$iex -S mix phoenix.server
+</code></pre>
+
+
+
+
+<p>This starts up your phoenix server and opens an interactive terminal.</p>
+
+
+
+
+<p>That is it! You have a JSON api. Let’s test it out.</p>
+
+
+
+
+<p>In another terminal window:</p>
+
+
+
+
+<pre><code>$curl -H &quot;Content-Type: application/json&quot; -X POST -d &#39;{&quot;user&quot;: {&quot;fullname&quot;: &quot;Jeff Baird&quot;, &quot;email&quot;: &quot;jeff@example.com&quot;}}&#39;   http://localhost:4000/api/users
+</code></pre>
+
+
+
+
+<p>Back in your phoenix server terminal you should see something like:</p>
+
+
+
+
+<pre><code>[info] POST /api/users
+[debug] Processing by Testapi.UserController.create/2
+  Parameters: %{&quot;user&quot; =&gt; %{&quot;email&quot; =&gt; &quot;jeff@example.com&quot;, &quot;fullname&quot; =&gt; &quot;Jeff&quot;}}
+  Pipelines: [:api]
+[debug] BEGIN [] OK query=142.8ms queue=4.2ms
+[debug] INSERT INTO &quot;users&quot; (&quot;email&quot;, &quot;fullname&quot;, &quot;inserted_at&quot;, &quot;updated_at&quot;) VALUES ($1, $2, $3, $4) RETURNING &quot;id&quot; [&quot;jeff@example.com&quot;, &quot;Jeff Baird&quot;, \{\{2015, 10, 3\}, \{17, 32, 48, 0\}\}, \{\{2015, 10, 3\}, \{17, 32, 48, 0\}\}] OK query=2.2ms
+</code></pre>
+
+
+
+
+<p>Cool!</p>
+
+
+
+
+<p>Let’s see if we can get data out of our api:</p>
+
+
+
+
+<pre><code>$curl -H &quot;Content-Type: application/json&quot; http://localhost:4000/api/users
+</code></pre>
+
+
+
+
+<p>You should see something like:</p>
+
+
+
+
+<pre><code>&#39;{&quot;data&quot;:[{&quot;id&quot;:1,&quot;fullname&quot;:&quot;Jeff Baird&quot;,&quot;email&quot;:&quot;jeff@example.com&quot;}]}
+</code></pre>
+
+
+
+
+<p>It works!</p>
+
+
+
+
+<p>This post is super basic and only meant to show you how fast you can get started developing apis with phoenix. I highly encourage you to go dive into phoenix some more. The documentation is great and the community is even better. Enjoy!</p>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Can You Learn to Code?]]></title>

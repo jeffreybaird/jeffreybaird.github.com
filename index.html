@@ -9,8 +9,7 @@
   <meta name="author" content="Jeffrey Baird">
 
   
-  <meta name="description" content="I get this email three or four times a month: I&rsquo;ve recently had a thought that I should learn how to code. I have a full time job.
-Can I learn &hellip;">
+  <meta name="description" content="I’ve been following Elixir for the last 18 months and finally, this week I was able to make it to ElixirConf. I’m glad I did. I had, up until this &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -87,6 +86,231 @@ Can I learn &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
+        <h1 class="entry-title"><a href="/blog/2015/10/03/building-a-json-api-with-phoenix/">Building a JSON API With Phoenix</a></h1>
+      
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-10-03T10:56:00-07:00" pubdate data-updated="true">Oct 3<span>rd</span>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I’ve been following Elixir for the last 18 months and finally, this week I was able to make it to ElixirConf. I’m glad I did. I had, up until this point, been very skeptical about phoenix. I really enjoyed writing in Elixir but I wasn’t convinced that the language needed a Rails. However, the ease in which you can create apis is just too cool. I thought that I would share just how easy it is.</p>
+
+
+
+
+<h2>Dependencies</h2>
+
+
+
+
+<p><a href="http://elixir-lang.org/install.html" title="Install Elixir">Install Elixir</a></p>
+
+
+
+
+<p>This will help you install Erlang, Mix, Elixir and other Elixir specific tools</p>
+
+
+
+
+<p><a href="http://www.phoenixframework.org/docs/installation">Install Phoenix</a></p>
+
+
+
+
+<p>This has the instructions for installing hex, phoenix and configuring your database. Phoenix, by default, uses postgres. I use the <a href="http://postgresapp.com/">Postgres.app</a> but you can use the install you prefer.</p>
+
+
+
+
+<h2>Let’s Get Started</h2>
+
+
+
+
+<pre><code>$mix phoenix.new testapi
+$cd testapi
+$mix ecto.create
+$mix phoenix.gen.json User users fullname:string email:string
+</code></pre>
+
+
+
+
+<p>This will create a bunch of files that do a bunch of different stuff. But, the point of this post isn’t to explain how phoenix works to you. Instead it is to show you how fast you can get an api built.</p>
+
+
+
+
+<p>Open you web/router.ex file and look for the following block:</p>
+
+
+
+
+<pre><code>#Other scopes may use custom stacks.
+  #scope &quot;/api&quot;, Testapi do
+     #pipe_through :api
+  #end
+</code></pre>
+
+
+
+
+<p>Un-comment this block and paste this line (It should show up in your terminal):</p>
+
+
+
+
+<p>resources &quot;/users&quot;, UserController, except: [:new, :edit]</p>
+
+
+
+
+<p>under “pipe_through” :api</p>
+
+
+
+
+<p>It should look like:</p>
+
+
+
+
+<pre><code>#Other scopes may use custom stacks.
+  scope &quot;/api&quot;, Testapi do
+     pipe_through :api
+     resources &quot;/users&quot;, UserController, except: [:new, :edit]
+  end
+</code></pre>
+
+
+
+
+<p>Then, back in your terminal run:</p>
+
+
+
+
+<pre><code>$mix ecto.migrate
+</code></pre>
+
+
+
+
+<p>This migrates your database.</p>
+
+
+
+
+<pre><code>$iex -S mix phoenix.server
+</code></pre>
+
+
+
+
+<p>This starts up your phoenix server and opens an interactive terminal.</p>
+
+
+
+
+<p>That is it! You have a JSON api. Let’s test it out.</p>
+
+
+
+
+<p>In another terminal window:</p>
+
+
+
+
+<pre><code>$curl -H &quot;Content-Type: application/json&quot; -X POST -d &#39;{&quot;user&quot;: {&quot;fullname&quot;: &quot;Jeff Baird&quot;, &quot;email&quot;: &quot;jeff@example.com&quot;}}&#39;   http://localhost:4000/api/users
+</code></pre>
+
+
+
+
+<p>Back in your phoenix server terminal you should see something like:</p>
+
+
+
+
+<pre><code>[info] POST /api/users
+[debug] Processing by Testapi.UserController.create/2
+  Parameters: %{&quot;user&quot; =&gt; %{&quot;email&quot; =&gt; &quot;jeff@example.com&quot;, &quot;fullname&quot; =&gt; &quot;Jeff&quot;}}
+  Pipelines: [:api]
+[debug] BEGIN [] OK query=142.8ms queue=4.2ms
+[debug] INSERT INTO &quot;users&quot; (&quot;email&quot;, &quot;fullname&quot;, &quot;inserted_at&quot;, &quot;updated_at&quot;) VALUES ($1, $2, $3, $4) RETURNING &quot;id&quot; [&quot;jeff@example.com&quot;, &quot;Jeff Baird&quot;, \{\{2015, 10, 3\}, \{17, 32, 48, 0\}\}, \{\{2015, 10, 3\}, \{17, 32, 48, 0\}\}] OK query=2.2ms
+</code></pre>
+
+
+
+
+<p>Cool!</p>
+
+
+
+
+<p>Let’s see if we can get data out of our api:</p>
+
+
+
+
+<pre><code>$curl -H &quot;Content-Type: application/json&quot; http://localhost:4000/api/users
+</code></pre>
+
+
+
+
+<p>You should see something like:</p>
+
+
+
+
+<pre><code>&#39;{&quot;data&quot;:[{&quot;id&quot;:1,&quot;fullname&quot;:&quot;Jeff Baird&quot;,&quot;email&quot;:&quot;jeff@example.com&quot;}]}
+</code></pre>
+
+
+
+
+<p>It works!</p>
+
+
+
+
+<p>This post is super basic and only meant to show you how fast you can get started developing apis with phoenix. I highly encourage you to go dive into phoenix some more. The documentation is great and the community is even better. Enjoy!</p>
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1022,243 +1246,6 @@ Jeff</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
-        <h1 class="entry-title"><a href="/blog/2012/05/29/testing-a-n00bs-reflection/">Testing - a N00b&#8217;s Reflection - Learn With Jeff</a></h1>
-      
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-05-29T10:00:00-07:00" pubdate data-updated="true">May 29<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I have officially spent more time testing and refactoring my code for my black jack game, <a href="https://github.com/jeffreybaird/RubyJack">RubyJack</a>, than I have on the original code base and it has taught me a big lesson: TEST FIRST.</p>
-
-
-
-
-<p>This is a topic that I don’t have the breadth of knowledge to really attack. Jeff Atwood does a much better job than I, <a href="http://www.codinghorror.com/blog/2006/07/i-pity-the-fool-who-doesnt-write-unit-tests.html">here</a>. I do, however, feel that I can add the perspective of a new programmer.</p>
-
-
-
-
-<p>The challenge of testing first as a n00b, is that when you are learning to program, you generally learn</p>
-
-
-
-
-<pre><code>    def print_hello_world
-
-
-      puts "hello world"
-
-    end
-
-    print_hello_world
-</code></pre>
-
-
-
-
-<p>before you learn</p>
-
-
-
-
-<pre><code>    it  "prints hello word" do
-
-      print_hello_world.should == "hello world"
-
-    end
-</code></pre>
-
-
-
-
-<p>I wouldn’t say this is a mistake since testing is inherently more complicated, but it does create a significant barrier to entry to the new programmer. This barrier is mainly a comfort level thing.</p>
-
-
-
-
-<p>When I was first learning about testing, I thought “I can really see the theoretical application of this, but my programs are so simple now that I don’t need tests.”</p>
-
-
-
-
-<p>BIG F&amp;<sup>%$ING</sup> MISTAKE.</p>
-
-
-
-
-<p>The big example, in <a href="https://github.com/jeffreybaird/RubyJack">RubyJack</a>, of where writing my tests first would have helped me, was during the refactoring process. The first draft of my code may not have been bad for a new programmer, but was(is) poorly written software on a whole. There were methods in classes where they didn’t make sense, arrays of strings where they should have been arrays of objects, 25 line methods that did one simple task and many, many other problems.</p>
-
-
-
-
-<p>Up to this point my tests consisted on running the program through my command line, playing the game till it broke and reading the error message. Not super efficient.</p>
-
-
-
-
-<p>So, after I published the first version of the gem (gem install RubyJack) I started to move stuff around. First, I did some simple refactoring of individual methods, no problems. Then I thought “oh, well this method that starts the game probably should be in the ‘Game class’ and not the ‘Player class.’”</p>
-
-
-
-
-<p>All Hell Broke Loose.</p>
-
-
-
-
-<p>Nothing worked anymore, I couldn’t even start the game let alone deal a card or initialize a deck.</p>
-
-
-
-
-<p>Thank god for “git reset –hard”.</p>
-
-
-
-
-<p>I was able to hop back to my latest commit and start again (more about using commits to your advantage later). Then, I wrote some tests. It was hard;  it hurt my head; I didn’t like it.</p>
-
-
-
-
-<p>I struggled through them and got (most of) them to pass. Around this time I brought in some professional help, Gavin. Gavin was nice enough to sit with me and help me do a little (a lot) of refactoring of my code. We moved some methods into classes where they made more sense, and created classes that should have been there from the beginning.</p>
-
-
-
-
-<p>Then I tried to do some more refactoring on my own, which led to even more problems. I hadn’t learned my lesson.</p>
-
-
-
-
-<p>Once again, I found myself reaching for “git reset”</p>
-
-
-
-
-<p>It was then that I resolved to write better tests. I re-watched the pragmatic studios video on unit testing and peppered Gavin with some more questions. Then, I wrote a bunch of tests and MADE THEM ALL PASS.</p>
-
-
-
-
-<p>When I originally wrote my tests, if I couldn’t get a test of a certain functionality to pass, I marked it as “pending” instead of figuring out the problem. Not this time. It took me hours, and until 2am, but I made them all pass.</p>
-
-
-
-
-<p>I then entered the process to which Gavin introduced me to:</p>
-
-
-
-
-<p>Red</p>
-
-
-
-
-<p>Green</p>
-
-
-
-
-<p>Refactor</p>
-
-
-
-
-<p>What that translates to is this:</p>
-
-
-
-
-<p>Check my tests, if they pass I make one small change. I then check my tests again, some of them may be failing, I want to make sure they are the ones I expect. Then, I continue tweaking the code till I get it to pass all the tests again (sometimes tweaking the tests too).</p>
-
-
-
-
-<p>Then I start the process all over again with my next change.</p>
-
-
-
-
-<p>The benefit to testing first, as I see it, is as it concerns the thought process towards your code. As <a href="http://blog.jtimothyking.com/2006/07/11/twelve-benefits-of-writing-unit-tests-first">J. Timothy King</a> States:</p>
-
-
-
-
-<blockquote><p>You ask, “What code will I write to generate a solution?” But that’s backward. The first thing you should be doing… The first thing you ask is <em>not</em>“What code will I write?” The first thing you ask is “How will I know that I’ve solved the problem?”</p></blockquote>
-
-
-
-
-<p>So, my tip for other n00bs out there is to learn to test sooner rather than later. You won’t regret it.</p>
-
-
-
-
-<h3>Thank You!</h3>
-
-
-
-
-<p>I want to give a huge public thank you to <a href="http://www.twitter.com/gstark">Gavin Stark</a> for helping me with the refactoring process and answering all my crazy n00b questions. Thanks Gavin! Also, thanks to <a href="blog.migrantstudios.com">Aubrey Goodman</a> who graciously takes my questions at all hours. Finally, I’d like to say thanks to <a href="http://alindeman.github.com/">Andy Lindeman</a> who went through and commented on my code on github! It is people like you guys that make the Ruby community awesome and make me glad to be a part of it.</p>
-
-
-
-
-<h3>Disclaimer, links, and tweets</h3>
-
-
-
-
-<p>I love to learn and I do not pretend to be an expert on the topics I post about. If I’m wrong please, let me know in the comments, I love feedback and you won’t offend me. Follow me on <a href="http://www.twitter.com/jeffrey_baird">Twitter</a>; I love to discuss Ruby, books and anything interesting.</p>
-
-
-
-
-<p>If you want to help an aspiring Rubyist, I’m on <a href="http://github.com/jeffreybaird">GitHub</a> and would love any feedback you have to offer.</p>
-
-
-
-
-<p>Many people have helped me learn, I would love to return the favor! <a href="http://jeffreyleebaird.com">Get in touch</a> and I’ll see if I can help.</p>
-
-
-
-
-<p>Thanks for reading!</p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -1274,6 +1261,10 @@ Jeff</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/10/03/building-a-json-api-with-phoenix/">Building a JSON API with Phoenix</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/02/10/can-you-learn-to-code/">Can You Learn to Code?</a>
       </li>
     
@@ -1287,10 +1278,6 @@ Jeff</p>
     
       <li class="post">
         <a href="/blog/2014/01/19/the-easiest-stew/">The Easiest Stew</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/07/31/moving-to-portland/">Moving to Portland</a>
       </li>
     
   </ul>
@@ -1335,7 +1322,7 @@ Jeff</p>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Jeffrey Baird -
+  Copyright &copy; 2015 - Jeffrey Baird -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
