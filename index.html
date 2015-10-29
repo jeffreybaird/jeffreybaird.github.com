@@ -9,7 +9,7 @@
   <meta name="author" content="Jeffrey Baird">
 
   
-  <meta name="description" content="I’ve been following Elixir for the last 18 months and finally, this week I was able to make it to ElixirConf. I’m glad I did. I had, up until this &hellip;">
+  <meta name="description" content="Let’s talk about publishing a hex package. (This post assumes that you have Erlang, Elixir and hex installed. If you don’t check out Elixir’s getting &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -86,6 +86,596 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
+        <h1 class="entry-title"><a href="/blog/2015/10/28/your-first-hex-package/">Your First Hex Package</a></h1>
+      
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-10-28T19:51:00-07:00" pubdate data-updated="true">Oct 28<span>th</span>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Let’s talk about publishing a hex package.</p>
+
+
+
+
+<p>(This post assumes that you have Erlang, Elixir and hex installed. If you don’t check out <a href="http://elixir-lang.org/getting-started/introduction.html">Elixir’s getting started guide</a>.)</p>
+
+
+
+
+<p>For the last few weeks I’ve been doing a deep dive into Elixir/Erlang’s success types (I will be posting more about that soon). During that time I ran into some issues where I was confused about the type signatures I was seeing. As a Rubyist, I found myself reaching for something like this:</p>
+
+
+
+
+<pre><code>&quot;foo&quot;.class #=&gt; String
+</code></pre>
+
+
+
+
+<p>However, because of Elixir’s pattern matching, this isn’t something you should actually be doing in your code. Instead we have guard clauses.</p>
+
+
+
+
+<pre><code>def foo(bar) when is_atom(bar) do
+  IO.puts(bar)
+end
+</code></pre>
+
+
+
+
+<p>In order to do a quick inspection of the types being passed into a given fuction, I need something that looks like this:</p>
+
+
+
+
+<pre><code>def foo(bar) do
+  Type.check(bar)
+    |&gt; IO.puts
+end
+</code></pre>
+
+
+
+
+<p>I built a little module to accomplish this functionality. I thought it would make a good example for this blog post.</p>
+
+
+
+
+<p>My goals for this package are as follows:</p>
+
+
+
+
+<ul>
+  <li>Simple API</li>
+  <li>Well tested</li>
+  <li>Well documented</li>
+</ul>
+
+
+
+
+<p>For the API, let’s take the above example. I want it to look something like this:</p>
+
+
+
+
+<pre><code>iex&gt; Type.check(:foo)
+&#39;Atom&#39;
+iex&gt; Type.check(%{hello: &#39;world&#39;})
+&#39;Map&#39;
+</code></pre>
+
+
+
+
+<p>I will start by creating the package:</p>
+
+
+
+
+<pre><code>$mix new type
+$cd type
+$mix test
+</code></pre>
+
+
+
+
+<p>Let’s take a look at the files that mix has generated for us.</p>
+
+
+
+
+<p>First we have the <code>config/config.exs</code>. We won’t be utilitizing this file in this exercise. This is the file you can use to add your own configurations to a package. There is further documentation <a href="http://elixir-lang.org/docs/v1.0/mix/Mix.Config.html">here</a> if you are interested.</p>
+
+
+
+
+<p>Next we have the <code>lib</code> folder. This is where all of the code for our package will go. Since we don’t have too much functionaility in this library, we will probably only need to use the provided <code>lib/type.ex</code> which has already defined a module for us.</p>
+
+
+
+
+<pre><code>defmodule Type do
+end
+</code></pre>
+
+
+
+
+<p>Then, under <code>test/</code>, we have two files: <code>test/test_helper.exs</code> and <code>test/type_test.exs.</code></p>
+
+
+
+
+<p>Finally, we have the README and the <code>mix.exs</code> file. The mix file is where we will list our dependencies and other package metadata.</p>
+
+
+
+
+<h3>Writing your first tests</h3>
+
+
+
+
+<p>We have a pretty good idea what we want our code to do, so let’s start by writing some basic tests.</p>
+
+
+
+
+<p>In <code>test/type_test.exs</code> we can start with the most basic types:</p>
+
+
+
+
+<pre><code>defmodule TypeTest do
+  use ExUnit.Case
+  doctest Type
+
+  test &quot;a number&quot; do
+    assert Type.check(1) == &#39;Integer&#39;
+  end
+
+  test &quot;a boolean&quot; do
+    assert Type.check(true) == &#39;Boolean&#39;
+  end
+
+  test &quot;a float&quot; do
+    assert Type.check(1.0) == &#39;Float&#39;
+  end
+
+  test &quot;a atom&quot; do
+    assert Type.check(:hi) == &#39;Atom&#39;
+  end
+
+  test &quot;a map&quot; do
+    assert Type.check(%{:hi =&gt; 1}) == &#39;Map&#39;
+  end
+
+  test &quot;a list&quot; do
+    assert Type.check([1,2,3])  == &#39;List&#39;
+  end
+
+  test &quot;a binary&quot; do
+    assert Type.check(&quot;abc&quot;) == &#39;Binary&#39;
+  end
+
+  test &quot;a bitstring&quot; do
+    assert Type.check(&lt;&lt; 1 :: size(1)&gt;&gt;) == &#39;Bitstring&#39;
+  end
+end
+</code></pre>
+
+
+
+
+<p>These are the ones I know off the top of my head. Looking at the available guard clauses, we have a few not covered by these tests:</p>
+
+
+
+
+<pre><code>is_nil(arg)
+is_function(arg)
+is_number(arg)
+is_pid(arg)
+is_port(arg)
+is_reference(arg)
+is_tuple(arg)
+</code></pre>
+
+
+
+
+<p>Out of these, I am least sure what <code>is_number</code> does. From the Elixir docs:</p>
+
+
+
+
+<blockquote>
+<p>is<em>number(term) Returns true if term is either an integer or a floating point number; otherwise returns false</em></p>
+</blockquote>
+
+
+
+
+<p>It looks like we don’t need to define this as it is a super type of floats and integers. There is no situation where I would want the <code>Type.check/1</code> function to return ‘Number’ instead of a ‘Float’ or ‘Integer’. I want the most specific type it can regcognize.</p>
+
+
+
+
+<p>Let’s implement tests for the rest of them:</p>
+
+
+
+
+<pre><code>  test &quot;function&quot; do
+    assert Type.check(&amp;(&amp;1+1)) == &#39;Function&#39;
+  end
+
+  test &quot;nil&quot; do
+    assert Type.check(nil) == &#39;Nil&#39;
+  end
+
+  test &quot;is pid&quot; do
+    pid = Process.spawn(Type, :check, [&quot;hi&quot;],[])
+    assert Type.check(pid) == &#39;Pid&#39;
+  end
+
+  test &quot;is port&quot; do
+    port = Port.open({:spawn,&#39;test&#39;},[])
+    assert Type.check(port) == &#39;Port&#39;
+  end
+
+  test &quot;a reference&quot; do
+    pid = Process.spawn(Type, :check, [&quot;hi&quot;],[])
+    ref  = Process.monitor(pid)
+    assert Type.check(ref) == &#39;Reference&#39;
+  end
+
+  test &quot;a tuple&quot; do
+    assert Type.check({:ok, &quot;200&quot;}) == &#39;Tuple&#39;
+  end
+</code></pre>
+
+
+
+
+<p>That should cover the rest of the types we want our function to handle.</p>
+
+
+
+
+<h3>Making the tests pass</h3>
+
+
+
+
+<p>I will start out with a function that takes any argument, and returns a character list representation of the type of the argument.</p>
+
+
+
+
+<p>To simplify the API, I will create a single function as an entry point to the module that calls a private function. I use the typespec notation to show that this function takes any type and always returns a character list.</p>
+
+
+
+
+<pre><code>@spec check(any()) :: char_list
+def check(arg), do: _check(arg)
+</code></pre>
+
+
+
+
+<p>I will implement the rest of the module. We can use the built in guard clauses.</p>
+
+
+
+
+<pre><code> defp _check(arg) when is_map(arg), do: &#39;Map&#39;
+ defp _check(arg) when is_list(arg), do: &#39;List&#39;
+ defp _check(arg) when is_atom(arg), do: &#39;Atom&#39;
+ defp _check(arg) when is_binary(arg), do: &#39;Binary&#39;
+ defp _check(arg) when is_bitstring(arg), do: &#39;Bitstring&#39;
+ defp _check(arg) when is_boolean(arg), do: &#39;Boolean&#39;
+ defp _check(arg) when is_float(arg), do: &#39;Float&#39;
+ defp _check(arg) when is_function(arg), do: &#39;Function&#39;
+ defp _check(arg) when is_integer(arg), do: &#39;Integer&#39;
+ defp _check(arg) when is_number(arg), do: &#39;Number&#39;
+ defp _check(arg) when is_pid(arg), do: &#39;Pid&#39;
+ defp _check(arg) when is_port(arg), do: &#39;Port&#39;
+ defp _check(arg) when is_reference(arg), do: &#39;Reference&#39;
+ defp _check(arg) when is_tuple(arg), do: &#39;Tuple&#39;
+ defp _check(arg) when is_nil(arg), do: &#39;Nil&#39;
+</code></pre>
+
+
+
+
+<p>Let’s run the tests.</p>
+
+
+
+
+<pre><code>$mix test
+</code></pre>
+
+
+
+
+<p>We see two failing tests:</p>
+
+
+
+
+<pre><code>  1) test a boolean (TypeTest)
+ test/type_test.exs:9
+ Assertion with == failed
+ code: Type.check(true) == &#39;Boolean&#39;
+ lhs:  &#39;Atom&#39;
+ rhs:  &#39;Boolean&#39;
+ stacktrace:
+   test/type_test.exs:10
+
+  2) test nil (TypeTest)
+ test/type_test.exs:41
+ Assertion with == failed
+ code: Type.check(nil) == &#39;Nil&#39;
+ lhs:  &#39;Atom&#39;
+ rhs:  &#39;Nil&#39;
+ stacktrace:
+   test/type_test.exs:42
+</code></pre>
+
+
+
+
+<p>It looks like booleans and nil must be implemented under the hood as atoms. Because Elixir will match in the order the functions are defined, and because <code>defp _check(arg) when is_atom(arg), do: &#39;Atom&#39; </code> is defined third, it is being called before the checks for booleans and nil are reached. A quick check of the documentation confirms my suspicion: <a href="http://elixir-lang.org/getting-started/basic-types.html#atoms">“The booleans true and false are, in fact, atoms.”</a></p>
+
+
+
+
+<p>So, we move the <code>defp _check(arg) when is_atom(arg), do: &#39;Atom&#39; </code> to the bottom and rerun the tests. They all pass.</p>
+
+
+
+
+<p>Next, we can add documentation and a doctest:</p>
+
+
+
+
+<pre><code> @doc &quot;&quot;&quot;
+  Returns  a string representation of the type of a passed argument
+
+  ## Example
+  iex&gt; Type.check(:hello_world)
+  &#39;Atom&#39;
+  &quot;&quot;&quot;
+  @spec check(any()) :: char_list
+  def check(arg), do: _check(arg
+</code></pre>
+
+
+
+
+<p>In the test file we see the line:</p>
+
+
+
+
+<pre><code> doctest Type
+</code></pre>
+
+
+
+
+<p>This runs our doctests for the <code>Type</code> module with the rest of our test suite. Let’s run the tests again to make sure the doctest passes.</p>
+
+
+
+
+<pre><code>$mix test
+</code></pre>
+
+
+
+
+<p>It does. Let’s publish our package.</p>
+
+
+
+
+<p>Your next step will be to register as a hex user. Here is the example from the <a href="https://hex.pm/docs/publish">hex documentation</a>:</p>
+
+
+
+
+<pre><code>$ mix hex.user register
+Username: johndoe
+Email: john.doe@example.com
+Password:
+Password (confirm):
+Registering...
+Generating API key...
+You are required to confirm your email to access your account, a confirmation email has been sent to john.doe@example.com
+</code></pre>
+
+
+
+
+<p>Then, we need to add metadata to the <code>mix.exs</code> file. Mine looks like:</p>
+
+
+
+
+<pre><code>defmodule Type.Mixfile do
+  use Mix.Project
+
+  def project do
+    [app: :type,
+     version: &quot;0.0.1&quot;,
+     elixir: &quot;~&gt; 1.2&quot;,
+     build_embedded: Mix.env == :prod,
+     start_permanent: Mix.env == :prod,
+     description: &quot;A module for checking the type of an argument&quot;,
+     package: package,
+     deps: deps]
+  end
+
+  def package do
+    [
+      maintainers: [&quot;Jeffrey Baird&quot;],
+      licenses: [&quot;MIT&quot;],
+      links: %{&quot;GitHub&quot; =&gt; &quot;https://github.com/jeffreybaird/type&quot;}
+    ]
+  end
+
+  # Configuration for the OTP application
+  #
+  # Type &quot;mix help compile.app&quot; for more information
+  def application do
+    [applications: [:logger]]
+  end
+
+  defp deps do
+    []
+  end
+end
+</code></pre>
+
+
+
+
+<p>After that is set up, we can build and publish our app.</p>
+
+
+
+
+<pre><code>$mix hex.build
+$mix hex.publish
+</code></pre>
+
+
+
+
+<p>We then get the message “Don&#39;t forget to upload your documentation with <code>mix hex.docs</code>”</p>
+
+
+
+
+<p>So we run that:</p>
+
+
+
+
+<pre><code>$mix hex.docs
+Compiled lib/type.ex
+Generated type app
+** (Mix) The task &quot;docs&quot; could not be found. Did you mean &quot;do&quot;?
+</code></pre>
+
+
+
+
+<p>This isn’t a very helpful error. A quick Google search tells me that in order to generate docs I need Exdoc. So, let’s add that as a dependency.</p>
+
+
+
+
+<p>In <code>mix.exs</code> we can add these:</p>
+
+
+
+
+<pre><code> defp deps do
+    [{:earmark, &quot;&gt;= 0.0.0&quot;, only: :dev},
+    {:ex_doc, &quot;~&gt; 0.10&quot;, only: :dev}]
+  end
+</code></pre>
+
+
+
+
+<p>Then we run:</p>
+
+
+
+
+<pre><code>$mix deps.get
+</code></pre>
+
+
+
+
+<p>And then generate the docs with:</p>
+
+
+
+
+<pre><code>$mix docs
+</code></pre>
+
+
+
+
+<p>And publish them:</p>
+
+
+
+
+<pre><code>$mix hex.docs
+</code></pre>
+
+
+
+
+<h3>Conclusion</h3>
+
+
+
+
+<p>That is it. You have published your first hex package! Hopefully you enjoyed the post. If you find any errors, please let me know.</p>
+
+
+<p></body>
+</html></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1202,50 +1792,6 @@ Jeff</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
-        <h1 class="entry-title"><a href="/blog/2012/05/31/goals-for-the-month-of-june/">Goals for the Month of June. - Learn With Jeff</a></h1>
-      
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-05-31T10:00:00-07:00" pubdate data-updated="true">May 31<span>st</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>In my learning, I find it immensely helpful to set lofty (but possible and measurable) goals. I didn’t my goal for the month of May but it was pretty straight-forward, publish a gem. I accomplished that goal, twice.</p>
-
-<p>I’ve decided to talk about my goals out for the month of June since they are much more challenging than my goals for May. First, I want to publish a “useful” gem/plugin/program/app. Second, I want to make some contribution to an open source project.</p>
-
-<p>Both of these are a little subjective, so let me define further. I define “useful” as someone other than myself <span style="text-decoration: underline;">uses</span> it. Not just downloads it, actually uses my creation. Now, since I can’t control whether or not my contribution to an open source project is accepted, I will be a little more loose in that definition. I want to issue a meaningful pull request on a public repo that has multiple contributors.</p>
-
-<p>I realize that the above are huge challenges for a beginning programmer, but I wouldn’t get anywhere if I only tried to do comfortable things :)</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -1261,6 +1807,10 @@ Jeff</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/10/28/your-first-hex-package/">Your First Hex Package</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/10/03/building-a-json-api-with-phoenix/">Building a JSON API with Phoenix</a>
       </li>
     
@@ -1274,10 +1824,6 @@ Jeff</p>
     
       <li class="post">
         <a href="/blog/2014/01/25/easy-broiled-rib-eye/">Easy Broiled Rib-eye</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/19/the-easiest-stew/">The Easiest Stew</a>
       </li>
     
   </ul>
