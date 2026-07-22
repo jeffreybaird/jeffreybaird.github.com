@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://jeffreybaird.github.io/sitemap.xml 

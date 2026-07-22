@@ -411,6 +411,7 @@ function App() {
 
       <div style={{ maxWidth: 620, margin: "0 auto" }}>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 22 }}>
+          <div style={{ ...mono, fontSize: 11, letterSpacing: 2, color: C.chalkDim, textTransform: "uppercase" }}>Matchday · Find Your Club</div>
           <div style={{ display: "flex", gap: 8 }}>
             {stage !== "intro" && (
               <button onClick={reset} title="Restart from the first question" style={{
@@ -419,11 +420,17 @@ function App() {
                 border: `1px solid ${C.line}`, borderRadius: 999, padding: "5px 10px",
               }}>↺ Restart</button>
             )}
+            <button onClick={() => setCoach((c) => !c)} style={{
+              ...mono, fontSize: 10, letterSpacing: 1, textTransform: "uppercase",
+              background: coach ? C.amber : "transparent", color: coach ? "#1a1305" : C.amberDim,
+              border: `1px solid ${coach ? C.amber : C.amberDim}`, borderRadius: 999, padding: "5px 10px",
+            }}>Coach's view</button>
           </div>
         </div>
 
         {stage === "intro" && (
           <div>
+            <div style={{ ...mono, fontSize: 12, color: C.lime, letterSpacing: 1, marginBottom: 10 }}>15 questions, then 4 dials</div>
             <h1 style={{ ...disp, fontWeight: 900, fontSize: 52, lineHeight: 0.95, margin: "0 0 14px", letterSpacing: -1 }}>
               FIND THE CLUB<br />YOU SHOULD<br /><span style={{ color: C.amber }}>ACTUALLY PICK.</span>
             </h1>
