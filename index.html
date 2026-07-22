@@ -530,15 +530,6 @@ function App() {
                 </div>
               ))}
             </div>
-            <div style={{ marginTop: 26, padding: 16, borderRadius: 12, border: `1px solid ${C.line}`, background: "rgba(0,0,0,.2)" }}>
-              <div style={{ ...mono, fontSize: 10, letterSpacing: 1, color: C.amberDim, textTransform: "uppercase", marginBottom: 12 }}>Your four attributes</div>
-              <TraitBoard vec={vec} />
-              <div style={{ ...mono, fontSize: 10, letterSpacing: 1, color: C.amberDim, textTransform: "uppercase", margin: "18px 0 4px", display: "flex", justifyContent: "space-between" }}>
-                <span>Ranking · equal vs your weights</span>
-                <span style={{ color: C.chalkDim }}>▲▼ move vs equal</span>
-              </div>
-              <LiveRanking vec={vec} weights={weights} compare={true} />
-            </div>
             <button onClick={finish} style={{
               ...disp, fontWeight: 800, fontSize: 17, letterSpacing: 0.5, textTransform: "uppercase", marginTop: 26,
               background: C.amber, color: "#1a1305", border: "none", borderRadius: 10, padding: "14px 30px", boxShadow: `0 8px 24px ${C.shadow}`,
