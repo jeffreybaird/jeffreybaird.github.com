@@ -307,16 +307,50 @@ function LiveRanking({ vec, weights, basePos, started, compare }) {
   );
 }
 
+// team name -> crest file in images/ (falls back to initials if missing)
+const BADGE = {
+  "Man City": "8456-Man City.png",
+  "Liverpool": "8650-Liverpool.png",
+  "Arsenal": "9825-Arsenal.png",
+  "Man United": "10260-Man United.png",
+  "Chelsea": "8455-Chelsea.png",
+  "Tottenham": "8586-Tottenham.png",
+  "Newcastle": "10261-Newcastle.png",
+  "Aston Villa": "10252-Aston Villa.png",
+  "Brighton": "10204-Brighton.png",
+  "Crystal Palace": "9826-Crystal Palace.png",
+  "Nott'm Forest": "10203-Nottm Forest.png",
+  "Everton": "8668-Everton.png",
+  "Fulham": "9879-Fulham.png",
+  "Brentford": "9937_xsmall-Brentford.png",
+  "Bournemouth": "8678-Bournemouth.png",
+  "Sunderland": "8472-Sunderland.png",
+  "Leeds": "8463-Leeds.png",
+  "Ipswich": "9902-Ipswich.png",
+  "Coventry": "8669-Coventry.png",
+  "Hull": "8667-Hull.png",
+};
+
 function Badge({ name, size = 92 }) {
+  const file = BADGE[name];
   const initials = name.split(" ").map((w) => w[0]).join("").slice(0, 3).toUpperCase();
   return (
     <div style={{
       width: size, height: size, flex: "0 0 auto", borderRadius: 14,
       background: `linear-gradient(160deg, ${C.pitch2}, #071410)`, border: `1.5px solid ${C.line}`,
-      display: "flex", alignItems: "center", justifyContent: "center",
+      display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden",
       boxShadow: `inset 0 1px 0 rgba(255,255,255,.04), 0 8px 24px ${C.shadow}`,
     }}>
-      <span style={{ ...disp, fontWeight: 900, fontSize: size * 0.32, color: C.amber, letterSpacing: 1 }}>{initials}</span>
+      {file ? (
+        <img src={`images/${encodeURIComponent(file)}`} alt={name}
+          style={{ width: size * 0.74, height: size * 0.74, objectFit: "contain" }}
+          onError={(e) => {
+            e.target.style.display = "none";
+            e.target.nextSibling.style.display = "block";
+          }} />
+      ) : null}
+      <span style={{ ...disp, fontWeight: 900, fontSize: size * 0.32, color: C.amber, letterSpacing: 1,
+        display: file ? "none" : "block" }}>{initials}</span>
     </div>
   );
 }
