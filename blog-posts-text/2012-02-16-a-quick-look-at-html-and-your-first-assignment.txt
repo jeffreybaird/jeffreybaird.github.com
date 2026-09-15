@@ -1,0 +1,16 @@
+Title: A Quick Look at HTML and Your First Assignment
+Date: 2012-02-16T10:00:00-08:00
+Source: blog/2012/02/16/a-quick-look-at-html-and-your-first-assignment/index.html
+
+Hello!
+
+Today we are going to look at a little basic HTML. I’m running behind so this will be a short post.
+
+This is what a (super) basic HTML file looks like:
+
+`
+This is the Header
+
+This is a paragraph in the body of the html
+
+`

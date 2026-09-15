@@ -1,0 +1,67 @@
+Title: For My First Lesson My Digital Resume
+Date: 2012-02-13T10:00:00-08:00
+Source: blog/2012/02/13/for-my-first-lesson-my-digital-resume/index.html
+
+I’ve done a lot of cool things in my short 24 years. I’m proud of my accomplishments and I want to show them off to future employers, partners and investors. To do this, I am making an online resume.
+
+First, I need a url. To do this you need to find an available domain name and a domain registration company.
+
+Here are some of the tools I used:
+
+Domai.nr - This tool helps you find interesting domain names
+
+Fat Cow - I love this website. It handles my domain registration as well as my hosting. It has one click Word Press installation, unlimited storage and a free domain name. It may not be the best in the market but I have been very happy with them.
+
+Some other tools:
+
+Domain Registrars
+
+Name Cheap - Voted number one by lifehacker
+
+1&1 - Came highly recommended
+
+Godaddy - I have used in the past, generally more expensive and not user friendly
+
+Website Hosting
+
+Blue Host - Highly recommended by friends
+
+Host Monster - Generally good online reviews
+
+Godaddy - Popular but again, more expensive and not user friendly
+
+What I did:
+
+Searched for domains using domia.nr. I tried a few combinations and settled on hirejeffbaird.com
+
+Opened a new account of Fat Cow, entered in my desired domain name and credit card information. I am now the proud owner of hirejeffbaird.com and have a hosting account to go along with it. Yay!
+
+Tomorrow’s Lesson: Getting Started with Word Press
+
+Posted by Jeffrey Baird
+
+Feb 13th, 2012
+
+Tweet
+
+« I am Jeff. Learn cool shit with me. - Learn With Jeff
+
+Lesson 2 An Intro to HTML - Learn With Jeff »
+
+Recent Posts
+
+Your First Hex Package
+
+Building a JSON API with Phoenix
+
+Can You Learn to Code?
+
+Free Consulting
+
+Easy Broiled Rib-eye
+
+GitHub Repos
+
+Status updating...
+
+@jeffreybaird on GitHub

@@ -1,0 +1,28 @@
+Title: Sunday's Challenge
+Date: 2012-05-06T10:00:00-07:00
+Source: blog/2012/05/06/sundays-challenge/index.html
+
+Full of the knowledge gained from Coder Night on Thursday, I made an attempt at creating a poker game. My original plan was to create three classes, a Player class, a Deck class and a Game class. The general construction of the game would be the Game class would use take a new deck object and pop the last card out of the shuffled array and assign it to one of the players in the array “hand”
+
+The first problem I ran into was getting each player cards from the same deck. When I wrote the program the first time I assigned a new deck to each player.
+
+I think I finally figured out the problem there, but I broke the program :/
+
+I am pretty sure the problem is somewhere in my Game class. Any ideas?
+
+require_relative 'player'
+class Game
+attr_reader :hand
+attr_accessor :make_game
+def initialize numplayers
+@numplayers = numplayers
+hand = []
+end
+def make_game
+i = 0
+while i &lt; @numplayers
+hand &lt;&lt; Player.new()
+i+=1
+end
+end
+end

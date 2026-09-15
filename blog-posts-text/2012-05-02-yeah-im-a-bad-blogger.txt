@@ -1,0 +1,41 @@
+Title: Yeah... I'm a Bad Blogger.
+Date: 2012-05-02T10:00:00-07:00
+Source: blog/2012/05/02/yeah-im-a-bad-blogger/index.html
+
+I’m coming back now, I promise
+
+I’m sorry, audience of zero, I haven’t been updating you on my learning process or helping you keep up. The problem is, I have been moving way too fast to write about it every day. So, to update you:
+
+HTML:
+
+While I am no master, I plowed through my HTML book and felt comfortable enough to move on.
+
+CSS:
+
+I know the concepts of CSS, I know what it can do and I know where to look up commands, I think I will get better by doing.
+
+So the blog originally was for you to learn with me and I dropped the ball on keeping up with it. Sorry.
+
+So, Where am I now?
+
+JavaScript
+
+I have been playing around with codecademy for a few months now and I love it. The exercises are challenging and you have a lot of freedom to mess around. It was a great intro to programming and I have since expanded my pursuits!
+
+Ruby
+
+Through the urging of my wonderful friends Jessica Barnett and Aubrey Goodman, I decided to pursue Ruby. I love it. Actually love is a gross understatement. When I sleep, I have dreams of objects and methods dancing in my head (you think I’m joking).
+
+I am currently working my way through the Learn to Program by Chris Pine (highly recommend) and a course offered by Pragmatic Studios (equally awesome).
+
+Needless to say, I don’t want to do anything else but program in Ruby for the foreseeable future.
+
+General Computer Science
+
+For this I am reading Schaum’s Outline which moves really fast but is completely worth the effort. I think this will prepare me well for some further exploration into algorithms and databases.
+
+Java
+
+I am also going through Standford’s Intro to Programming Methodology and Computer Science class to hopefully give me some training in larger theories and best practices of software design.
+
+So, yes I am busy. I will however try to post more often with some tidbits, challenges and advice I pick up along the way. I hope you continue to read!

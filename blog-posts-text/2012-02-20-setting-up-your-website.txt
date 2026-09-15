@@ -1,0 +1,41 @@
+Title: Setting Up Your Website
+Date: 2012-02-20T10:00:00-08:00
+Source: blog/2012/02/20/setting-up-your-website/index.html
+
+Homework Answers:
+
+<html> and </html> let the browser know where the html document begins and ends
+
+<head> and </head> starts and ends the page “head”
+
+<title> and </title> Gives the page a title
+
+<body> and </body> starts and ends the “body” of the document.
+
+<h1> and </h1> changes the formatting of the enclosed text to the size of  heading 1
+
+<p> and </p> shows when a paragraph begins and ends
+
+<h2> and </h2> Same as heading 1 except slightly smaller.  There is a total of 6 heading sizes
+
+Today’s Lesson
+
+Setting up your website
+
+In order to begin creating your website you have to first choose a text editor. If you have a Mac you can use TextEdit. If you have a PC, Notepad comes standard. Thanks to Jessica I will be using TextMate which is a text editor made specially for developers.
+
+So open up the text editor of your choice and make sure that it is set to a plain text format (not necessary if using TextMate)
+
+Save the file as “index.html” to a folder called “learnwithjeff.”
+
+Now, try creating a file like the one I did in my previous post. Once you have finished open the file using your browser and check out your first HTML website!
+
+Posted by Jeffrey Baird
+
+Feb 20th, 2012
+
+Tweet
+
+« A Quick Look at HTML and Your First Assignment - Learn With Jeff
+
+Yeah... I'm a bad blogger. - Learn With Jeff »

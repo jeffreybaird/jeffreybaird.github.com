@@ -1,0 +1,84 @@
+Title: Building a JSON API With Phoenix
+Date: 2015-10-03T10:56:00-07:00
+Source: blog/2015/10/03/building-a-json-api-with-phoenix/index.html
+
+I’ve been following Elixir for the last 18 months and finally, this week I was able to make it to ElixirConf. I’m glad I did. I had, up until this point, been very skeptical about phoenix. I really enjoyed writing in Elixir but I wasn’t convinced that the language needed a Rails. However, the ease in which you can create apis is just too cool. I thought that I would share just how easy it is.
+
+Dependencies
+
+Install Elixir
+
+This will help you install Erlang, Mix, Elixir and other Elixir specific tools
+
+Install Phoenix
+
+This has the instructions for installing hex, phoenix and configuring your database. Phoenix, by default, uses postgres. I use the Postgres.app but you can use the install you prefer.
+
+Let’s Get Started
+
+$mix phoenix.new testapi
+$cd testapi
+$mix ecto.create
+$mix phoenix.gen.json User users fullname:string email:string
+
+This will create a bunch of files that do a bunch of different stuff. But, the point of this post isn’t to explain how phoenix works to you. Instead it is to show you how fast you can get an api built.
+
+Open you web/router.ex file and look for the following block:
+
+#Other scopes may use custom stacks.
+#scope "/api", Testapi do
+#pipe_through :api
+#end
+
+Un-comment this block and paste this line (It should show up in your terminal):
+
+resources "/users", UserController, except: [:new, :edit]
+
+under “pipe_through” :api
+
+It should look like:
+
+#Other scopes may use custom stacks.
+scope "/api", Testapi do
+pipe_through :api
+resources "/users", UserController, except: [:new, :edit]
+end
+
+Then, back in your terminal run:
+
+$mix ecto.migrate
+
+This migrates your database.
+
+$iex -S mix phoenix.server
+
+This starts up your phoenix server and opens an interactive terminal.
+
+That is it! You have a JSON api. Let’s test it out.
+
+In another terminal window:
+
+$curl -H "Content-Type: application/json" -X POST -d '{"user": {"fullname": "Jeff Baird", "email": "jeff@example.com"}}' http://localhost:4000/api/users
+
+Back in your phoenix server terminal you should see something like:
+
+[info] POST /api/users
+[debug] Processing by Testapi.UserController.create/2
+Parameters: %{"user" => %{"email" => "jeff@example.com", "fullname" => "Jeff"}}
+Pipelines: [:api]
+[debug] BEGIN [] OK query=142.8ms queue=4.2ms
+[debug] INSERT INTO "users" ("email", "fullname", "inserted_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id" ["jeff@example.com", "Jeff Baird", \{\{2015, 10, 3\}, \{17, 32, 48, 0\}\}, \{\{2015, 10, 3\}, \{17, 32, 48, 0\}\}] OK query=2.2ms
+
+Cool!
+
+Let’s see if we can get data out of our api:
+
+$curl -H "Content-Type: application/json" http://localhost:4000/api/users
+
+You should see something like:
+
+'{"data":[{"id":1,"fullname":"Jeff Baird","email":"jeff@example.com"}]}
+
+It works!
+
+This post is super basic and only meant to show you how fast you can get started developing apis with phoenix. I highly encourage you to go dive into phoenix some more. The documentation is great and the community is even better. Enjoy!

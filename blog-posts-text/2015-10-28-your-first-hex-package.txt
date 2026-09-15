@@ -1,0 +1,314 @@
+Title: Your First Hex Package
+Date: 2015-10-28T19:51:00-07:00
+Source: blog/2015/10/28/your-first-hex-package/index.html
+
+Let’s talk about publishing a hex package.
+
+(This post assumes that you have Erlang, Elixir and hex installed. If you don’t check out Elixir’s getting started guide.)
+
+For the last few weeks I’ve been doing a deep dive into Elixir/Erlang’s success types (I will be posting more about that soon). During that time I ran into some issues where I was confused about the type signatures I was seeing. As a Rubyist, I found myself reaching for something like this:
+
+"foo".class #=> String
+
+However, because of Elixir’s pattern matching, this isn’t something you should actually be doing in your code. Instead we have guard clauses.
+
+def foo(bar) when is_atom(bar) do
+IO.puts(bar)
+end
+
+In order to do a quick inspection of the types being passed into a given fuction, I need something that looks like this:
+
+def foo(bar) do
+Type.check(bar)
+|> IO.puts
+end
+
+I built a little module to accomplish this functionality. I thought it would make a good example for this blog post.
+
+My goals for this package are as follows:
+
+Simple API
+
+Well tested
+
+Well documented
+
+For the API, let’s take the above example. I want it to look something like this:
+
+iex> Type.check(:foo)
+'Atom'
+iex> Type.check(%{hello: 'world'})
+'Map'
+
+I will start by creating the package:
+
+$mix new type
+$cd type
+$mix test
+
+Let’s take a look at the files that mix has generated for us.
+
+First we have the config/config.exs. We won’t be utilitizing this file in this exercise. This is the file you can use to add your own configurations to a package. There is further documentation here if you are interested.
+
+Next we have the lib folder. This is where all of the code for our package will go. Since we don’t have too much functionaility in this library, we will probably only need to use the provided lib/type.ex which has already defined a module for us.
+
+defmodule Type do
+end
+
+Then, under test/, we have two files: test/test_helper.exs and test/type_test.exs.
+
+Finally, we have the README and the mix.exs file. The mix file is where we will list our dependencies and other package metadata.
+
+Writing your first tests
+
+We have a pretty good idea what we want our code to do, so let’s start by writing some basic tests.
+
+In test/type_test.exs we can start with the most basic types:
+
+defmodule TypeTest do
+use ExUnit.Case
+doctest Type
+
+test "a number" do
+assert Type.check(1) == 'Integer'
+end
+
+test "a boolean" do
+assert Type.check(true) == 'Boolean'
+end
+
+test "a float" do
+assert Type.check(1.0) == 'Float'
+end
+
+test "a atom" do
+assert Type.check(:hi) == 'Atom'
+end
+
+test "a map" do
+assert Type.check(%{:hi => 1}) == 'Map'
+end
+
+test "a list" do
+assert Type.check([1,2,3]) == 'List'
+end
+
+test "a binary" do
+assert Type.check("abc") == 'Binary'
+end
+
+test "a bitstring" do
+assert Type.check(<< 1 :: size(1)>>) == 'Bitstring'
+end
+end
+
+These are the ones I know off the top of my head. Looking at the available guard clauses, we have a few not covered by these tests:
+
+is_nil(arg)
+is_function(arg)
+is_number(arg)
+is_pid(arg)
+is_port(arg)
+is_reference(arg)
+is_tuple(arg)
+
+Out of these, I am least sure what is_number does. From the Elixir docs:
+
+isnumber(term) Returns true if term is either an integer or a floating point number; otherwise returns false
+
+It looks like we don’t need to define this as it is a super type of floats and integers. There is no situation where I would want the Type.check/1 function to return ‘Number’ instead of a ‘Float’ or ‘Integer’. I want the most specific type it can regcognize.
+
+Let’s implement tests for the rest of them:
+
+test "function" do
+assert Type.check(&(&1+1)) == 'Function'
+end
+
+test "nil" do
+assert Type.check(nil) == 'Nil'
+end
+
+test "is pid" do
+pid = Process.spawn(Type, :check, ["hi"],[])
+assert Type.check(pid) == 'Pid'
+end
+
+test "is port" do
+port = Port.open({:spawn,'test'},[])
+assert Type.check(port) == 'Port'
+end
+
+test "a reference" do
+pid = Process.spawn(Type, :check, ["hi"],[])
+ref = Process.monitor(pid)
+assert Type.check(ref) == 'Reference'
+end
+
+test "a tuple" do
+assert Type.check({:ok, "200"}) == 'Tuple'
+end
+
+That should cover the rest of the types we want our function to handle.
+
+Making the tests pass
+
+I will start out with a function that takes any argument, and returns a character list representation of the type of the argument.
+
+To simplify the API, I will create a single function as an entry point to the module that calls a private function. I use the typespec notation to show that this function takes any type and always returns a character list.
+
+@spec check(any()) :: char_list
+def check(arg), do: _check(arg)
+
+I will implement the rest of the module. We can use the built in guard clauses.
+
+defp _check(arg) when is_map(arg), do: 'Map'
+defp _check(arg) when is_list(arg), do: 'List'
+defp _check(arg) when is_atom(arg), do: 'Atom'
+defp _check(arg) when is_binary(arg), do: 'Binary'
+defp _check(arg) when is_bitstring(arg), do: 'Bitstring'
+defp _check(arg) when is_boolean(arg), do: 'Boolean'
+defp _check(arg) when is_float(arg), do: 'Float'
+defp _check(arg) when is_function(arg), do: 'Function'
+defp _check(arg) when is_integer(arg), do: 'Integer'
+defp _check(arg) when is_number(arg), do: 'Number'
+defp _check(arg) when is_pid(arg), do: 'Pid'
+defp _check(arg) when is_port(arg), do: 'Port'
+defp _check(arg) when is_reference(arg), do: 'Reference'
+defp _check(arg) when is_tuple(arg), do: 'Tuple'
+defp _check(arg) when is_nil(arg), do: 'Nil'
+
+Let’s run the tests.
+
+$mix test
+
+We see two failing tests:
+
+1) test a boolean (TypeTest)
+test/type_test.exs:9
+Assertion with == failed
+code: Type.check(true) == 'Boolean'
+lhs: 'Atom'
+rhs: 'Boolean'
+stacktrace:
+test/type_test.exs:10
+
+2) test nil (TypeTest)
+test/type_test.exs:41
+Assertion with == failed
+code: Type.check(nil) == 'Nil'
+lhs: 'Atom'
+rhs: 'Nil'
+stacktrace:
+test/type_test.exs:42
+
+It looks like booleans and nil must be implemented under the hood as atoms. Because Elixir will match in the order the functions are defined, and because defp _check(arg) when is_atom(arg), do: 'Atom' is defined third, it is being called before the checks for booleans and nil are reached. A quick check of the documentation confirms my suspicion: “The booleans true and false are, in fact, atoms.”
+
+So, we move the defp _check(arg) when is_atom(arg), do: 'Atom' to the bottom and rerun the tests. They all pass.
+
+Next, we can add documentation and a doctest:
+
+@doc """
+Returns a string representation of the type of a passed argument
+
+## Example
+iex> Type.check(:hello_world)
+'Atom'
+"""
+@spec check(any()) :: char_list
+def check(arg), do: _check(arg
+
+In the test file we see the line:
+
+doctest Type
+
+This runs our doctests for the Type module with the rest of our test suite. Let’s run the tests again to make sure the doctest passes.
+
+$mix test
+
+It does. Let’s publish our package.
+
+Your next step will be to register as a hex user. Here is the example from the hex documentation:
+
+$ mix hex.user register
+Username: johndoe
+Email: john.doe@example.com
+Password:
+Password (confirm):
+Registering...
+Generating API key...
+You are required to confirm your email to access your account, a confirmation email has been sent to john.doe@example.com
+
+Then, we need to add metadata to the mix.exs file. Mine looks like:
+
+defmodule Type.Mixfile do
+use Mix.Project
+
+def project do
+[app: :type,
+version: "0.0.1",
+elixir: "~> 1.2",
+build_embedded: Mix.env == :prod,
+start_permanent: Mix.env == :prod,
+description: "A module for checking the type of an argument",
+package: package,
+deps: deps]
+end
+
+def package do
+[
+maintainers: ["Jeffrey Baird"],
+licenses: ["MIT"],
+links: %{"GitHub" => "https://github.com/jeffreybaird/type"}
+]
+end
+
+# Configuration for the OTP application
+#
+# Type "mix help compile.app" for more information
+def application do
+[applications: [:logger]]
+end
+
+defp deps do
+[]
+end
+end
+
+After that is set up, we can build and publish our app.
+
+$mix hex.build
+$mix hex.publish
+
+We then get the message “Don't forget to upload your documentation with mix hex.docs”
+
+So we run that:
+
+$mix hex.docs
+Compiled lib/type.ex
+Generated type app
+** (Mix) The task "docs" could not be found. Did you mean "do"?
+
+This isn’t a very helpful error. A quick Google search tells me that in order to generate docs I need Exdoc. So, let’s add that as a dependency.
+
+In mix.exs we can add these:
+
+defp deps do
+[{:earmark, ">= 0.0.0", only: :dev},
+{:ex_doc, "~> 0.10", only: :dev}]
+end
+
+Then we run:
+
+$mix deps.get
+
+And then generate the docs with:
+
+$mix docs
+
+And publish them:
+
+$mix hex.docs
+
+Conclusion
+
+That is it. You have published your first hex package! Hopefully you enjoyed the post. If you find any errors, please let me know.
